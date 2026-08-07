@@ -125,6 +125,10 @@ html.light .nav-search{background:rgba(0,0,0,0.04);border-color:rgba(0,0,0,0.1);
 .expo-item .meta span{display:flex;align-items:center;gap:3px}
 .expo-item .cat-badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.68rem;
   background:rgba(59,130,246,0.1);color:var(--t1g);border:1px solid rgba(59,130,246,0.15)}
+.decision-badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.decision-badge{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:10px;font-size:0.66rem;
+  background:rgba(20,184,166,0.09);color:var(--t2g);border:1px solid rgba(20,184,166,0.15);line-height:1.35}
+.decision-badge.warn{background:rgba(245,158,11,0.1);color:var(--t3g);border-color:rgba(245,158,11,0.18)}
 @media(max-width:600px){.star-grid,.expo-list{grid-template-columns:1fr}}
 
 /* ===== MONTH TABS ===== */
@@ -254,7 +258,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
       <button class="search-close" onclick="closeSearch()">✕</button>
     </div>
     <div class="search-results" id="searchResults">
-      <div class="search-empty">输入关键词搜索 592 场展会</div>
+      <div class="search-empty">输入关键词搜索展会</div>
     </div>
   </div>
 </div>
@@ -327,7 +331,7 @@ const exhibitions = [
   {month:4, name:"AMR 中国国际汽保汽配展（含润滑油/养护品）", cat:"润滑油/养护品", date:"4月13-15日", sortDate:413, location:"中国 北京", focus:"面积7万㎡，1200+展商，48000观众，法兰克福展览系列，覆盖润滑油/养护全链", market:"海外", star:3},
   {month:4, name:"AMR 中国国际汽车维修检测诊断设备展览会", cat:"汽车维修设备", date:"4月13-15日", sortDate:413, location:"中国 北京", focus:"74届/8万㎡/1300+展商，中国最大汽保展，聚焦新能源维保与数字化", market:"中国", star:3},
   {month:4, name:"Taipei AMPA 台北汽配展", cat:"汽配/汽保", date:"4月14-17日", sortDate:414, location:"中国台湾 台北", focus:"亚洲第二大汽配展，OEM配套+售后，EV技术专区", market:"海外", star:0},
-  {month:4, name:"WCX SAE World Congress", cat:"汽车技术", date:"4月14-16日", sortDate:414, location:"美国 底特律", focus:"SAE年会，汽车工程学术+产业，前沿技术论文/标准", market:"海外", star:0},
+  {month:4, name:"SAE WCX 2026 World Congress Experience", cat:"汽车技术", date:"4月14-16日", sortDate:414, location:"美国 底特律", focus:"SAE年度工程大会，覆盖低碳动力、法规、安全、自动驾驶、SDV与测试验证", market:"海外", star:2, sc:"工程研发/测试验证", audience:"工程、法规、测试验证、Tier1技术团队", source:"https://www.swri.org/events/sae-international-world-congress-experience-wcx"},
   {month:4, name:"AUTOTRONICS TAIPEI 台北国际汽车电子展", cat:"汽车电子元器件", date:"4月14-17日", sortDate:414, location:"中国台湾 台北", focus:"亚洲领先汽车电子专展，覆盖连接器/线束/ADAS/天线/EMS", market:"海外", star:2},
   {month:4, name:"INTERMOLD Osaka（日本大阪国际模具展）", cat:"模具/冲压", date:"4月15-17日", sortDate:415, location:"日本 大阪", focus:"日本顶级模具技术展，30+年历史，含名古屋展，一年两届", market:"海外", star:2},
   {month:4, name:"CAR Conference（Conference of Automotive Remarketers）", cat:"汽车维修设备", date:"4月15-16日", sortDate:416, location:"Cleveland, Ohio", focus:"汽车再营销/二手车专业会", market:"海外", star:1},
@@ -352,6 +356,7 @@ const exhibitions = [
   {month:5, name:"ECAR SHOW葡萄牙", cat:"新能源/EV", date:"5月15-17日", sortDate:515, location:"葡萄牙 里斯本", focus:"南欧新能源车展", market:"海外", star:0},
   {month:5, name:"Expomecanica 2026", cat:"汽配/汽保", date:"5月15-17日", sortDate:517, location:"Lima, Peru", focus:"秘鲁汽配展", market:"海外", star:1},
   {month:5, name:"Automotive Hungary", cat:"汽车供应链", date:"5月18-21日", sortDate:518, location:"匈牙利 布达佩斯", focus:"匈牙利汽车供应商展，Tier1/Tier2对接", market:"海外", star:0},
+  {month:5, name:"Automechanika Istanbul 2026", cat:"汽配/汽保", date:"5月19-22日", sortDate:519, location:"土耳其 伊斯坦布尔 TÜYAP", focus:"连接欧洲、中东、北非和中亚的汽配售后枢纽，适合区域代理、渠道和贸易对接", market:"海外", star:2, sc:"售后流通/区域渠道", audience:"汽配外贸、品牌出海、区域经销商开发", source:"https://automechanika.messefrankfurt.com/global/en/press/press-releases/2026/automechanika-istanbul-officially-opened.html"},
   {month:5, name:"华中华际车展（武汉）", cat:"整车车展", date:"5月14-18日", sortDate:518, location:"武汉国际博览中心", focus:"华中地区最大消费车展", market:"中国", star:1},
   {month:5, name:"INAPA Jakarta", cat:"汽配/汽保", date:"5月20-22日", sortDate:520, location:"印尼 雅加达 JIExpo", focus:"东盟最大B2B汽配展，4万㎡/1405展商/31国，同期紧固件/轮胎/EV展", market:"海外", star:1},
   {month:5, name:"Vehicle Interiors Technology Summit 车辆内饰技术峰会", cat:"汽车座椅", date:"5月20-21日", sortDate:520, location:"德国 慕尼黑", focus:"Automotive IQ主办，18年历史，唯一整合座椅+灯光+显示技术的欧洲峰会", market:"海外", star:2},
@@ -360,7 +365,7 @@ const exhibitions = [
   {month:5, name:"CIMT（中国国际机床展览会）", cat:"材料/金属加工", date:"5月25-29日", sortDate:525, location:"中国 北京", focus:"亚洲最大机床展之一，31万㎡/2400+展商，含金属成形机床", market:"海外", star:2},
   {month:5, name:"TyreXpo Asia Bangkok（亚洲轮胎展-曼谷）", cat:"轮毂/底盘件", date:"5月26-28日", sortDate:526, location:"泰国 曼谷", focus:"东盟轮胎及MRO展，7645观众/71国，首办AutoMROtive子展", market:"海外", star:2},
   {month:5, name:"Expo Eléctrica Internacional 墨西哥电子元器件展", cat:"汽车电子元器件", date:"5月26-28日", sortDate:526, location:"墨西哥 墨西哥城", focus:"拉美最大电子元器件展，2万㎡/400+展商，汽车电子专区", market:"海外", star:1},
-  {month:5, name:"Automotive Engineering Exposition 丰田纺织技术展", cat:"汽车座椅", date:"5月27-29日", sortDate:527, location:"日本 横滨", focus:"丰田纺织主办，展示I.C.30未来座舱概念及模块化座椅TBlocks", market:"海外", star:1},
+  {month:5, name:"JSAE Automotive Engineering Exposition Yokohama 2026", cat:"汽车技术", date:"5月27-29日", sortDate:527, location:"日本 横滨", focus:"日本汽车工程学会主办，面向工程、电子、电动化、ADAS、测试及制造技术", market:"海外", star:2, sc:"工程研发/整车技术", audience:"研发工程、技术选型、日系OEM/Tier1对接", source:"https://aee.expo-info.jsae.or.jp/en/yokohama/"},
   {month:5, name:"WIC 世界智能产业博览会（智能网联汽车专区）", cat:"车联网/座舱", date:"5月28-31日", sortDate:528, location:"中国 天津", focus:"面积13万㎡，V2X通信模块/域控制器专区，对接EU R155/R156合规", market:"海外", star:2},
   {month:5, name:"EAC2026 汽车座椅技术创新论坛暨展览会", cat:"汽车座椅", date:"5月28-29日", sortDate:528, location:"中国 上海", focus:"400+主机厂及总成企业参会，李尔/延锋/佛瑞亚/安道拓/麦格纳等齐聚", market:"中国", star:2},
   {month:5, name:"EAC2026 汽车安全技术论坛(同期)", cat:"汽车安全", date:"5月28-29日", sortDate:528, location:"中国 上海", focus:"与EAC座椅论坛同期，聚焦碰撞安全/被动安全/约束系统集成", market:"中国", star:1},
@@ -386,6 +391,10 @@ const exhibitions = [
   {month:6, name:"Nagoya Automotive Lighting（日本名古屋车灯技术展）", cat:"汽车照明", date:"6月（具体日期待定）", sortDate:610, location:"日本 名古屋", focus:"日本专业车灯技术展，聚焦LED/激光/OLED尾灯等前沿方案", market:"海外", star:1},
   {month:6, name:"iVT Expo Europe（含商用车热管理）", cat:"热管理/空调", date:"6月10-11日", sortDate:610, location:"德国 科隆", focus:"商用车热管理专题，Grayson等集成热管理方案展示，800V系统", market:"海外", star:1},
   {month:6, name:"Lube Indonesia 印尼国际润滑油及养护技术展", cat:"润滑油/养护品", date:"6月12-15日", sortDate:612, location:"印尼 雅加达", focus:"东南亚润滑油旗舰B2B平台，与INAPA汽配展同期，覆盖EV专用液/生物基润滑油", market:"海外", star:2},
+  {month:6, name:"Automotive Manufacturing Thailand 2026", cat:"汽车技术", date:"6月16-19日（日期待复核）", sortDate:616, location:"泰国 曼谷 BITEC", focus:"东盟汽车零部件制造技术展，覆盖加工、自动化、装配、质量与制造装备", market:"海外", star:2, sc:"制造装备/工艺设备", audience:"制造工程、设备采购、东南亚供应链布局", status:"日期待复核", source:"https://www.automanexpo.com/"},
+  {month:6, name:"JSAE Automotive Engineering Exposition Nagoya 2026", cat:"汽车技术", date:"6月17-19日", sortDate:617, location:"日本 名古屋 Aichi Sky Expo", focus:"日本汽车工程学会名古屋站，聚焦电动化、轻量化、车载电子、测试与工程服务", market:"海外", star:2, sc:"工程研发/整车技术", audience:"研发工程、技术选型、日系OEM/Tier1对接", source:"https://aee.expo-info.jsae.or.jp/en/nagoya/"},
+  {month:6, name:"Automechanika Ho Chi Minh City 2026", cat:"汽配/汽保", date:"6月18-20日", sortDate:618, location:"越南 胡志明市 SECC", focus:"越南汽配、售后、EV与混动转型平台，覆盖OEM、物流和后市场全链条", market:"海外", star:2, sc:"售后流通/区域供应链", audience:"汽配外贸、渠道开发、东南亚市场拓展", source:"https://automechanika.messefrankfurt.com/global/en/press/press-releases/2026/automechanika-ho-chi-minh-city-2026.html"},
+  {month:6, name:"Power2Drive Europe 2026", cat:"新能源/EV", date:"6月23-25日（会议22-23日）", sortDate:623, location:"德国 慕尼黑", focus:"欧洲充电基础设施与电动出行展，覆盖CPO、V2G、车队能源管理、充电互操作", market:"海外", star:2, sc:"补能基础设施/能源服务", audience:"充电设施、车队、电力电子、能源服务商", source:"https://www.charin.global/events/power2drive-2026/"},
   {month:6, name:"重庆车展", cat:"整车车展", date:"6月13-21日", sortDate:613, location:"中国 重庆", focus:"西南最大车展", market:"海外", star:0},
   {month:6, name:"第15届南宁国际汽车展览会", cat:"整车车展", date:"6月12-15日", sortDate:615, location:"南宁国际会展中心", focus:"广西-东盟车展", market:"中国", star:1},
   {month:6, name:"Rosmould（俄罗斯莫斯科模具展）", cat:"模具/冲压", date:"6月16-19日", sortDate:616, location:"俄罗斯 莫斯科", focus:"东欧最具影响力模具展，含Rosplast/3D-TECH同期展", market:"海外", star:1},
@@ -523,6 +532,8 @@ const exhibitions = [
   {month:9, name:"世界新能源汽车大会", cat:"汽车技术", date:"9月22-24日", sortDate:924, location:"海口·海南国际会展中心", focus:"中国新能源汽车顶层学术/产业大会", market:"中国", star:3},
   {month:9, name:"武汉国际汽车制造技术暨智能装备博览会", cat:"汽车技术", date:"9月22-24日", sortDate:924, location:"武汉国际博览中心", focus:"汽车制造+智能装备", market:"中国", star:2},
   {month:9, name:"第14届武汉国际汽车电子展览会", cat:"汽车电子元器件", date:"9月22-24日", sortDate:924, location:"武汉国际博览中心", focus:"与武汉汽车制造技术展同期", market:"中国", star:2},
+  {month:9, name:"AutoSens Europe 2026", cat:"智能驾驶", date:"9月22-24日", sortDate:924, location:"西班牙 巴塞罗那", focus:"ADAS/自动驾驶感知专业会议与展览，覆盖摄像头、雷达、传感器、视觉算法、仿真验证", market:"海外", star:2, sc:"智能化/感知系统", audience:"ADAS、传感器、算法、芯片、测试验证团队", source:"https://auto-sens.com/europe/"},
+  {month:9, name:"MOVE America 2026", cat:"汽车软件/OTA", date:"9月23-24日", sortDate:924, location:"美国 底特律", focus:"北美汽车科技与出行商业论坛，覆盖EV、自动驾驶、SDV、车队、CPO与能源生态", market:"海外", star:2, sc:"智能化/出行生态", audience:"OEM、车队、软件、充电运营、能源与数据服务商", source:"https://www.terrapinn.com/exhibition/move-america/index.stm"},
   {month:9, name:"第14届东部沿海（盐城）国际汽车博览会", cat:"整车车展", date:"9月23-27日", sortDate:927, location:"盐城国际会展中心", focus:"苏北消费车展", market:"中国", star:0},
   {month:9, name:"荆州国际车展", cat:"整车车展", date:"9月24-27日", sortDate:927, location:"荆州国际会展中心", focus:"地方消费车展", market:"中国", star:0},
   {month:9, name:"Camauto", cat:"汽配/汽保", date:"9月28-30日", sortDate:928, location:"柬埔寨 金边", focus:"柬埔寨汽配及售后展", market:"海外", star:0},
@@ -537,10 +548,10 @@ const exhibitions = [
   {month:10, name:"长沙芒果国际汽车博览会暨智能出行展", cat:"整车车展", date:"10月1-5日", sortDate:1005, location:"湖南国际会展中心（芒果馆）", focus:"10万㎡，980家展商", market:"中国", star:1},
   {month:10, name:"COMTRANS", cat:"商用车", date:"10月6-9日", sortDate:1006, location:"俄罗斯 莫斯科", focus:"6万㎡/370展商，俄罗斯最大商用车展", market:"海外", star:0},
   {month:10, name:"ALUMINIUM 2026（杜塞尔多夫铝业展）", cat:"表面处理/涂装", date:"10月6-8日", sortDate:1006, location:"德国 杜塞尔多夫", focus:"全球铝业旗舰展，800+展商/2万+观众，设Surface Pavilion表面处理专区", market:"海外", star:2},
-  {month:10, name:"The Battery Show North America 北美电池展(含高压连接器)", cat:"汽车电子元器件", date:"10月6-8日", sortDate:1006, location:"美国 底特律", focus:"1.8万观众，EV电池技术旗舰展，高压DC连接器为核心品类", market:"海外", star:2},
+  {month:10, name:"The Battery Show North America 2026", cat:"新能源/EV", date:"10月12-15日", sortDate:1012, location:"美国 底特律 Huntington Place", focus:"北美动力电池与EV技术旗舰展，覆盖电池材料、模组PACK、设备、测试、回收与高压部件", market:"海外", star:3, sc:"三电/电池供应链", audience:"电池材料、设备、Pack、测试、连接器与北美客户开发", source:"https://www.german-pavilion.com/en/the-battery-show-north-america-2026"},
   {month:10, name:"E-Charge Bologna", cat:"新能源/EV", date:"10月7-9日", sortDate:1007, location:"意大利 博洛尼亚", focus:"电动车充电技术展", market:"海外", star:0},
   {month:10, name:"AutoTech埃及", cat:"汽配/汽保", date:"10月9-11日", sortDate:1009, location:"埃及 开罗", focus:"4万㎡/650展商，北非最大汽配展", market:"海外", star:0},
-  {month:10, name:"波兰华沙汽配展", cat:"汽配/汽保", date:"10月9-11日", sortDate:1009, location:"波兰 华沙", focus:"东欧新兴汽配市场", market:"海外", star:0},
+  {month:10, name:"Automotive Parts Expo 2026（Warsaw）", cat:"汽配/汽保", date:"10月9-11日", sortDate:1009, location:"波兰 华沙", focus:"中东欧汽配与汽车技术贸易展，适合中国汽配供应商开发欧洲区域渠道", market:"海外", star:1, sc:"售后流通/渠道开发", audience:"汽配外贸、区域分销、售后渠道", source:"https://automotive-expo.eu/en/"},
   {month:10, name:"Paris Motor Show", cat:"整车车展", date:"10月12-18日", sortDate:1012, location:"法国 巴黎", focus:"五大车展之一，14万㎡/950展商，欧洲EV/概念车首发重镇", market:"海外", star:2},
   {month:10, name:"MWCS（中国工博会数控机床与金属加工展）", cat:"材料/金属加工", date:"10月12-16日", sortDate:1012, location:"中国 上海", focus:"中国工博会核心展，8万㎡/800+企业，智能加工与高端装备", market:"海外", star:1},
   {month:10, name:"上海国际轻量化材料与技术应用展览会", cat:"汽车轻量化", date:"10月12-16日", sortDate:1012, location:"中国 上海", focus:"30万㎡超大规模，UFI认证，覆盖轻量化材料/核心部件/商用车", market:"海外", star:1},
@@ -898,18 +909,71 @@ const catIcons = {
 function starStr(n){return n>=3?'⭐⭐⭐':n===2?'⭐⭐':n===1?'⭐':''}
 function getMonth(e){return e.month||(new Date(e.sortDate).getMonth()+1)||1}
 function getCountry(loc){
-  // Extract country from location string like "美国 拉斯维加斯" or "日本东京"
+  // Extract country from location string like "美国 拉斯维加斯" or "日本东京".
   const cnMap={'上海':'中国','北京':'中国','广州':'中国','深圳':'中国','重庆':'中国','成都':'中国','武汉':'中国',
     '杭州':'中国','南京':'中国','天津':'中国','苏州':'中国','青岛':'中国','济南':'中国','郑州':'中国',
     '昆明':'中国','合肥':'中国','佛山':'中国','东莞':'中国','无锡':'中国','宁波':'中国','贵阳':'中国',
     '海口':'中国','温州':'中国','昆山':'中国','邯郸':'中国','太原':'中国','梁山':'中国','义乌':'中国',
-    '南通':'中国','西安':'中国','厦门':'中国','长春':'中国','长沙':'中国','大连':'中国','石家庄':'中国'};
+    '南通':'中国','西安':'中国','厦门':'中国','长春':'中国','长沙':'中国','大连':'中国','石家庄':'中国',
+    '沈阳':'中国','南昌':'中国','福州':'中国','柳州':'中国','荆州':'中国','盐城':'中国','玉环':'中国',
+    '瑞安':'中国','广饶':'中国','喀什':'中国','兰州':'中国','哈尔滨':'中国','台北':'中国台湾',
+    '香港':'中国香港','中国台湾':'中国台湾','中国香港':'中国香港'};
   if(!loc)return '';
+  const countryHints=['中国台湾','中国香港','中国','美国','加拿大','墨西哥','德国','法国','意大利','西班牙','英国','荷兰','瑞士','奥地利','波兰','捷克','土耳其','俄罗斯','葡萄牙','比利时','瑞典','匈牙利','日本','韩国','泰国','印度尼西亚','印尼','越南','马来西亚','菲律宾','新加坡','柬埔寨','印度','巴西','阿根廷','秘鲁','埃及','阿联酋','沙特','伊拉克','澳大利亚','塞尔维亚'];
+  const direct=countryHints.find(c=>loc.includes(c));
+  if(direct)return direct;
+  const englishHints=[
+    ['USA','美国'],['United States','美国'],['Detroit','美国'],['Las Vegas','美国'],['Los Angeles','美国'],['New York','美国'],['Chicago','美国'],['Louisville','美国'],
+    ['Germany','德国'],['Frankfurt','德国'],['Stuttgart','德国'],['Hannover','德国'],['Munich','德国'],['Cologne','德国'],
+    ['Japan','日本'],['Tokyo','日本'],['Nagoya','日本'],['Yokohama','日本'],['Aichi','日本'],['Makuhari','日本'],
+    ['UK','英国'],['Birmingham','英国'],['London','英国'],['France','法国'],['Paris','法国'],['Italy','意大利'],['Milan','意大利'],
+    ['Spain','西班牙'],['Barcelona','西班牙'],['Thailand','泰国'],['Bangkok','泰国'],['India','印度'],['Poland','波兰'],
+    ['Warsaw','波兰'],['Brazil','巴西'],['Sao Paulo','巴西'],['Netherlands','荷兰'],['Sweden','瑞典'],['Australia','澳大利亚']
+  ];
+  const hit=englishHints.find(([k])=>loc.toLowerCase().includes(k.toLowerCase()));
+  if(hit)return hit[1];
   const first=loc.split(/[\s,，]/)[0];
   return cnMap[first]||first;
 }
+function isChinaLocation(loc){
+  return getCountry(loc).startsWith('中国')||/北京|上海|广州|深圳|重庆|成都|武汉|天津|苏州|南京|宁波|温州|瑞安|邯郸|永年|济南|青岛|石家庄|长沙|大连|哈尔滨|兰州|西安|沈阳|南昌|福州|佛山|昆山|玉环|广饶|海口|喀什|台北|香港/.test(loc||'');
+}
+function regionLabel(e){
+  if(e.region)return e.region;
+  const c=getCountry(e.location);
+  if(c.startsWith('中国'))return '中国';
+  if(['美国','加拿大','墨西哥'].includes(c))return '北美';
+  if(['德国','法国','意大利','西班牙','英国','荷兰','瑞士','奥地利','波兰','捷克','土耳其','俄罗斯','葡萄牙','比利时','瑞典','匈牙利'].includes(c))return '欧洲';
+  if(['日本','韩国'].includes(c))return '日韩';
+  if(['泰国','印度尼西亚','印尼','越南','马来西亚','菲律宾','新加坡','柬埔寨'].includes(c))return '东南亚';
+  if(['阿联酋','沙特','伊拉克','埃及'].includes(c))return '中东/非洲';
+  if(['巴西','阿根廷','秘鲁'].includes(c))return '拉美';
+  if(c==='印度')return '印度';
+  return '其他海外';
+}
+function supplyChainLabel(e){
+  if(e.sc)return e.sc;
+  const map={
+    '材料/金属加工':'原材料/材料工艺','模具/冲压':'制造装备/工艺设备','表面处理/涂装':'制造装备/表面工程',
+    '紧固件':'零部件/标准件','轮毂/底盘件':'零部件/底盘系统','轮胎/橡胶':'零部件/轮胎橡胶','热管理/空调':'零部件/热管理',
+    '汽车内外饰':'零部件/内外饰','汽车座椅':'零部件/座椅系统','汽车照明':'零部件/照明系统','汽车电子元器件':'电子电气/元器件',
+    '汽车电子':'电子电气/系统集成','汽车半导体/芯片':'电子电气/车规芯片','新能源/EV':'三电/新能源','智能驾驶':'智能化/ADAS',
+    '车联网/座舱':'智能化/座舱网联','汽车软件/OTA':'软件/SDV','汽车测试/验证':'工程研发/测试验证','汽车安全':'工程研发/安全法规',
+    '汽车技术':'工程研发/整车技术','汽车物流':'供应链服务/物流','汽车供应链':'供应链服务/综合对接','汽配/汽保':'售后流通/汽配汽保',
+    '汽车维修设备':'售后流通/维修设备','润滑油/养护品':'售后流通/养护品','商用车':'整车/商用车','整车车展':'整车/OEM市场'
+  };
+  return map[e.cat]||'汽车产业链';
+}
+function normalizeRecord(e){
+  if(isChinaLocation(e.location))e.market='中国';
+  if(!e.region)e.region=regionLabel(e);
+  if(!e.sc)e.sc=supplyChainLabel(e);
+  return e;
+}
+function normalizeExhibitions(){exhibitions.forEach(normalizeRecord)}
 function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function now(){const d=new Date();return{y:d.getFullYear(),m:d.getMonth()+1}}
+normalizeExhibitions();
 
 // ===== PAGE SWITCHING =====
 function switchPage(name){
@@ -938,14 +1002,16 @@ function closeSearch(){
   document.getElementById('searchOverlay').classList.remove('open');
   const inp=document.getElementById('searchInput');
   inp.value='';inp.setAttribute('readonly','');
-  document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 592 场展会</div>';
+  document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 '+exhibitions.length+' 场展会</div>';
 }
 function doSearch(){
   const q=document.getElementById('searchInput').value.trim().toLowerCase();
-  if(!q){document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 592 场展会</div>';return}
+  if(!q){document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 '+exhibitions.length+' 场展会</div>';return}
   const results=exhibitions.filter(e=>{
     return e.name.toLowerCase().includes(q)||(e.location||'').toLowerCase().includes(q)||
-      e.cat.toLowerCase().includes(q)||(e.focus||'').toLowerCase().includes(q)||(e.market||'').toLowerCase().includes(q);
+      e.cat.toLowerCase().includes(q)||(e.focus||'').toLowerCase().includes(q)||(e.market||'').toLowerCase().includes(q)||
+      (e.sc||'').toLowerCase().includes(q)||(e.audience||'').toLowerCase().includes(q)||(e.region||'').toLowerCase().includes(q)||
+      (e.status||'').toLowerCase().includes(q);
   }).slice(0,40);
   if(!results.length){document.getElementById('searchResults').innerHTML='<div class="search-empty">未找到匹配的展会</div>';return}
   document.getElementById('searchResults').innerHTML=results.map(e=>
@@ -956,10 +1022,12 @@ function doSearch(){
 
 // ===== RENDER HELPERS =====
 function expoItem(e){
-  return '<div class="expo-item"><div class="name">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="meta"><span class="cat-badge">'+escapeHtml(e.cat)+'</span><span>📅 '+escapeHtml(e.date)+'</span><span>📍 '+escapeHtml(e.location)+'</span></div></div>';
+  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
+  return '<div class="expo-item"><div class="name">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="meta"><span class="cat-badge">'+escapeHtml(e.cat)+'</span><span>📅 '+escapeHtml(e.date)+'</span><span>📍 '+escapeHtml(e.location)+'</span></div>'+badges+'</div>';
 }
 function starCard(e){
-  return '<div class="star-card'+(e.star>=3?' flagship':'')+'"><div class="stars">'+starStr(e.star)+'</div><div class="cat-badge">'+escapeHtml(e.cat)+'</div><div class="name">'+escapeHtml(e.name)+'</div><div class="meta"><span>📅 '+escapeHtml(e.date)+'</span><span>📍 '+escapeHtml(e.location)+'</span></div>'+(e.focus?'<div class="focus">'+escapeHtml(e.focus)+'</div>':'')+'</div>';
+  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
+  return '<div class="star-card'+(e.star>=3?' flagship':'')+'"><div class="stars">'+starStr(e.star)+'</div><div class="cat-badge">'+escapeHtml(e.cat)+'</div><div class="name">'+escapeHtml(e.name)+'</div><div class="meta"><span>📅 '+escapeHtml(e.date)+'</span><span>📍 '+escapeHtml(e.location)+'</span></div>'+badges+(e.focus?'<div class="focus">'+escapeHtml(e.focus)+'</div>':'')+'</div>';
 }
 
 // ===== PAGE 1: OVERVIEW =====
@@ -1051,18 +1119,11 @@ function renderDomestic(){
 function renderOverseas(){
   const items=exhibitions.filter(e=>e.market!=='中国').sort((a,b)=>a.sortDate-b.sortDate);
   document.getElementById('overseasCount').textContent='共 '+items.length+' 场海外展会';
-  const asiaSet=new Set(['日本','韩国']);
-  const seaSet=new Set(['泰国','印度尼西亚','印尼','越南','马来西亚','菲律宾','新加坡','柬埔寨']);
-  const euSet=new Set(['德国','法国','意大利','西班牙','英国','荷兰','瑞士','奥地利','波兰','捷克','土耳其','俄罗斯','葡萄牙','比利时','瑞典','匈牙利']);
-  const naSet=new Set(['美国','墨西哥','加拿大']);
-  const regions={'🇪🇺 欧洲':[],'🇺🇸 北美':[],'🇯🇵🇰🇷 日韩':[],'🌏 东南亚':[],'🌐 其他':[]};
+  const regions={'🇪🇺 欧洲':[],'🇺🇸 北美':[],'🇯🇵🇰🇷 日韩':[],'🌏 东南亚':[],'🇮🇳 印度':[],'🌎 拉美':[],'🕌 中东/非洲':[],'🌐 其他海外':[]};
+  const regionKeys={'欧洲':'🇪🇺 欧洲','北美':'🇺🇸 北美','日韩':'🇯🇵🇰🇷 日韩','东南亚':'🌏 东南亚','印度':'🇮🇳 印度','拉美':'🌎 拉美','中东/非洲':'🕌 中东/非洲','其他海外':'🌐 其他海外'};
   items.forEach(e=>{
-    const c=getCountry(e.location);
-    if(asiaSet.has(c))regions['🇯🇵🇰🇷 日韩'].push(e);
-    else if(seaSet.has(c))regions['🌏 东南亚'].push(e);
-    else if(euSet.has(c))regions['🇪🇺 欧洲'].push(e);
-    else if(naSet.has(c))regions['🇺🇸 北美'].push(e);
-    else regions['🌐 其他'].push(e);
+    const key=regionKeys[regionLabel(e)]||'🌐 其他海外';
+    regions[key].push(e);
   });
   let html='';
   for(const [r,list] of Object.entries(regions)){
