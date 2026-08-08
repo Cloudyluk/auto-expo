@@ -274,6 +274,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
   </div>
 </div>
 
+<script src="data/supply-chain-taxonomy.js"></script>
 <script>
 const exhibitions = [
   {month:1, name:"第33届浙江(瑞安)机械装备展览会", cat:"模具/冲压", date:"待定", sortDate:101, location:"瑞安市会展中心", focus:"含汽摩配加工设备", market:"中国", star:1},
@@ -1004,10 +1005,16 @@ function verticalLabel(e){
   return map[e.cat]||'综合汽车产业链';
 }
 function normalizeRecord(e){
+  const profile=typeof getSupplyChainProfile==='function'?getSupplyChainProfile(e):{sc:supplyChainLabel(e),vertical:verticalLabel(e),buyerValue:['找供应商'],sellerValue:['开发产业客户'],buyerTasks:['供应商开发'],sellerTargets:['OEM'],marketUse:{}};
   if(isChinaLocation(e.location))e.market='中国';
   if(!e.region)e.region=regionLabel(e);
-  if(!e.sc)e.sc=supplyChainLabel(e);
-  if(!e.vertical)e.vertical=verticalLabel(e);
+  if(!e.sc)e.sc=profile.sc;
+  if(!e.vertical)e.vertical=profile.vertical;
+  if(!e.buyerValue)e.buyerValue=profile.buyerValue;
+  if(!e.sellerValue)e.sellerValue=profile.sellerValue;
+  if(!e.buyerTasks)e.buyerTasks=profile.buyerTasks;
+  if(!e.sellerTargets)e.sellerTargets=profile.sellerTargets;
+  if(!e.marketUse)e.marketUse=(profile.marketUse||{})[e.region]||(profile.marketUse||{}).default||'';
   return e;
 }
 function normalizeExhibitions(){exhibitions.forEach(normalizeRecord)}

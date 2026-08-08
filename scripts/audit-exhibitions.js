@@ -48,6 +48,18 @@ const coverage = Object.fromEntries(
   coverageFields.map((field) => [field, exhibitions.filter((event) => event[field] !== undefined && event[field] !== '').length])
 );
 
+if (process.argv.includes('--taxonomy')) {
+  const { SUPPLY_CHAIN_TAXONOMY } = require(path.join(root, 'data', 'supply-chain-taxonomy.js'));
+  const categories = [...new Set(exhibitions.map((event) => event.cat))];
+  const missingTaxonomy = categories.filter((category) => !SUPPLY_CHAIN_TAXONOMY[category]);
+  console.log(`Taxonomy categories: ${Object.keys(SUPPLY_CHAIN_TAXONOMY).length}`);
+  console.log(`Missing taxonomy categories: ${missingTaxonomy.length}`);
+  if (missingTaxonomy.length) {
+    console.error(`Missing taxonomy: ${missingTaxonomy.join(', ')}`);
+    process.exitCode = 1;
+  }
+}
+
 console.log('Exhibition data audit');
 console.log(`Records: ${exhibitions.length}`);
 console.log(`2027 previews: ${exhibitions.filter((event) => event.year === 2027).length}`);
