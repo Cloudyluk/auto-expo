@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全球汽车产业展会聚合平台 V5</title>
+<title>全球汽车产业展会聚合平台 V6</title>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -129,6 +129,7 @@ html.light .nav-search{background:rgba(0,0,0,0.04);border-color:rgba(0,0,0,0.1);
 .decision-badge{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:10px;font-size:0.66rem;
   background:rgba(20,184,166,0.09);color:var(--t2g);border:1px solid rgba(20,184,166,0.15);line-height:1.35}
 .decision-badge.warn{background:rgba(245,158,11,0.1);color:var(--t3g);border-color:rgba(245,158,11,0.18)}
+.source-link{margin-top:8px;font-size:0.72rem}.source-link a{color:var(--t1g);text-decoration:none}.source-link a:hover{text-decoration:underline}
 @media(max-width:600px){.star-grid,.expo-list{grid-template-columns:1fr}}
 
 /* ===== MONTH TABS ===== */
@@ -192,6 +193,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
       <div class="nav-tab" data-page="category" onclick="switchPage('category')">🏷️ 分类</div>
       <div class="nav-tab" data-page="domestic" onclick="switchPage('domestic')">🇨🇳 国内</div>
       <div class="nav-tab" data-page="overseas" onclick="switchPage('overseas')">🌍 海外</div>
+      <div class="nav-tab" data-page="preview2027" onclick="switchPage('preview2027')">🔭 2027预告</div>
       <div class="nav-tab" data-page="starred" onclick="switchPage('starred')">⭐ 推荐</div>
     </div>
     <div class="nav-right">
@@ -244,7 +246,14 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
   <div id="overseasContent"></div>
 </div>
 
-<!-- PAGE 6: STARRED -->
+<!-- PAGE 6: 2027 PREVIEW -->
+<div class="page" id="page-preview2027">
+  <div class="section-title"><span class="icon">🔭</span> 2027年已公布 / 预告展会</div>
+  <div class="month-count" id="preview2027Count"></div>
+  <div id="preview2027Content"></div>
+</div>
+
+<!-- PAGE 7: STARRED -->
 <div class="page" id="page-starred">
   <div class="section-title"><span class="icon">⭐</span> 重点推荐</div>
   <div id="starredContent"></div>
@@ -864,6 +873,10 @@ const exhibitions = [
   {month:12, name:"DMP大湾区工博会(汽车座椅零部件专区)", cat:"汽车座椅", date:"12月3-6日", sortDate:20261203, location:"深圳", focus:"座椅零部件/模具/金属加工", market:"中国", star:1},
   {month:12, name:"DMP大湾区工博会(轻量化专区)", cat:"汽车轻量化", date:"12月3-6日", sortDate:20261203, location:"深圳", focus:"轻量化制造/一体化压铸/新材料", market:"中国", star:1},
   {month:12, name:"CIBE 2026第十五届上海国际客车展览会", cat:"商用车", date:"12月9-11日", sortDate:20261209, location:"上海", focus:"客车、公交、新能源客车", market:"中国", star:1},
+  // 2027 预告：仅收录主办方已公布日期的海外重点展会；未公布日期的系列展会继续保留在 2026 数据中并标注“待定”。
+  {year:2027,month:5,name:"Autopromotec 2027",cat:"汽配/汽保",date:"5月26-29日",sortDate:20270526,location:"意大利 博洛尼亚 Bologna Fair District",address:"Piazza della Costituzione / Via Michelino / Via Calzoni 15, Bologna",focus:"轮胎、维修设备、售后市场与车间技术；适合开发欧洲售后渠道",market:"海外",region:"欧洲",star:3,status:"2027预告",source:"https://www.autopromotec.com/en/Where-and-when/p28"},
+  {year:2027,month:9,name:"IAA MOBILITY 2027",cat:"汽车技术",date:"9月7-12日（专业展9月7-10日）",sortDate:20270907,location:"德国 慕尼黑 Messe München / Munich Downtown",address:"Messe München, Messegelände, 81823 München, Germany；Open Space位于慕尼黑市中心",focus:"整车、智能出行、软件、充电与移动科技；适合技术选型、竞品调研和品牌曝光",market:"海外",region:"欧洲",star:3,status:"2027预告",source:"https://www.iaa-mobility.com/en/visitors"},
+  {year:2027,month:10,name:"EQUIP AUTO Paris 2027",cat:"汽配/汽保",date:"10月12-16日",sortDate:20271012,location:"法国 巴黎 Paris Expo Porte de Versailles",address:"1 Place de la Porte de Versailles, 75015 Paris, France",focus:"覆盖汽配、维修设备、ADAS、轮胎、再制造与售后服务；适合外贸获客和渠道招商",market:"海外",region:"欧洲",star:3,status:"2027预告",source:"https://paris.equipauto.com/en/faq/"},
 ];
 
 const catIcons = {
@@ -908,6 +921,9 @@ const catIcons = {
 // ===== HELPERS =====
 function starStr(n){return n>=3?'⭐⭐⭐':n===2?'⭐⭐':n===1?'⭐':''}
 function getMonth(e){return e.month||(new Date(e.sortDate).getMonth()+1)||1}
+function getYear(e){return e.year||(e.sortDate>=10000000?Math.floor(e.sortDate/10000):2026)}
+function isCurrentYear(e){return getYear(e)===2026}
+function yearLabel(e){return getYear(e)>=2027?'2027预告':'2026展期'}
 function getCountry(loc){
   // Extract country from location string like "美国 拉斯维加斯" or "日本东京".
   const cnMap={'上海':'中国','北京':'中国','广州':'中国','深圳':'中国','重庆':'中国','成都':'中国','武汉':'中国',
@@ -971,6 +987,8 @@ function normalizeRecord(e){
   return e;
 }
 function normalizeExhibitions(){exhibitions.forEach(normalizeRecord)}
+const currentExhibitions=()=>exhibitions.filter(isCurrentYear);
+const previewExhibitions=()=>exhibitions.filter(e=>getYear(e)>=2027||e.status==='2027预告');
 function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function now(){const d=new Date();return{y:d.getFullYear(),m:d.getMonth()+1}}
 normalizeExhibitions();
@@ -1016,14 +1034,15 @@ function doSearch(){
   if(!results.length){document.getElementById('searchResults').innerHTML='<div class="search-empty">未找到匹配的展会</div>';return}
   document.getElementById('searchResults').innerHTML=results.map(e=>
     '<div class="search-result-item"><div class="sname">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="smeta">'+
-    escapeHtml(e.cat)+' · '+escapeHtml(e.date)+' · '+escapeHtml(e.location)+'</div></div>'
+    escapeHtml(e.cat)+' · '+escapeHtml(e.date)+' · '+escapeHtml(e.location)+(e.address?' · '+escapeHtml(e.address):'')+'</div></div>'
   ).join('');
 }
 
 // ===== RENDER HELPERS =====
 function expoItem(e){
   const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
-  return '<div class="expo-item"><div class="name">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="meta"><span class="cat-badge">'+escapeHtml(e.cat)+'</span><span>📅 '+escapeHtml(e.date)+'</span><span>📍 '+escapeHtml(e.location)+'</span></div>'+badges+'</div>';
+  const venue=e.address||e.location||'地址待确认';
+  return '<div class="expo-item"><div class="name">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="meta"><span class="cat-badge">'+escapeHtml(e.cat)+'</span><span>📅 '+escapeHtml(e.date||'时间待确认')+'</span><span>📍 '+escapeHtml(venue)+'</span><span>🗓 '+yearLabel(e)+'</span></div>'+badges+(e.source?'<div class="source-link"><a href="'+escapeHtml(e.source)+'" target="_blank" rel="noopener">查看官方信息 ↗</a></div>':'')+'</div>';
 }
 function starCard(e){
   const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
@@ -1033,17 +1052,18 @@ function starCard(e){
 // ===== PAGE 1: OVERVIEW =====
 function renderOverview(){
   const {m}=now();
-  const countries=new Set(exhibitions.map(e=>getCountry(e.location))).size;
-  const thisMonth=exhibitions.filter(e=>getMonth(e)===m);
+  const data=currentExhibitions();
+  const countries=new Set(data.map(e=>getCountry(e.location))).size;
+  const thisMonth=data.filter(e=>getMonth(e)===m);
   document.getElementById('overviewMetrics').innerHTML=
-    '<div class="metric-card"><span class="icon">🎪</span><span class="value">'+exhibitions.length+'</span><span class="label">展会总数</span></div>'+
-    '<div class="metric-card"><span class="icon">🏷️</span><span class="value">'+new Set(exhibitions.map(e=>e.cat)).size+'</span><span class="label">展会类别</span></div>'+
+    '<div class="metric-card"><span class="icon">🎪</span><span class="value">'+data.length+'</span><span class="label">2026展会</span></div>'+
+    '<div class="metric-card"><span class="icon">🏷️</span><span class="value">'+new Set(data.map(e=>e.cat)).size+'</span><span class="label">展会类别</span></div>'+
     '<div class="metric-card"><span class="icon">🌍</span><span class="value">'+countries+'</span><span class="label">覆盖国家/地区</span></div>'+
     '<div class="metric-card"><span class="icon">📅</span><span class="value">'+thisMonth.length+'</span><span class="label">本月展会</span></div>';
-  const flagship=exhibitions.filter(e=>e.star>=3).sort((a,b)=>a.sortDate-b.sortDate);
+  const flagship=data.filter(e=>e.star>=3).sort((a,b)=>a.sortDate-b.sortDate);
   document.getElementById('starGrid').innerHTML=flagship.map(starCard).join('');
   const nextM=m===12?1:m+1;
-  const upcoming=exhibitions.filter(e=>{const em=getMonth(e);return em===m||em===nextM}).sort((a,b)=>a.sortDate-b.sortDate);
+  const upcoming=data.filter(e=>{const em=getMonth(e);return em===m||em===nextM}).sort((a,b)=>a.sortDate-b.sortDate);
   document.getElementById('upcomingList').innerHTML=upcoming.map(expoItem).join('');
 }
 
@@ -1063,7 +1083,7 @@ function selectMonth(m){
   renderMonthContent();
 }
 function renderMonthContent(){
-  const items=exhibitions.filter(e=>getMonth(e)===curMonth).sort((a,b)=>a.sortDate-b.sortDate);
+  const items=currentExhibitions().filter(e=>getMonth(e)===curMonth).sort((a,b)=>a.sortDate-b.sortDate);
   document.getElementById('monthCount').textContent='共 '+items.length+' 场展会';
   document.getElementById('monthContent').innerHTML=items.length?items.map(expoItem).join(''):'<div style="color:var(--text-dim);padding:40px;text-align:center">本月暂无展会</div>';
 }
@@ -1071,7 +1091,7 @@ function renderMonthContent(){
 // ===== PAGE 3: CATEGORY =====
 let curCat='全部',curCatMarket='全部';
 function renderCatChips(){
-  const allCats=[...new Set(exhibitions.map(e=>e.cat))].sort((a,b)=>a.localeCompare(b,'zh'));
+  const allCats=[...new Set(currentExhibitions().map(e=>e.cat))].sort((a,b)=>a.localeCompare(b,'zh'));
   const cats=['全部',...allCats];
   document.getElementById('catChips').innerHTML=cats.map(c=>
     '<div class="cat-chip'+(c===curCat?' active':'')+'" data-cat="'+escapeHtml(c)+'" onclick="selectCat(this)">'+
@@ -1092,7 +1112,8 @@ function filterCatMarket(m){
   renderCatContent();
 }
 function renderCatContent(){
-  let items=curCat==='全部'?[...exhibitions]:exhibitions.filter(e=>e.cat===curCat);
+  const data=currentExhibitions();
+  let items=curCat==='全部'?[...data]:data.filter(e=>e.cat===curCat);
   if(curCatMarket==='中国')items=items.filter(e=>e.market==='中国');
   else if(curCatMarket==='海外')items=items.filter(e=>e.market!=='中国');
   items.sort((a,b)=>a.sortDate-b.sortDate);
@@ -1102,7 +1123,7 @@ function renderCatContent(){
 
 // ===== PAGE 4: DOMESTIC =====
 function renderDomestic(){
-  const items=exhibitions.filter(e=>e.market==='中国').sort((a,b)=>a.sortDate-b.sortDate);
+  const items=currentExhibitions().filter(e=>e.market==='中国').sort((a,b)=>a.sortDate-b.sortDate);
   document.getElementById('domesticCount').textContent='共 '+items.length+' 场国内展会';
   const grouped={};
   items.forEach(e=>{const m=getMonth(e);if(!grouped[m])grouped[m]=[];grouped[m].push(e)});
@@ -1117,7 +1138,7 @@ function renderDomestic(){
 
 // ===== PAGE 5: OVERSEAS =====
 function renderOverseas(){
-  const items=exhibitions.filter(e=>e.market!=='中国').sort((a,b)=>a.sortDate-b.sortDate);
+  const items=currentExhibitions().filter(e=>e.market!=='中国').sort((a,b)=>a.sortDate-b.sortDate);
   document.getElementById('overseasCount').textContent='共 '+items.length+' 场海外展会';
   const regions={'🇪🇺 欧洲':[],'🇺🇸 北美':[],'🇯🇵🇰🇷 日韩':[],'🌏 东南亚':[],'🇮🇳 印度':[],'🌎 拉美':[],'🕌 中东/非洲':[],'🌐 其他海外':[]};
   const regionKeys={'欧洲':'🇪🇺 欧洲','北美':'🇺🇸 北美','日韩':'🇯🇵🇰🇷 日韩','东南亚':'🌏 东南亚','印度':'🇮🇳 印度','拉美':'🌎 拉美','中东/非洲':'🕌 中东/非洲','其他海外':'🌐 其他海外'};
@@ -1135,14 +1156,21 @@ function renderOverseas(){
 
 // ===== PAGE 6: STARRED =====
 function renderStarred(){
-  const s3=exhibitions.filter(e=>e.star>=3).sort((a,b)=>a.sortDate-b.sortDate);
-  const s2=exhibitions.filter(e=>e.star===2).sort((a,b)=>a.sortDate-b.sortDate);
-  const s1=exhibitions.filter(e=>e.star===1).sort((a,b)=>a.sortDate-b.sortDate);
+  const data=currentExhibitions();
+  const s3=data.filter(e=>e.star>=3).sort((a,b)=>a.sortDate-b.sortDate);
+  const s2=data.filter(e=>e.star===2).sort((a,b)=>a.sortDate-b.sortDate);
+  const s1=data.filter(e=>e.star===1).sort((a,b)=>a.sortDate-b.sortDate);
   let html='';
   if(s3.length)html+='<div class="group-section"><div class="group-header">⭐⭐⭐ 旗舰展会 <span class="group-count">'+s3.length+'场</span></div><div class="star-grid">'+s3.map(starCard).join('')+'</div></div>';
   if(s2.length)html+='<div class="group-section"><div class="group-header">⭐⭐ 重点展会 <span class="group-count">'+s2.length+'场</span></div><div class="expo-list">'+s2.map(expoItem).join('')+'</div></div>';
   if(s1.length)html+='<div class="group-section"><div class="group-header">⭐ 推荐展会 <span class="group-count">'+s1.length+'场</span></div><div class="expo-list">'+s1.map(expoItem).join('')+'</div></div>';
   document.getElementById('starredContent').innerHTML=html;
+}
+
+function renderPreview2027(){
+  const items=previewExhibitions().sort((a,b)=>a.sortDate-b.sortDate);
+  document.getElementById('preview2027Count').textContent='共 '+items.length+' 场，已公布日期优先；日期未确认的系列展会不虚构日期';
+  document.getElementById('preview2027Content').innerHTML=items.length?items.map(expoItem).join(''):'<div style="color:var(--text-dim);padding:40px;text-align:center">暂无已公布的 2027 展期</div>';
 }
 
 // ===== KEYBOARD =====
@@ -1158,6 +1186,7 @@ renderCatChips();
 renderDomestic();
 renderOverseas();
 renderStarred();
+renderPreview2027();
 </script>
 </body>
 </html>
