@@ -66,7 +66,14 @@
 
 ```bash
 node --check <(sed -n '/<script>/,/<\/script>/p' index.html | sed '1d;$d')
+node scripts/audit-exhibitions.js
 git diff --check
+```
+
+如需将重复记录、2027 状态和国内/海外归类冲突视为阻断项，运行：
+
+```bash
+node scripts/audit-exhibitions.js --strict
 ```
 
 5. 用本地静态服务器检查总览、分类、海外、2027 预告和搜索。
