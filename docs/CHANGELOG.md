@@ -1,5 +1,12 @@
 # 变更日志
 
+## 2026-08-09：全球品牌分展补漏（6条）
+
+- 新增 TAPA Thailand Auto Parts & Accessories Show，并保留“下一届待公布”状态，避免把上一届日期误写为 2026 日期。
+- 新增 Motortec Madrid 2027、Automechanika Riyadh 2027 两个已由主办方公布日期的 2027 预告。
+- 新增 Automechanika Johannesburg、Automechanika Tashkent、Automechanika Astana 三个此前只有官网链接规则、缺少主记录的地区分展。
+- 数据规模由 608 条增至 614 条，2027 预告由 5 条增至 7 条；详细地址 386 条，适合人群 388 条，官方来源 78 条。
+
 ## 2026-08-09：重点展会字段补齐，第十三批（40条）
 
 - 按每批 40 条完成本批，覆盖全球汽车电子、再营销、整车车展、铸造、车辆安全、线束连接器、轮胎、润滑油、表面处理、氢能和区域汽车展会。
