@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：重点展会字段补齐，海外第五批（20条）
+
+- 为 GIIAS、ITEC、Aachen Colloquium、COMTRANS、ALUMINIUM、The Battery Show North America、AutoTech Egypt、巴黎车展、CEATEC、EuroBLECH、KOAA GTT、DIFA、MIAPEX和IZB等 20 条记录补齐地址、适合人群和来源字段。
+- 累计字段覆盖提升：详细地址 83 → 102 条，适合人群 94 → 111 条，官方来源 70 → 72 条。
+- 对 AIAG 合规会议明确标注“场地待确认、支持 Hybrid”，避免把未公布地点误写为具体场馆。
+
 ## 2026-08-08：重点展会字段补齐，海外第四批（20条）
 
 - 为 GIIAS、METAS、拉丁美洲轮胎展、InterAuto、EV Trend Korea、Bangkok Auto Salon、E-Mobility Asia、ADAS Expo、瑞士汽车展、Automotive World秋季和法兰克福汽配展专题记录等 20 条记录补齐地址、适合人群和来源字段。
