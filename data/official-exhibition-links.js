@@ -61,7 +61,27 @@
     [/Detroit Auto Show|\bNAIAS\b/i, 'https://detroitautoshow.com/'],
     [/Chicago Auto Show/i, 'https://www.chicagoautoshow.com/'],
     [/Brussels Motor Show/i, 'https://autosalon.be/en/'],
-    [/Seoul (Mobility|Motor) Show/i, 'https://mobilityshow.or.kr/ko/main']
+    [/Seoul (Mobility|Motor) Show/i, 'https://mobilityshow.or.kr/ko/main'],
+    [/Battery Show Asia/i, 'https://www.thebatteryshow.asia/'],
+    [/Expo Eléctrica Internacional/i, 'https://www.expoelectrica.com.mx/Es/'],
+    [/SNEC氢能展|SNEC H2/i, 'https://www.snec-h2.com/'],
+    [/EV Trend Korea/i, 'https://www.evtrendkorea.co.kr/?hl=ko'],
+    [/E-Mobility Asia/i, 'https://emobilityasia.com/'],
+    [/ICH2026|ICH深圳国际连接器|深圳国际连接器\/线缆线束/i, 'https://www.ich-expo.com/en'],
+    [/Electronica India|Productronica India/i, 'https://electronica-india.com/en/'],
+    [/SNBE 2026|深圳国际新能源电池产业展/i, 'https://www.3c-ate.com/'],
+    [/\bIZB\b/i, 'https://www.izb-online.com/'],
+    [/\bCIAAR\b|上海国际车用空调及热管理/i, 'https://www.autocoolexpo.com/en/'],
+    [/Auto EV India/i, 'https://autoevindia.com/'],
+    [/EVS Saudi/i, 'https://evs-saudi.com/'],
+    [/\bIICIE\b|国际集成电路创新博览会/i, 'https://iicieexpo.com/en/Brief.html'],
+    [/\bSAECCE\b|中国汽车工程学会年会暨展览会/i, 'https://cnsaecce.com/'],
+    [/\bIC China\b|中国国际半导体博览会/i, 'https://www.ic-china.com.cn/'],
+    [/北京国际充换电与光储充展览会|\bCPSE\b/i, 'http://bjcpse.szevexpo.com/'],
+    [/EV Auto Show/i, 'https://evautoshowonline.com/'],
+    [/\bDIFA\b|大邱未来汽车与出行展/i, 'https://www.difa.or.kr/'],
+    [/Paris Motor Show/i, 'https://mondial.paris/en/'],
+    [/LA Auto Show/i, 'https://laautoshow.com/']
   ];
 
   function getOfficialExhibitionUrl(event) {

@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：官方链接补全，第二批
+
+- 新增 20 个官方链接规则，优先覆盖动力电池、充换电、线束连接器、车规芯片、热管理、供应链和区域电动化展会。
+- 本批包括 The Battery Show Asia、SNEC H2、EV Trend Korea、E-Mobility Asia、ICH Shenzhen、electronica India、IZB、CIAAR、IICIE、IC China、SAECCE、CPSE、EVS Saudi 等。
+- 链接均经主办方或展会官方域名核验；不将搜索结果页或第三方展会目录作为官网链接。
+
 ## 2026-08-08：官方链接补全，第一批
 
 - 新增 20 个展会官方链接规则，覆盖工程技术、制造、表面处理、智能驾驶、汽配售后及整车展。
