@@ -223,6 +223,8 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
 <!-- PAGE 3: CATEGORY -->
 <div class="page" id="page-category">
   <div class="section-title"><span class="icon">🏷️</span> 分类浏览</div>
+  <div class="decision-badges taxonomy-summary"><span class="decision-badge">供应链子行业导航</span><span class="decision-badge">原材料 · 零部件 · 三电 · 智能化 · 制造装备 · 售后流通 · 物流服务</span></div>
+  <div class="cat-chips" id="scChips"></div>
   <div class="cat-chips" id="catChips"></div>
   <div class="market-filter" id="marketFilter">
     <div class="market-btn active" data-market="全部" onclick="filterCatMarket('全部')">全部</div>
@@ -980,10 +982,26 @@ function supplyChainLabel(e){
   };
   return map[e.cat]||'汽车产业链';
 }
+function verticalLabel(e){
+  if(e.vertical)return e.vertical;
+  const map={
+    '材料/金属加工':'铝镁合金/钢材/材料工艺','模具/冲压':'冲压模具/成形设备','表面处理/涂装':'涂装/表面工程','紧固件':'紧固件/标准件',
+    '轮毂/底盘件':'底盘/制动/转向/悬架','轮胎/橡胶':'轮胎/橡胶材料','热管理/空调':'热管理/空调系统','汽车内外饰':'内外饰/玻璃/密封',
+    '汽车座椅':'座椅/舒适系统','汽车照明':'车灯/光学系统','汽车电子元器件':'线束/连接器/电子元件','汽车电子':'车载电子/域控集成',
+    '汽车半导体/芯片':'车规芯片/功率半导体','新能源/EV':'动力电池/电驱/充换电','智能驾驶':'ADAS/激光雷达/传感器','车联网/座舱':'智能座舱/车联网',
+    '汽车软件/OTA':'软件/SDV/数据安全','汽车测试/验证':'测试验证/认证检测','汽车安全':'功能安全/被动安全','汽车技术':'整车技术/移动出行',
+    '汽车物流':'整车物流/零部件物流','汽车供应链':'采购/物流/供应链服务','汽配/汽保':'汽配渠道/后市场','汽车维修设备':'维修设备/诊断工具',
+    '润滑油/养护品':'润滑油/汽车养护','商用车':'卡车/客车/专用车','整车车展':'整车/OEM/移动出行','汽车轻量化':'轻量化/复合材料',
+    '汽车NVH':'NVH/声学振动','汽车CMF':'CMF/材料设计','改装展':'改装/个性化/性能','摩托车':'两轮车/电动两轮车',
+    '赛车/摩托运动':'赛车/运动科技','二手车/经典车':'二手车/经典车','汽车设计/工程服务':'汽车设计/工程服务','汽车金融/保险':'汽车金融/保险'
+  };
+  return map[e.cat]||'综合汽车产业链';
+}
 function normalizeRecord(e){
   if(isChinaLocation(e.location))e.market='中国';
   if(!e.region)e.region=regionLabel(e);
   if(!e.sc)e.sc=supplyChainLabel(e);
+  if(!e.vertical)e.vertical=verticalLabel(e);
   return e;
 }
 function normalizeExhibitions(){exhibitions.forEach(normalizeRecord)}
@@ -1029,7 +1047,7 @@ function doSearch(){
     return e.name.toLowerCase().includes(q)||(e.location||'').toLowerCase().includes(q)||
       e.cat.toLowerCase().includes(q)||(e.focus||'').toLowerCase().includes(q)||(e.market||'').toLowerCase().includes(q)||
       (e.sc||'').toLowerCase().includes(q)||(e.audience||'').toLowerCase().includes(q)||(e.region||'').toLowerCase().includes(q)||
-      (e.status||'').toLowerCase().includes(q);
+      (e.status||'').toLowerCase().includes(q)||(e.vertical||'').toLowerCase().includes(q);
   }).slice(0,40);
   if(!results.length){document.getElementById('searchResults').innerHTML='<div class="search-empty">未找到匹配的展会</div>';return}
   document.getElementById('searchResults').innerHTML=results.map(e=>
@@ -1040,12 +1058,12 @@ function doSearch(){
 
 // ===== RENDER HELPERS =====
 function expoItem(e){
-  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
+  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.vertical||verticalLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
   const venue=e.address||e.location||'地址待确认';
   return '<div class="expo-item"><div class="name">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="meta"><span class="cat-badge">'+escapeHtml(e.cat)+'</span><span>📅 '+escapeHtml(e.date||'时间待确认')+'</span><span>📍 '+escapeHtml(venue)+'</span><span>🗓 '+yearLabel(e)+'</span></div>'+badges+(e.source?'<div class="source-link"><a href="'+escapeHtml(e.source)+'" target="_blank" rel="noopener">查看官方信息 ↗</a></div>':'')+'</div>';
 }
 function starCard(e){
-  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
+  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.vertical||verticalLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
   return '<div class="star-card'+(e.star>=3?' flagship':'')+'"><div class="stars">'+starStr(e.star)+'</div><div class="cat-badge">'+escapeHtml(e.cat)+'</div><div class="name">'+escapeHtml(e.name)+'</div><div class="meta"><span>📅 '+escapeHtml(e.date)+'</span><span>📍 '+escapeHtml(e.location)+'</span></div>'+badges+(e.focus?'<div class="focus">'+escapeHtml(e.focus)+'</div>':'')+'</div>';
 }
 
@@ -1089,7 +1107,15 @@ function renderMonthContent(){
 }
 
 // ===== PAGE 3: CATEGORY =====
-let curCat='全部',curCatMarket='全部';
+let curCat='全部',curSc='全部',curCatMarket='全部';
+function renderSupplyChainChips(){
+  const all=[...new Set(currentExhibitions().map(e=>e.sc))].sort((a,b)=>a.localeCompare(b,'zh'));
+  document.getElementById('scChips').innerHTML=['全部',...all].map(c=>'<div class="cat-chip'+(c===curSc?' active':'')+'" onclick="selectSupplyChain(this)">'+escapeHtml(c)+'</div>').join('');
+}
+function selectSupplyChain(el){
+  curSc=el.textContent.trim();
+  document.querySelectorAll('#scChips .cat-chip').forEach(t=>t.classList.remove('active')); el.classList.add('active'); renderCatContent();
+}
 function renderCatChips(){
   const allCats=[...new Set(currentExhibitions().map(e=>e.cat))].sort((a,b)=>a.localeCompare(b,'zh'));
   const cats=['全部',...allCats];
@@ -1114,6 +1140,7 @@ function filterCatMarket(m){
 function renderCatContent(){
   const data=currentExhibitions();
   let items=curCat==='全部'?[...data]:data.filter(e=>e.cat===curCat);
+  if(curSc!=='全部')items=items.filter(e=>e.sc===curSc);
   if(curCatMarket==='中国')items=items.filter(e=>e.market==='中国');
   else if(curCatMarket==='海外')items=items.filter(e=>e.market!=='中国');
   items.sort((a,b)=>a.sortDate-b.sortDate);
@@ -1183,6 +1210,7 @@ document.addEventListener('keydown',function(e){
 renderOverview();
 renderMonthTabs();
 renderCatChips();
+renderSupplyChainChips();
 renderDomestic();
 renderOverseas();
 renderStarred();
