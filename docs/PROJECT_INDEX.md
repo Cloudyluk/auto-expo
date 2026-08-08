@@ -65,7 +65,7 @@
 
 | 文件 | 用途 |
 |---|---|
-| `index.html` | 当前网站、数据数组和渲染逻辑 |
+| `index.html` | 当前网站与渲染逻辑；展会主数据位于 `data/exhibitions.js` |
 | `README.md` | 项目简介和快速入口 |
 | `docs/PROJECT_INDEX.md` | 本文件，长期总索引 |
 | `docs/DATA_MAINTENANCE.md` | 补数据、改数据、发布和核验流程 |
