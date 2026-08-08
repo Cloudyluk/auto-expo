@@ -1057,10 +1057,11 @@ function doSearch(){
   const q=document.getElementById('searchInput').value.trim().toLowerCase();
   if(!q){document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 '+exhibitions.length+' 场展会</div>';return}
   const results=exhibitions.filter(e=>{
+    const decisionText=[...(e.buyerValue||[]),...(e.sellerValue||[]),...(e.buyerTasks||[]),...(e.sellerTargets||[]),e.marketUse||''].join(' ').toLowerCase();
     return e.name.toLowerCase().includes(q)||(e.location||'').toLowerCase().includes(q)||
       e.cat.toLowerCase().includes(q)||(e.focus||'').toLowerCase().includes(q)||(e.market||'').toLowerCase().includes(q)||
       (e.sc||'').toLowerCase().includes(q)||(e.audience||'').toLowerCase().includes(q)||(e.region||'').toLowerCase().includes(q)||
-      (e.status||'').toLowerCase().includes(q)||(e.vertical||'').toLowerCase().includes(q);
+      (e.status||'').toLowerCase().includes(q)||(e.vertical||'').toLowerCase().includes(q)||decisionText.includes(q);
   }).slice(0,40);
   if(!results.length){document.getElementById('searchResults').innerHTML='<div class="search-empty">未找到匹配的展会</div>';return}
   document.getElementById('searchResults').innerHTML=results.map(e=>
@@ -1071,12 +1072,12 @@ function doSearch(){
 
 // ===== RENDER HELPERS =====
 function expoItem(e){
-  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.vertical||verticalLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
+  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.vertical||verticalLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span><span class="decision-badge">采购：'+escapeHtml((e.buyerTasks||['供应商开发'])[0])+'</span><span class="decision-badge">客户：'+escapeHtml((e.sellerTargets||['OEM'])[0])+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
   const venue=e.address||e.location||'地址待确认';
   return '<div class="expo-item"><div class="name">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="meta"><span class="cat-badge">'+escapeHtml(e.cat)+'</span><span>📅 '+escapeHtml(e.date||'时间待确认')+'</span><span>📍 '+escapeHtml(venue)+'</span><span>🗓 '+yearLabel(e)+'</span></div>'+badges+(e.source?'<div class="source-link"><a href="'+escapeHtml(e.source)+'" target="_blank" rel="noopener">查看官方信息 ↗</a></div>':'')+'</div>';
 }
 function starCard(e){
-  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.vertical||verticalLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
+  const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.vertical||verticalLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span><span class="decision-badge">采购：'+escapeHtml((e.buyerTasks||['供应商开发'])[0])+'</span><span class="decision-badge">客户：'+escapeHtml((e.sellerTargets||['OEM'])[0])+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
   return '<div class="star-card'+(e.star>=3?' flagship':'')+'"><div class="stars">'+starStr(e.star)+'</div><div class="cat-badge">'+escapeHtml(e.cat)+'</div><div class="name">'+escapeHtml(e.name)+'</div><div class="meta"><span>📅 '+escapeHtml(e.date)+'</span><span>📍 '+escapeHtml(e.location)+'</span></div>'+badges+(e.focus?'<div class="focus">'+escapeHtml(e.focus)+'</div>':'')+'</div>';
 }
 

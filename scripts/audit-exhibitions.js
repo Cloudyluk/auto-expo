@@ -49,13 +49,19 @@ const coverage = Object.fromEntries(
 );
 
 if (process.argv.includes('--taxonomy')) {
-  const { SUPPLY_CHAIN_TAXONOMY } = require(path.join(root, 'data', 'supply-chain-taxonomy.js'));
+  const { SUPPLY_CHAIN_TAXONOMY, getSupplyChainProfile } = require(path.join(root, 'data', 'supply-chain-taxonomy.js'));
   const categories = [...new Set(exhibitions.map((event) => event.cat))];
   const missingTaxonomy = categories.filter((category) => !SUPPLY_CHAIN_TAXONOMY[category]);
+  const missingBuyerGuidance = exhibitions.filter((event) => !getSupplyChainProfile(event).buyerValue.length);
   console.log(`Taxonomy categories: ${Object.keys(SUPPLY_CHAIN_TAXONOMY).length}`);
   console.log(`Missing taxonomy categories: ${missingTaxonomy.length}`);
+  console.log(`Missing buyer guidance: ${missingBuyerGuidance.length}`);
   if (missingTaxonomy.length) {
     console.error(`Missing taxonomy: ${missingTaxonomy.join(', ')}`);
+    process.exitCode = 1;
+  }
+  if (missingBuyerGuidance.length) {
+    console.error(`Missing buyer guidance for: ${missingBuyerGuidance.map((event) => event.name).join(', ')}`);
     process.exitCode = 1;
   }
 }
