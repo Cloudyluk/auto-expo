@@ -28,15 +28,21 @@ function canonicalName(name) {
   return (name || '')
     .toLowerCase()
     .replace(/20\d{2}/g, '')
-    .replace(/[（）()【】\[\]·\s-]/g, '')
+    .replace(/[（(][^）)]*[）)]/g, '')
+    .replace(/[【】\[\]·\s-]/g, '')
     .replace(/第\d+届/g, '');
+}
+
+function exhibitionIdentity(event) {
+  const year = event.year || (event.sortDate >= 10000000 ? Math.floor(event.sortDate / 10000) : 2026);
+  return `${canonicalName(event.name)}|${year}|${event.sortDate}`;
 }
 
 const duplicateMap = new Map();
 for (const event of exhibitions) {
-  const key = canonicalName(event.name);
+  const key = exhibitionIdentity(event);
   if (!duplicateMap.has(key)) duplicateMap.set(key, []);
-  duplicateMap.get(key).push(event.name);
+  duplicateMap.get(key).push(`${event.name} (${event.date})`);
 }
 const duplicates = [...duplicateMap.values()]
   .filter((names) => names.length > 1)

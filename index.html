@@ -1029,11 +1029,16 @@ function normalizeRecord(e){
   return e;
 }
 function normalizeExhibitions(){exhibitions.forEach(normalizeRecord)}
-const currentExhibitions=()=>exhibitions.filter(isCurrentYear);
-const previewExhibitions=()=>exhibitions.filter(e=>getYear(e)>=2027||e.status==='2027预告');
+normalizeExhibitions();
+function canonicalExpoName(name){return(name||'').toLowerCase().replace(/20\d{2}/g,'').replace(/[（(][^）)]*[）)]/g,'').replace(/[【】\[\]·\s-]/g,'').replace(/第\d+届/g,'')}
+function exhibitionIdentity(e){return canonicalExpoName(e.name)+'|'+getYear(e)+'|'+e.sortDate}
+function exhibitionScore(e){return ['address','source','audience','buyerValue','sellerValue','sellerTargets','marketUse','vertical'].reduce((score,key)=>score+(e[key]&&(!Array.isArray(e[key])||e[key].length)?1:0),0)}
+function uniqueExhibitions(data){const groups=new Map();data.forEach(e=>{const key=exhibitionIdentity(e);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(e)});return[...groups.values()].map(group=>{const best=[...group].sort((a,b)=>exhibitionScore(b)-exhibitionScore(a))[0];if(group.length===1)return best;return{...best,relatedCategories:[...new Set(group.map(e=>e.cat))],relatedSupplyChains:[...new Set(group.map(e=>e.sc))]}})}
+const displayExhibitions=uniqueExhibitions(exhibitions);
+const currentExhibitions=()=>displayExhibitions.filter(isCurrentYear);
+const previewExhibitions=()=>displayExhibitions.filter(e=>getYear(e)>=2027||e.status==='2027预告');
 function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function now(){const d=new Date();return{y:d.getFullYear(),m:d.getMonth()+1}}
-normalizeExhibitions();
 
 // ===== PAGE SWITCHING =====
 function switchPage(name){
@@ -1062,17 +1067,17 @@ function closeSearch(){
   document.getElementById('searchOverlay').classList.remove('open');
   const inp=document.getElementById('searchInput');
   inp.value='';inp.setAttribute('readonly','');
-  document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 '+exhibitions.length+' 场展会</div>';
+  document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 '+displayExhibitions.length+' 场展会</div>';
 }
 function doSearch(){
   const q=document.getElementById('searchInput').value.trim().toLowerCase();
-  if(!q){document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 '+exhibitions.length+' 场展会</div>';return}
-  const results=exhibitions.filter(e=>{
+  if(!q){document.getElementById('searchResults').innerHTML='<div class="search-empty">输入关键词搜索 '+displayExhibitions.length+' 场展会</div>';return}
+  const results=displayExhibitions.filter(e=>{
     const decisionText=[...(e.buyerValue||[]),...(e.sellerValue||[]),...(e.buyerTasks||[]),...(e.sellerTargets||[]),e.marketUse||''].join(' ').toLowerCase();
     return e.name.toLowerCase().includes(q)||(e.location||'').toLowerCase().includes(q)||
       e.cat.toLowerCase().includes(q)||(e.focus||'').toLowerCase().includes(q)||(e.market||'').toLowerCase().includes(q)||
       (e.sc||'').toLowerCase().includes(q)||(e.audience||'').toLowerCase().includes(q)||(e.region||'').toLowerCase().includes(q)||
-      (e.status||'').toLowerCase().includes(q)||(e.vertical||'').toLowerCase().includes(q)||decisionText.includes(q);
+      (e.status||'').toLowerCase().includes(q)||(e.vertical||'').toLowerCase().includes(q)||decisionText.includes(q)||(e.relatedCategories||[]).join(' ').toLowerCase().includes(q);
   }).slice(0,40);
   if(!results.length){document.getElementById('searchResults').innerHTML='<div class="search-empty">未找到匹配的展会</div>';return}
   document.getElementById('searchResults').innerHTML=results.map(e=>
@@ -1122,7 +1127,7 @@ const MAP_COUNTRY_NAMES={'中国':'China','美国':'USA','德国':'Germany','日
 const MAP_COUNTRY_LABELS=Object.fromEntries(Object.entries(MAP_COUNTRY_NAMES).map(([label,name])=>[name,label]));
 let worldGeoFeatures=null;
 function projectGeo(latitude,longitude){return{x:((longitude+180)/360)*1000,y:((90-latitude)/180)*500}}
-function getMonthlyMapGroups(month){const groups=new Map();exhibitions.filter(e=>getYear(e)===curMapYear&&getMonth(e)===month).forEach(e=>{const geo=typeof getExhibitionGeo==='function'?getExhibitionGeo(e):null;if(!geo)return;const key=geo.country+':'+(geo.city||'国家中心');if(!groups.has(key))groups.set(key,{key,...geo,events:[]});groups.get(key).events.push(e)});return[...groups.values()]}
+function getMonthlyMapGroups(month){const groups=new Map();displayExhibitions.filter(e=>getYear(e)===curMapYear&&getMonth(e)===month).forEach(e=>{const geo=typeof getExhibitionGeo==='function'?getExhibitionGeo(e):null;if(!geo)return;const key=geo.country+':'+(geo.city||'国家中心');if(!groups.has(key))groups.set(key,{key,...geo,events:[]});groups.get(key).events.push(e)});return[...groups.values()]}
 function getMapView(){const width=1000/mapZoom,height=500/mapZoom;mapCenterX=Math.max(width/2,Math.min(1000-width/2,mapCenterX));mapCenterY=Math.max(height/2,Math.min(500-height/2,mapCenterY));return{x:mapCenterX-width/2,y:mapCenterY-height/2,width,height}}
 function geometryToPath(geometry){const rings=geometry.type==='Polygon'?geometry.coordinates:geometry.coordinates.flat();return rings.map(ring=>ring.map(([longitude,latitude],index)=>{const p=projectGeo(latitude,longitude);return(index?'L':'M')+p.x.toFixed(2)+','+p.y.toFixed(2)}).join('')+'Z').join('')}
 async function loadWorldMap(){try{const response=await fetch(WORLD_GEOJSON_URL);if(!response.ok)throw new Error('地图数据请求失败');const data=await response.json();worldGeoFeatures=data.features;renderMonthlyMap()}catch(error){console.warn('World map unavailable',error);const el=document.getElementById('monthlyMap');if(el)el.innerHTML='<div style="padding:32px;text-align:center;color:var(--text-dim)">国家边界暂时无法加载，请检查网络后重试。</div>'}}
@@ -1192,8 +1197,8 @@ function filterCatMarket(m){
 }
 function renderCatContent(){
   const data=currentExhibitions();
-  let items=curCat==='全部'?[...data]:data.filter(e=>e.cat===curCat);
-  if(curSc!=='全部')items=items.filter(e=>e.sc===curSc);
+  let items=curCat==='全部'?[...data]:data.filter(e=>e.cat===curCat||(e.relatedCategories||[]).includes(curCat));
+  if(curSc!=='全部')items=items.filter(e=>e.sc===curSc||(e.relatedSupplyChains||[]).includes(curSc));
   if(curCatMarket==='中国')items=items.filter(e=>e.market==='中国');
   else if(curCatMarket==='海外')items=items.filter(e=>e.market!=='中国');
   items.sort((a,b)=>a.sortDate-b.sortDate);
