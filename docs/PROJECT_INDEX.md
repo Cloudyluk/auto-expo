@@ -23,7 +23,8 @@
 3. 要知道下一步做什么：阅读 [项目待办看板](PROJECT_BACKLOG.md)。
 4. 要查看为什么这样改：阅读 [决策日志](DECISION_LOG.md)。
 5. 要了解长期产品方向：阅读 [供应链升级路线图](auto-expo-supply-chain-roadmap.md)。
-6. 更新完成后，把结果写入 [变更日志](CHANGELOG.md)。
+6. 要查看当前完成比例：阅读 [项目进度与甘特图](PROJECT_PROGRESS.md)。
+7. 更新完成后，把结果写入 [变更日志](CHANGELOG.md)。
 
 ## 当前产品能力
 
@@ -56,7 +57,7 @@
 - 608 条展会，其中 603 条为 2026 主数据、5 条为 2027 已公布预告。
 - 36/36 个主题分类已纳入可维护的供应链分类表。
 - 原始数据覆盖：详细地址 10 条、官方来源 22 条、适合人群 19 条。
-- 待治理：18 组重复记录、85 条原始国内/海外标注冲突。
+- 待治理：33 组重复记录、85 条原始国内/海外标注冲突。
 - 审计命令：`node scripts/audit-exhibitions.js`；严格检查：`node scripts/audit-exhibitions.js --strict`。
 
 ## 文件地图
@@ -71,6 +72,7 @@
 | `docs/PROJECT_BACKLOG.md` | 分阶段待办和验收标准 |
 | `docs/DECISION_LOG.md` | 关键产品和数据决策记录 |
 | `docs/CHANGELOG.md` | 面向项目的版本变更记录 |
+| `docs/PROJECT_PROGRESS.md` | 当前完成比例、甘特图和剩余工作量 |
 | `docs/auto-expo-supply-chain-roadmap.md` | 供应链产品长期规划 |
 
 ## 下一次更新入口
