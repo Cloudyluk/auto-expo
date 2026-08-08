@@ -14,7 +14,7 @@
 | 仓库 | `Cloudyluk/auto-expo` |
 | 在线地址 | https://cloudyluk.github.io/auto-expo/ |
 | 最近提交 | 官网补全与字段治理持续更新，详见 [变更日志](CHANGELOG.md) |
-| 最近更新 | 2026-08-08 |
+| 最近更新 | 2026-08-09 |
 
 ## 从哪里开始
 
