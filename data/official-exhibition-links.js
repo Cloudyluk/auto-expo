@@ -41,7 +41,27 @@
     [/Fastener Fair/i, 'https://www.fastenerfairglobal.com/'],
     [/\bEICMA\b/i, 'https://www.eicma.it/en/'],
     [/中国国际进口博览会|\bCIIE\b/i, 'https://www.ciie.org/'],
-    [/中国国际机床展览会|\bCIMT\b/i, 'https://www.cimtshow.com/']
+    [/中国国际机床展览会|\bCIMT\b/i, 'https://www.cimtshow.com/'],
+    [/Automotive World/i, 'https://www.automotiveworld.jp/'],
+    [/IMTEX Forming/i, 'https://www.imtex.in/'],
+    [/\bSIAT\b|印度汽车制造技术展/i, 'https://siat.araiindia.com/2026/exhibition/siat-expo-details'],
+    [/\bSURTECH\b/i, 'https://www.surtech.jp/'],
+    [/Mobility Live (Asia|Thailand)/i, 'https://www.terrapinn.com/VisitMobilityTH26'],
+    [/ACMA Automechanika New Delhi/i, 'https://acma-automechanika-newdelhi.in.messefrankfurt.com/newdelhi/en.html'],
+    [/The ADAS Show/i, 'https://www.adasshow.com/'],
+    [/Tokyo International Auto Aftermarket Expo/i, 'https://www.iaae-jp.com/en/'],
+    [/MWC Barcelona/i, 'https://www.mwcbarcelona.com/?lg=en'],
+    [/INTERMOLD/i, 'https://www.intermold.jp/english/'],
+    [/Die & Mould India/i, 'https://www.diemouldindia.org/'],
+    [/Vienna Motor Symposium/i, 'https://wiener-motorensymposium.at/en/'],
+    [/Automec Show/i, 'https://www.automecfeira.com.br/pt-br.html'],
+    [/ACT Expo/i, 'https://www.actexpo.com/'],
+    [/Surface Technology Germany/i, 'https://www.surface-technology-germany.de/en/'],
+    [/Tokyo Auto Salon/i, 'https://www.tokyoautosalon.jp/2026/en/'],
+    [/Detroit Auto Show|\bNAIAS\b/i, 'https://detroitautoshow.com/'],
+    [/Chicago Auto Show/i, 'https://www.chicagoautoshow.com/'],
+    [/Brussels Motor Show/i, 'https://autosalon.be/en/'],
+    [/Seoul (Mobility|Motor) Show/i, 'https://mobilityshow.or.kr/ko/main']
   ];
 
   function getOfficialExhibitionUrl(event) {

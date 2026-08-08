@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：官方链接补全，第一批
+
+- 新增 20 个展会官方链接规则，覆盖工程技术、制造、表面处理、智能驾驶、汽配售后及整车展。
+- 本批包含 Automotive World、IMTEX Forming、SIAT、SURTECH、ACMA Automechanika New Delhi、IAAE、MWC Barcelona、INTERMOLD、ACT Expo、东京/底特律/芝加哥/布鲁塞尔/首尔车展等。
+- 链接均指向主办方或展会官方域名；同名重复记录复用同一官方入口。
+
 ## 2026-08-08：地图工作台首页
 
 - 将全球地图设为默认首页，原“总览”调整为“展会精选”次级入口。
