@@ -13,7 +13,7 @@
 | 技术形态 | `index.html` 纯静态单页，GitHub Pages 部署 |
 | 仓库 | `Cloudyluk/auto-expo` |
 | 在线地址 | https://cloudyluk.github.io/auto-expo/ |
-| 最近提交 | `380cd98` |
+| 最近提交 | `797d464` |
 | 最近更新 | 2026-08-08 |
 
 ## 从哪里开始
