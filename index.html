@@ -190,6 +190,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
     <button class="hamburger" onclick="toggleMobileMenu()" aria-label="菜单">☰</button>
     <div class="nav-tabs" id="navTabs">
       <div class="nav-tab active" data-page="overview" onclick="switchPage('overview')">🏠 总览</div>
+      <div class="nav-tab" data-page="map" onclick="switchPage('map')">🌐 地图</div>
       <div class="nav-tab" data-page="monthly" onclick="switchPage('monthly')">📅 月度</div>
       <div class="nav-tab" data-page="category" onclick="switchPage('category')">🏷️ 分类</div>
       <div class="nav-tab" data-page="domestic" onclick="switchPage('domestic')">🇨🇳 国内</div>
@@ -217,9 +218,15 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
 <div class="page" id="page-monthly">
   <div class="section-title"><span class="icon">📅</span> 月度时间线</div>
   <div class="month-tabs" id="monthTabs"></div>
-  <div class="monthly-map-shell"><div class="monthly-map-header"><span>全球展会分布</span><button id="clearMapSelection" type="button" onclick="clearMapSelection()" hidden>清除地图筛选</button></div><div id="monthlyMap" class="monthly-map" aria-live="polite"></div><div id="mapSelectionSummary" class="month-count" hidden></div><div id="mapSelectionContent" class="expo-list" hidden></div></div>
   <div class="month-count" id="monthCount"></div>
   <div class="expo-list" id="monthContent"></div>
+</div>
+
+<!-- MAP -->
+<div class="page" id="page-map">
+  <div class="section-title"><span class="icon">🌐</span> 全球展会地图</div>
+  <div class="month-tabs" id="mapMonthTabs"></div>
+  <div class="monthly-map-shell"><div class="monthly-map-header"><span>当月全球展会分布</span><button id="clearMapSelection" type="button" onclick="clearMapSelection()" hidden>清除地图筛选</button></div><div id="monthlyMap" class="monthly-map" aria-live="polite"></div><div id="mapSelectionSummary" class="month-count" hidden></div><div id="mapSelectionContent" class="expo-list" hidden></div></div>
 </div>
 
 <!-- PAGE 3: CATEGORY -->
@@ -1113,17 +1120,18 @@ function selectMapGroup(key){selectedMapGroupKey=key;const groups=getMonthlyMapG
 function clearMapSelection(){selectedMapGroupKey='';document.getElementById('mapSelectionSummary').hidden=true;document.getElementById('mapSelectionContent').hidden=true;document.getElementById('clearMapSelection').hidden=true}
 function renderMonthTabs(){
   const names=["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
-  document.getElementById('monthTabs').innerHTML=names.map((n,i)=>
+  const tabs=names.map((n,i)=>
     '<div class="month-tab'+(i+1===curMonth?' active':'')+'" data-m="'+(i+1)+'" onclick="selectMonth('+(i+1)+')">'+n+'</div>'
   ).join('');
+  document.getElementById('monthTabs').innerHTML=tabs;
+  document.getElementById('mapMonthTabs').innerHTML=tabs;
   renderMonthlyMap();
   renderMonthContent();
 }
 function selectMonth(m){
   curMonth=m;
   clearMapSelection();
-  document.querySelectorAll('.month-tab').forEach(t=>t.classList.remove('active'));
-  document.querySelector('.month-tab[data-m="'+m+'"]').classList.add('active');
+  document.querySelectorAll('.month-tab').forEach(t=>t.classList.toggle('active',Number(t.getAttribute('data-m'))===m));
   renderMonthlyMap();
   renderMonthContent();
 }
