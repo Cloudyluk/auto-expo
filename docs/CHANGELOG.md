@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：重点展会字段补齐，海外第四批（20条）
+
+- 为 GIIAS、METAS、拉丁美洲轮胎展、InterAuto、EV Trend Korea、Bangkok Auto Salon、E-Mobility Asia、ADAS Expo、瑞士汽车展、Automotive World秋季和法兰克福汽配展专题记录等 20 条记录补齐地址、适合人群和来源字段。
+- 累计字段覆盖提升：详细地址 65 → 83 条，适合人群 72 → 94 条，官方来源 61 → 70 条。
+- 法兰克福主展、轮胎、底盘、润滑油和维修设备专题统一使用 Messe Frankfurt 场馆地址。
+
 ## 2026-08-08：重点展会字段补齐，海外第三批（20条）
 
 - 为 SUR/FIN、科隆轮胎展、CastForge、FABTECH Canada、ITS America、Bosch Connected World、JSAE名古屋、胡志明汽配展、Power2Drive、Rosmould、INTERMOLD Thailand和ISNVH等 20 条记录补齐地址、适合人群和来源字段。
