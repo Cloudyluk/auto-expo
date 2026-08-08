@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：重点展会字段补齐，海外第三批（20条）
+
+- 为 SUR/FIN、科隆轮胎展、CastForge、FABTECH Canada、ITS America、Bosch Connected World、JSAE名古屋、胡志明汽配展、Power2Drive、Rosmould、INTERMOLD Thailand和ISNVH等 20 条记录补齐地址、适合人群和来源字段。
+- 累计字段覆盖提升：详细地址 45 → 65 条，适合人群 56 → 72 条，官方来源 53 → 61 条。
+- 同系列轮胎展和热管理专题记录同步场馆信息，避免主展与专题记录字段不一致。
+
 ## 2026-08-08：重点展会字段补齐，海外第二批（20条）
 
 - 为曼谷车展、F+L Week、东京摩托车展、MATS、Fastener Fair Stuttgart、纽约车展、阿根廷汽配展、INTERMOLD Osaka、印度模具展、ACT Expo和Surface Technology Germany等 20 条记录补齐地址、适合人群和来源字段。
