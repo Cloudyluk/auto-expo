@@ -10,7 +10,7 @@
 | 当前版本 | V6 供应链指引基础版 |
 | 数据规模 | 614 条记录 / 36 个主题分类 |
 | 数据年度 | 2026 主数据 + 2027 已公布预告 |
-| 技术形态 | `index.html` 纯静态单页，GitHub Pages 部署 |
+| 技术形态 | `index.html` 纯静态单页 + `data/exhibitions.js` 数据源，GitHub Pages 部署 |
 | 仓库 | `Cloudyluk/auto-expo` |
 | 在线地址 | https://cloudyluk.github.io/auto-expo/ |
 | 最近提交 | 官网补全与字段治理持续更新，详见 [变更日志](CHANGELOG.md) |
@@ -39,7 +39,7 @@
 
 ## 当前数据结构
 
-原始数据目前仍内嵌在 [index.html](../index.html) 的 `exhibitions` 数组中。字段逐步向标准结构演进：
+原始数据已拆分到 [data/exhibitions.js](../data/exhibitions.js)，页面只负责渲染和交互。字段逐步向标准结构演进：
 
 `name` → `year` / `month` / `date` / `sortDate` → `location` / `address` → `cat` / `sc` / `vertical` → `focus` / `audience` → `market` / `region` → `star` / `status` / `source`
 
@@ -79,7 +79,7 @@
 
 下一次开始工作时，先确认：
 
-- [ ] 查看本文件的当前版本、数据量和最近提交。
+- [x] 查看本文件的当前版本、数据量和最近提交。
 - [ ] 查看 [项目待办看板](PROJECT_BACKLOG.md) 的最高优先级事项。
 - [ ] 查看 [数据维护手册](DATA_MAINTENANCE.md) 的来源与核验要求。
 - [ ] 完成后更新 `CHANGELOG.md` 和本文件的状态信息。

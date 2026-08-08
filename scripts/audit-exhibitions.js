@@ -5,8 +5,11 @@ const path = require('path');
 
 const strict = process.argv.includes('--strict');
 const root = path.resolve(__dirname, '..');
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const match = html.match(/const exhibitions = \[(.*?)\n\];/s);
+const sourcePath = fs.existsSync(path.join(root, 'data', 'exhibitions.js'))
+  ? path.join(root, 'data', 'exhibitions.js')
+  : path.join(root, 'index.html');
+const source = fs.readFileSync(sourcePath, 'utf8');
+const match = source.match(/(?:const EXHIBITIONS|const exhibitions) = \[(.*?)\n\];/s);
 
 if (!match) {
   console.error('Unable to find the exhibitions array in index.html.');
@@ -23,6 +26,10 @@ try {
 
 const chineseLocationPattern = /中国|北京|上海|广州|深圳|重庆|成都|武汉|天津|苏州|南京|宁波|温州|瑞安|邯郸|永年|济南|青岛|石家庄|长沙|大连|哈尔滨|兰州|西安|沈阳|南昌|福州|佛山|昆山|玉环|广饶|海口|喀什/;
 const coverageFields = ['year', 'address', 'sc', 'vertical', 'audience', 'source', 'buyerValue', 'sellerValue', 'sellerTargets', 'marketUse', 'action', 'confidence'];
+const requiredFields = ['name', 'month', 'date', 'sortDate', 'location', 'cat', 'market', 'star'];
+const missingRequired = exhibitions.filter((event) => requiredFields.some((field) => event[field] === undefined || event[field] === ''));
+const invalidSortDates = exhibitions.filter((event) => !Number.isInteger(event.sortDate) || event.sortDate < 100 || event.sortDate > 99999999);
+const invalidSources = exhibitions.filter((event) => event.source && !/^https?:\/\//.test(event.source));
 
 function canonicalName(name) {
   return (name || '')
@@ -87,12 +94,15 @@ console.log('Exhibition data audit');
 console.log(`Records: ${exhibitions.length}`);
 console.log(`2027 previews: ${exhibitions.filter((event) => event.year === 2027).length}`);
 console.log(`Field coverage: ${JSON.stringify(coverage)}`);
+console.log(`Missing required fields: ${missingRequired.length}`);
+console.log(`Invalid sortDate values: ${invalidSortDates.length}`);
+console.log(`Invalid source URLs: ${invalidSources.length}`);
 console.log(`Duplicate groups: ${duplicates.length}`);
 for (const names of duplicates) console.log(`  duplicate: ${names.join(' | ')}`);
 console.log(`Invalid 2027 status: ${invalid2027.length}`);
 console.log(`China market conflicts: ${chinaMarketConflicts.length}`);
 
-if (strict && (duplicates.length || invalid2027.length || chinaMarketConflicts.length)) {
-  console.error('Strict audit failed. Resolve duplicate, annual-status, and market-conflict findings.');
+if (strict && (duplicates.length || invalid2027.length || chinaMarketConflicts.length || missingRequired.length || invalidSortDates.length || invalidSources.length)) {
+  console.error('Strict audit failed. Resolve duplicate, annual-status, market-conflict, required-field, date, and source findings.');
   process.exitCode = 1;
 }

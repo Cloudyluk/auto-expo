@@ -9,8 +9,8 @@
 - [x] 增加供应链阶段与子行业标签。
 - [x] 建立供应链分类表、买方任务和卖方客户类型默认指引。
 - [x] 增加数据审计命令，输出字段覆盖率、重复记录、年度状态和地域冲突。
-- [ ] 将 `exhibitions` 从 `index.html` 拆到 `data/exhibitions.js` 或 JSON。
-- [ ] 编写数据 QA 脚本：缺字段、重复项、日期格式、国内/海外归类。
+- [x] 将 `exhibitions` 从 `index.html` 拆到 `data/exhibitions.js` 或 JSON。
+- [x] 编写数据 QA 脚本：缺字段、重复项、日期格式、国内/海外归类。
 - [ ] 为所有重点海外展会补齐 `address`、`source`、`audience`。
 
 ## 下一阶段：数据治理与交易入口
