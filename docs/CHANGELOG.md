@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：重点展会字段补齐，第六批（40条）
+
+- 按新的批处理规则完成 40 条记录，覆盖 SEMA/AAPEX、FENATRAN、Automechanika Dubai、北美和中东新能源展、洛杉矶车展、Embedded World、IAAE Tokyo、汽车测试和经典车展等。
+- 累计字段覆盖提升：详细地址 102 → 140 条，适合人群 111 → 151 条，官方来源保持 72 条。
+- 本轮完成 40 / 80，按约定暂停，等待下一次“继续”后再开始下一批 40 条。
+
 ## 2026-08-08：重点展会字段补齐，海外第五批（20条）
 
 - 为 GIIAS、ITEC、Aachen Colloquium、COMTRANS、ALUMINIUM、The Battery Show North America、AutoTech Egypt、巴黎车展、CEATEC、EuroBLECH、KOAA GTT、DIFA、MIAPEX和IZB等 20 条记录补齐地址、适合人群和来源字段。
