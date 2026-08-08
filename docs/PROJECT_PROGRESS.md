@@ -48,7 +48,7 @@ gantt
     字段治理第四批 20 条             :done, fields4, after fields3, 1d
     字段治理第五批 20 条             :done, fields5, after fields4, 1d
     字段治理第六批 40 条             :done, fields6, after fields5, 1d
-    字段治理第七批 40 条             :pending, fields7, after fields6, 1d
+    字段治理第七批 40 条             :fields7, after fields6, 1d
     展会主记录去重与标签合并         :dedupe, after fields, 4d
     拆分 exhibitions 数据文件        :split, after dedupe, 3d
     数据 QA 与发布前检查              :qa, after split, 3d
