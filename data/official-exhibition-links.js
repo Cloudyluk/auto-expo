@@ -21,7 +21,7 @@
     [/IAA Transportation|IAA TRANSPORTATION/i, 'https://www.iaa-transportation.com/en'],
     [/RubberTech China|中国国际橡胶技术展/i, 'https://www.rubbertech-expo.com/'],
     [/EuroBLECH/i, 'https://www.euroblech.com/'],
-    [/\bFABTECH\b/i, 'https://www.fabtechexpo.com/'],
+    [/\bFABTECH\b(?! Canada)/i, 'https://www.fabtechexpo.com/'],
     [/Japan Mobility Show/i, 'https://www.japan-mobility-show.com/en/'],
     [/SEMA Show/i, 'https://www.semashow.com/'],
     [/\bAAPEX\b/i, 'https://www.aapexshow.com/'],
@@ -101,7 +101,27 @@
     [/Autopar 2026/i, 'https://feiraautopar.com.br/'],
     [/Automotive Hungary/i, 'https://automotivexpo.hu/en/'],
     [/INAPA Jakarta/i, 'https://www.inapa-exhibition.net/'],
-    [/CAPAS成都汽配展/i, 'https://capas-chengdu.hk.messefrankfurt.com/chengdu/en.html']
+    [/CAPAS成都汽配展/i, 'https://capas-chengdu.hk.messefrankfurt.com/chengdu/en.html'],
+    [/GT Show苏州/i, 'https://www.gtshow.cn/'],
+    [/东京摩托车展/i, 'https://www.motorcycleshow.org/index'],
+    [/ITES深圳工业展|深圳国际工业零件展\(ITES\)/i, 'https://global.iteschina.com/en/'],
+    [/AMR北京汽保展|AMR（中国国际汽保展）|AMR 中国国际汽保汽配展|AMR 中国国际汽车维修/i, 'https://auto-maintenance.cn.messefrankfurt.com/beijing/en.html'],
+    [/日本卡车展/i, 'https://truck-show.jp/'],
+    [/Australian Auto Aftermarket Expo/i, 'https://aftermarketexpo.com.au/'],
+    [/The Tire Cologne|THE TIRE COLOGNE/i, 'https://www.thetirecologne.com/'],
+    [/CastForge/i, 'https://www.messe-stuttgart.de/castforge/en/'],
+    [/FABTECH Canada/i, 'https://canada.fabtechexpo.com/'],
+    [/Intertraffic China/i, 'https://www.intertraffic.com/china/'],
+    [/SUR\/FIN/i, 'https://www.nasfsurfin.com/'],
+    [/Interplas（英国伯明翰塑料橡胶展）/i, 'https://interplasuk.com/'],
+    [/UK Garage and Bodyshop Event/i, 'https://garageandbodyshopevent.uk/'],
+    [/Road 2 Logistics Automotive/i, 'https://road2logistics.com/'],
+    [/TyreXpo Asia Bangkok/i, 'https://www.tyrexpoasia.com/'],
+    [/SF EXPO（国际广州表面处理电镀涂装展）/i, 'https://www.sf-expo.com/'],
+    [/Inter Lubric China/i, 'https://www.interlubric.com/'],
+    [/Lube Indonesia/i, 'https://www.lube-indonesia.com/'],
+    [/Rosmould（俄罗斯莫斯科模具展）/i, 'https://rosmould.ru/en/'],
+    [/Automotive Testing\/Interiors Expo/i, 'https://www.testing-expo.com/uk/']
   ];
 
   function getOfficialExhibitionUrl(event) {

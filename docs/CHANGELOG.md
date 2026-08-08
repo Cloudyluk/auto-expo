@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：官方链接补全，第四批
+
+- 新增 20 个官方链接规则，集中补足制造、轮胎、商用车、汽后、车灯、表面处理和交通安全等供应链中段展会。
+- 本批包括 GT Show、东京摩托车展、ITES、AMR、日本卡车展、Australian Auto Aftermarket Expo、The Tire Cologne、CastForge、Intertraffic China、SUR/FIN、TyreXpo Asia、SF EXPO 等。
+- 对 AMR、ITES 等含多条库内记录的展会使用同组名称匹配，确保同一官方入口在卡片中一致呈现。
+
 ## 2026-08-08：官方链接补全，第三批
 
 - 新增 20 个官方链接规则，覆盖英国、北欧、北美、东北亚、东盟、拉美和中国的整车、汽配、商用车与后市场展会。
