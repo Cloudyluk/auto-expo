@@ -81,7 +81,27 @@
     [/EV Auto Show/i, 'https://evautoshowonline.com/'],
     [/\bDIFA\b|大邱未来汽车与出行展/i, 'https://www.difa.or.kr/'],
     [/Paris Motor Show/i, 'https://mondial.paris/en/'],
-    [/LA Auto Show/i, 'https://laautoshow.com/']
+    [/LA Auto Show/i, 'https://laautoshow.com/'],
+    [/Automechanika Birmingham/i, 'https://automechanika-birmingham.uk.messefrankfurt.com/birmingham/en.html'],
+    [/Automechanika Sao Paulo/i, 'https://www.automecfeira.com.br/en/home.html'],
+    [/Bangkok Motor Show/i, 'https://www.motorshow.in.th/'],
+    [/Goodwood Festival of Speed/i, 'https://www.goodwood.com/motorsport/festival-of-speed/'],
+    [/Automässan/i, 'https://en.automassan.se/'],
+    [/India Auto Expo/i, 'https://www.bharat-mobility.com/'],
+    [/Osaka Auto Messe/i, 'https://www.automesse.jp/en/'],
+    [/Vancouver Auto Show/i, 'https://vancouverinternationalautoshow.com/'],
+    [/Tire Technology Expo/i, 'https://tiretechnology-expo.com/'],
+    [/Mid-America Trucking Show|\bMATS\b/i, 'https://truckingshow.com/'],
+    [/New York Auto Show/i, 'https://www.autoshowny.com/'],
+    [/Taipei AMPA/i, 'https://www.taipeiampa.com.tw/en/index.html'],
+    [/Beijing Auto China|北京车展/i, 'https://www.autochinashow.org/'],
+    [/Automechanika New York/i, 'https://automechanika-ny.us.messefrankfurt.com/newyork/en.html'],
+    [/Automechanika Buenos Aires/i, 'https://automechanika-buenosaires.ar.messefrankfurt.com/buenosaires/en.html'],
+    [/Automechanika Kuala Lumpur/i, 'https://automechanika-kualalumpur.hk.messefrankfurt.com/kualalumpur/en.html'],
+    [/Autopar 2026/i, 'https://feiraautopar.com.br/'],
+    [/Automotive Hungary/i, 'https://automotivexpo.hu/en/'],
+    [/INAPA Jakarta/i, 'https://www.inapa-exhibition.net/'],
+    [/CAPAS成都汽配展/i, 'https://capas-chengdu.hk.messefrankfurt.com/chengdu/en.html']
   ];
 
   function getOfficialExhibitionUrl(event) {

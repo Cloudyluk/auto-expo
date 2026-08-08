@@ -1,5 +1,11 @@
 # 变更日志
 
+## 2026-08-08：官方链接补全，第三批
+
+- 新增 20 个官方链接规则，覆盖英国、北欧、北美、东北亚、东盟、拉美和中国的整车、汽配、商用车与后市场展会。
+- 本批包括 Automechanika Birmingham、Bangkok Motor Show、Goodwood Festival of Speed、Tire Technology Expo、MATS、Taipei AMPA、Auto China、CAPAS、INAPA Jakarta 等。
+- 优先采用主办方或展会官方站点；同名记录复用同一入口，避免重复维护链接。
+
 ## 2026-08-08：官方链接补全，第二批
 
 - 新增 20 个官方链接规则，优先覆盖动力电池、充换电、线束连接器、车规芯片、热管理、供应链和区域电动化展会。
