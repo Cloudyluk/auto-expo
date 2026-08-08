@@ -130,6 +130,7 @@ html.light .nav-search{background:rgba(0,0,0,0.04);border-color:rgba(0,0,0,0.1);
   background:rgba(20,184,166,0.09);color:var(--t2g);border:1px solid rgba(20,184,166,0.15);line-height:1.35}
 .decision-badge.warn{background:rgba(245,158,11,0.1);color:var(--t3g);border-color:rgba(245,158,11,0.18)}
 .source-link{margin-top:8px;font-size:0.72rem}.source-link a{color:var(--t1g);text-decoration:none}.source-link a:hover{text-decoration:underline}
+.monthly-map-shell{margin:14px 0 22px;border:1px solid var(--border);background:var(--card);padding:14px;border-radius:var(--radius-sm)}.monthly-map-header{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:.82rem;font-weight:600}.monthly-map-header button{border:1px solid var(--border);background:var(--card-hover);color:var(--text);padding:5px 8px;border-radius:var(--radius-xs);cursor:pointer}.monthly-map{margin-top:12px;min-height:260px;aspect-ratio:2/1;overflow:hidden;background:linear-gradient(180deg,rgba(59,130,246,.08),rgba(16,185,129,.03));border:1px solid var(--border);border-radius:var(--radius-xs)}.monthly-map svg{width:100%;height:100%;display:block}.map-grid{stroke:var(--border);stroke-width:1}.map-country{fill:rgba(59,130,246,.18);stroke:rgba(96,165,250,.6);cursor:pointer}.map-marker{fill:var(--t2);stroke:var(--bg);stroke-width:3;cursor:pointer}.map-number{font-size:12px;font-weight:700;fill:var(--text);pointer-events:none}.map-label{font-size:10px;fill:var(--text-sec);pointer-events:none}@media(max-width:700px){.monthly-map{min-height:210px}.map-label{font-size:8px}.map-number{font-size:10px}}
 @media(max-width:600px){.star-grid,.expo-list{grid-template-columns:1fr}}
 
 /* ===== MONTH TABS ===== */
@@ -216,6 +217,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
 <div class="page" id="page-monthly">
   <div class="section-title"><span class="icon">📅</span> 月度时间线</div>
   <div class="month-tabs" id="monthTabs"></div>
+  <div class="monthly-map-shell"><div class="monthly-map-header"><span>全球展会分布</span><button id="clearMapSelection" type="button" onclick="clearMapSelection()" hidden>清除地图筛选</button></div><div id="monthlyMap" class="monthly-map" aria-live="polite"></div><div id="mapSelectionSummary" class="month-count" hidden></div><div id="mapSelectionContent" class="expo-list" hidden></div></div>
   <div class="month-count" id="monthCount"></div>
   <div class="expo-list" id="monthContent"></div>
 </div>
@@ -1102,17 +1104,27 @@ function renderOverview(){
 
 // ===== PAGE 2: MONTHLY =====
 let curMonth=new Date().getMonth()+1;
+let selectedMapGroupKey='';
+function projectGeo(latitude,longitude){return{x:((longitude+180)/360)*1000,y:((90-latitude)/180)*500}}
+function getMonthlyMapGroups(month){const groups=new Map();currentExhibitions().filter(e=>getMonth(e)===month).forEach(e=>{const geo=typeof getExhibitionGeo==='function'?getExhibitionGeo(e):null;if(!geo)return;const key=geo.country+':'+(geo.city||'国家中心');if(!groups.has(key))groups.set(key,{key,...geo,events:[]});groups.get(key).events.push(e)});return[...groups.values()]}
+function renderMonthlyMap(){const el=document.getElementById('monthlyMap');if(!el)return;const groups=getMonthlyMapGroups(curMonth),countries=new Map();groups.forEach(g=>{if(!countries.has(g.country))countries.set(g.country,[]);countries.get(g.country).push(g)});let svg='<svg viewBox="0 0 1000 500" role="img" aria-label="当月全球展会分布地图"><path d="M0 125H1000M0 250H1000M0 375H1000M250 0V500M500 0V500M750 0V500" class="map-grid"/>';
+countries.forEach((list,country)=>{const p=projectGeo(list[0].latitude,list[0].longitude);svg+='<circle class="map-country" cx="'+p.x+'" cy="'+p.y+'" r="'+(16+Math.min(list.reduce((n,g)=>n+g.events.length,0),8))+'" onclick="selectMapGroup(\''+country+':__country__\')" role="button" tabindex="0"><title>'+escapeHtml(country)+' '+list.reduce((n,g)=>n+g.events.length,0)+'场</title></circle>'});groups.forEach(g=>{const p=projectGeo(g.latitude,g.longitude),count=g.events.length;svg+='<g onclick="selectMapGroup(\''+g.key+'\')" role="button" tabindex="0"><circle class="map-marker" cx="'+p.x+'" cy="'+p.y+'" r="'+(8+Math.min(count,5))+'"><title>'+escapeHtml(g.country+' '+(g.city||'国家中心')+' '+count+'场')+'</title></circle><text class="map-number" x="'+p.x+'" y="'+(p.y+4)+'" text-anchor="middle">'+count+'</text><text class="map-label" x="'+p.x+'" y="'+(p.y+24)+'" text-anchor="middle">'+escapeHtml(g.city||g.country)+'</text></g>'});el.innerHTML=svg+'</svg>'}
+function selectMapGroup(key){selectedMapGroupKey=key;const groups=getMonthlyMapGroups(curMonth);const selected=key.endsWith(':__country__')?groups.filter(g=>g.country===key.slice(0,-12)):groups.filter(g=>g.key===key);const events=selected.flatMap(g=>g.events).sort((a,b)=>a.sortDate-b.sortDate),label=key.endsWith(':__country__')?key.slice(0,-12):selected[0].country+' '+(selected[0].city||'');document.getElementById('mapSelectionSummary').textContent=label+' · '+events.length+' 场展会';document.getElementById('mapSelectionSummary').hidden=false;document.getElementById('mapSelectionContent').innerHTML=events.map(expoItem).join('');document.getElementById('mapSelectionContent').hidden=false;document.getElementById('clearMapSelection').hidden=false}
+function clearMapSelection(){selectedMapGroupKey='';document.getElementById('mapSelectionSummary').hidden=true;document.getElementById('mapSelectionContent').hidden=true;document.getElementById('clearMapSelection').hidden=true}
 function renderMonthTabs(){
   const names=["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
   document.getElementById('monthTabs').innerHTML=names.map((n,i)=>
     '<div class="month-tab'+(i+1===curMonth?' active':'')+'" data-m="'+(i+1)+'" onclick="selectMonth('+(i+1)+')">'+n+'</div>'
   ).join('');
+  renderMonthlyMap();
   renderMonthContent();
 }
 function selectMonth(m){
   curMonth=m;
+  clearMapSelection();
   document.querySelectorAll('.month-tab').forEach(t=>t.classList.remove('active'));
   document.querySelector('.month-tab[data-m="'+m+'"]').classList.add('active');
+  renderMonthlyMap();
   renderMonthContent();
 }
 function renderMonthContent(){
