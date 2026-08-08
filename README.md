@@ -41,6 +41,7 @@ npx serve .
 
 ## 项目规划
 
+- [项目总索引与管理入口](docs/PROJECT_INDEX.md)
 - [汽车展会库供应链升级规划](docs/auto-expo-supply-chain-roadmap.md)
 
 ---

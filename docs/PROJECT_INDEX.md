@@ -1,0 +1,72 @@
+# 全球汽车展会聚合平台：项目总索引
+
+> 这是项目的长期管理入口。后续更新不依赖聊天上下文，先阅读本文件，再按链接进入对应文档。
+
+## 当前状态
+
+| 项目 | 当前值 |
+|---|---|
+| 产品定位 | 全球汽车产业展会与供应链决策库 |
+| 当前版本 | V6 数据增强版 |
+| 数据规模 | 608 条记录 / 36 个主题分类 |
+| 数据年度 | 2026 主数据 + 2027 已公布预告 |
+| 技术形态 | `index.html` 纯静态单页，GitHub Pages 部署 |
+| 仓库 | `Cloudyluk/auto-expo` |
+| 在线地址 | https://cloudyluk.github.io/auto-expo/ |
+| 最近提交 | `380cd98` |
+| 最近更新 | 2026-08-08 |
+
+## 从哪里开始
+
+1. 要补展会：阅读 [数据维护手册](DATA_MAINTENANCE.md)。
+2. 要理解字段：阅读 [数据字典](DATA_DICTIONARY.md)。
+3. 要知道下一步做什么：阅读 [项目待办看板](PROJECT_BACKLOG.md)。
+4. 要查看为什么这样改：阅读 [决策日志](DECISION_LOG.md)。
+5. 要了解长期产品方向：阅读 [供应链升级路线图](auto-expo-supply-chain-roadmap.md)。
+6. 更新完成后，把结果写入 [变更日志](CHANGELOG.md)。
+
+## 当前产品能力
+
+- 总览、月度、分类、国内、海外、推荐、2027 预告。
+- 按主题分类和供应链环节筛选。
+- 展会卡片显示日期、场馆/地址、区域、供应链标签和子行业标签。
+- 支持官方来源链接和搜索。
+- 暗色/亮色主题，适配桌面和移动端。
+
+## 当前数据结构
+
+原始数据目前仍内嵌在 [index.html](../index.html) 的 `exhibitions` 数组中。字段逐步向标准结构演进：
+
+`name` → `year` / `month` / `date` / `sortDate` → `location` / `address` → `cat` / `sc` / `vertical` → `focus` / `audience` → `market` / `region` → `star` / `status` / `source`
+
+## 项目原则
+
+- 日期和地址优先引用主办方官网。
+- 未公布的信息写“待定/待确认”，不推测具体日期。
+- 2027 预告独立展示，不混入 2026 统计。
+- 一个展会尽量保持一条主记录，避免同一展会因多个主题重复计数。
+- 每次数据更新都要同步来源、更新时间和变更日志。
+- 不编辑 `sources/` 下的项目同步资料。
+
+## 文件地图
+
+| 文件 | 用途 |
+|---|---|
+| `index.html` | 当前网站、数据数组和渲染逻辑 |
+| `README.md` | 项目简介和快速入口 |
+| `docs/PROJECT_INDEX.md` | 本文件，长期总索引 |
+| `docs/DATA_MAINTENANCE.md` | 补数据、改数据、发布和核验流程 |
+| `docs/DATA_DICTIONARY.md` | 字段、状态、分类和质量规则 |
+| `docs/PROJECT_BACKLOG.md` | 分阶段待办和验收标准 |
+| `docs/DECISION_LOG.md` | 关键产品和数据决策记录 |
+| `docs/CHANGELOG.md` | 面向项目的版本变更记录 |
+| `docs/auto-expo-supply-chain-roadmap.md` | 供应链产品长期规划 |
+
+## 下一次更新入口
+
+下一次开始工作时，先确认：
+
+- [ ] 查看本文件的当前版本、数据量和最近提交。
+- [ ] 查看 [项目待办看板](PROJECT_BACKLOG.md) 的最高优先级事项。
+- [ ] 查看 [数据维护手册](DATA_MAINTENANCE.md) 的来源与核验要求。
+- [ ] 完成后更新 `CHANGELOG.md` 和本文件的状态信息。
