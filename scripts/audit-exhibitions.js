@@ -66,6 +66,17 @@ if (process.argv.includes('--taxonomy')) {
   }
 }
 
+if (process.argv.includes('--geo')) {
+  const { CITY_COORDINATES, getExhibitionGeo } = require(path.join(root, 'data', 'exhibition-geo.js'));
+  const expectedCities = ['上海', '慕尼黑', '底特律', '曼谷', '东京'];
+  const missingCities = expectedCities.filter((city) => !CITY_COORDINATES[city]);
+  const current = exhibitions.filter((event) => !event.year || event.year === 2026);
+  const covered = current.filter((event) => getExhibitionGeo(event)).length;
+  console.log(`Geo coverage: ${covered}/${current.length}`);
+  console.log(`Missing expected city coordinates: ${missingCities.length}`);
+  if (missingCities.length) { console.error(`Missing city coordinates: ${missingCities.join(', ')}`); process.exitCode = 1; }
+}
+
 console.log('Exhibition data audit');
 console.log(`Records: ${exhibitions.length}`);
 console.log(`2027 previews: ${exhibitions.filter((event) => event.year === 2027).length}`);
