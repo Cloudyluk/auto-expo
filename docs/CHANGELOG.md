@@ -1,5 +1,12 @@
 # 变更日志
 
+## 2026-08-08：官方链接补全，第五批（40条）
+
+- 新增 40 个官方链接规则，本批扩展智能交通、车载软件、内饰、ADAS、制造成形、轮胎、商用车和区域市场覆盖。
+- 本批包括 ITS India、CWIEME、Bosch ConnectedWorld、Automotive Interiors Expo、Stanztec、GIIAS、MIMS、FENATRAN、Japan Mobility Show、CHINACOAT 等。
+- 修正 Automotive Testing Expo 通用规则，使欧洲站可以命中对应的欧洲官网入口。
+- 官网覆盖率由 41.0% 提升至 47.4%，已覆盖 288 / 608 条展会记录，剩余 320 条。
+
 ## 2026-08-08：项目进度甘特图
 
 - 新增 `docs/PROJECT_PROGRESS.md`，记录网站基础功能、数据底座、官网覆盖率和供应链决策工具的完成比例。
