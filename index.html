@@ -286,6 +286,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
 
 <script src="data/supply-chain-taxonomy.js"></script>
 <script src="data/exhibition-geo.js"></script>
+<script src="data/official-exhibition-links.js"></script>
 <script>
 const exhibitions = [
   {month:1, name:"第33届浙江(瑞安)机械装备展览会", cat:"模具/冲压", date:"待定", sortDate:101, location:"瑞安市会展中心", focus:"含汽摩配加工设备", market:"中国", star:1},
@@ -1087,7 +1088,7 @@ function doSearch(){
 }
 
 // ===== RENDER HELPERS =====
-function officialLink(e){const searchUrl='https://www.bing.com/search?q='+encodeURIComponent(e.name+' 官方网站');return '<div class="source-link">'+(e.source?'<a href="'+escapeHtml(e.source)+'" target="_blank" rel="noopener">🔗 官网 / 官方信息 ↗</a>':'<span class="source-missing">🔗 官网待核验 · </span><a href="'+searchUrl+'" target="_blank" rel="noopener">搜索官网 ↗</a>')+'</div>'}
+function officialLink(e){const officialUrl=e.source||(typeof getOfficialExhibitionUrl==='function'?getOfficialExhibitionUrl(e):''),searchUrl='https://www.bing.com/search?q='+encodeURIComponent(e.name+' 官方网站');return '<div class="source-link">'+(officialUrl?'<a href="'+escapeHtml(officialUrl)+'" target="_blank" rel="noopener">🔗 官网 / 官方信息 ↗</a>':'<span class="source-missing">🔗 官网待核验 · </span><a href="'+searchUrl+'" target="_blank" rel="noopener">搜索官网 ↗</a>')+'</div>'}
 function expoItem(e){
   const badges='<div class="decision-badges"><span class="decision-badge">'+escapeHtml(e.sc||supplyChainLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.vertical||verticalLabel(e))+'</span><span class="decision-badge">'+escapeHtml(e.region||regionLabel(e))+'</span><span class="decision-badge">采购：'+escapeHtml((e.buyerTasks||['供应商开发'])[0])+'</span><span class="decision-badge">客户：'+escapeHtml((e.sellerTargets||['OEM'])[0])+'</span>'+(e.status?'<span class="decision-badge warn">'+escapeHtml(e.status)+'</span>':'')+'</div>';
   const venue=e.address||e.location||'地址待确认';
