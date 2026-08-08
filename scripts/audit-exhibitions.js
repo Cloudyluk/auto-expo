@@ -26,6 +26,8 @@ try {
 
 const chineseLocationPattern = /中国|北京|上海|广州|深圳|重庆|成都|武汉|天津|苏州|南京|宁波|温州|瑞安|邯郸|永年|济南|青岛|石家庄|长沙|大连|哈尔滨|兰州|西安|沈阳|南昌|福州|佛山|昆山|玉环|广饶|海口|喀什/;
 const coverageFields = ['year', 'address', 'sc', 'vertical', 'audience', 'source', 'buyerValue', 'sellerValue', 'sellerTargets', 'marketUse', 'action', 'confidence'];
+const verifiedAddressCount = exhibitions.filter((event) => event.address && event.addressStatus !== '待核验' && !/^Venue to be confirmed/i.test(event.address)).length;
+const pendingAddressCount = exhibitions.filter((event) => event.addressStatus === '待核验' || /^Venue to be confirmed/i.test(event.address || '')).length;
 const requiredFields = ['name', 'month', 'date', 'sortDate', 'location', 'cat', 'market', 'star'];
 const missingRequired = exhibitions.filter((event) => requiredFields.some((field) => event[field] === undefined || event[field] === ''));
 const invalidSortDates = exhibitions.filter((event) => !Number.isInteger(event.sortDate) || event.sortDate < 100 || event.sortDate > 99999999);
@@ -94,6 +96,8 @@ console.log('Exhibition data audit');
 console.log(`Records: ${exhibitions.length}`);
 console.log(`2027 previews: ${exhibitions.filter((event) => event.year === 2027).length}`);
 console.log(`Field coverage: ${JSON.stringify(coverage)}`);
+console.log(`Verified addresses: ${verifiedAddressCount}`);
+console.log(`Addresses pending venue verification: ${pendingAddressCount}`);
 console.log(`Missing required fields: ${missingRequired.length}`);
 console.log(`Invalid sortDate values: ${invalidSortDates.length}`);
 console.log(`Invalid source URLs: ${invalidSources.length}`);

@@ -11,7 +11,8 @@ const EXHIBITIONS = [
     "focus": "含汽摩配加工设备",
     "audience": "汽摩配加工、机床、模具、自动化和瑞安产业集群采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.riautoexpo.com/"
   },
   {
     "month": 1,
@@ -24,7 +25,8 @@ const EXHIBITIONS = [
     "focus": "英国汽配展",
     "audience": "汽配、维修设备、工具、零部件和英国售后渠道采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://automechanika-birmingham.uk.messefrankfurt.com/birmingham/en.html"
   },
   {
     "month": 1,
@@ -37,7 +39,8 @@ const EXHIBITIONS = [
     "focus": "巴西汽配展",
     "audience": "汽配、维修设备、商用车零部件和巴西及南美渠道采购商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.automecfeira.com.br/en/home.html"
   },
   {
     "month": 1,
@@ -50,7 +53,8 @@ const EXHIBITIONS = [
     "focus": "韩国车展",
     "audience": "整车品牌、EV供应链、韩国经销商和出行科技企业",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://mobilityshow.or.kr/ko/main"
   },
   {
     "month": 1,
@@ -63,7 +67,8 @@ const EXHIBITIONS = [
     "focus": "泰国车展",
     "audience": "整车品牌、EV供应商、泰国经销商和东盟市场渠道团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.motorshow.in.th/"
   },
   {
     "month": 1,
@@ -76,7 +81,8 @@ const EXHIBITIONS = [
     "focus": "日内瓦国际车展",
     "audience": "整车品牌、豪华车、设计机构、经销商和欧洲市场渠道团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://genevamotorshow.com/"
   },
   {
     "month": 1,
@@ -89,7 +95,8 @@ const EXHIBITIONS = [
     "focus": "古德伍德速度节，全球顶级汽车文化活动",
     "audience": "赛车、性能车、经典车、改装品牌和汽车文化渠道团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.goodwood.com/motorsport/festival-of-speed/"
   },
   {
     "month": 1,
@@ -180,7 +187,8 @@ const EXHIBITIONS = [
     "focus": "瑞典汽车售后展",
     "audience": "汽配、维修设备、工具、轮胎和北欧售后渠道采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://en.automassan.se/"
   },
   {
     "month": 1,
@@ -277,7 +285,8 @@ const EXHIBITIONS = [
     "focus": "荷兰汽车专业展",
     "audience": "汽配、维修设备、工具、经销商和荷兰独立维修渠道",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.autoprof-vakbeurs.nl/en/"
   },
   {
     "month": 2,
@@ -290,7 +299,8 @@ const EXHIBITIONS = [
     "focus": "亚洲最大车展之一，小型车+EV+印度市场专属车型",
     "audience": "整车品牌、EV、电池、经销商和印度市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.bharat-mobility.com/"
   },
   {
     "month": 2,
@@ -303,7 +313,8 @@ const EXHIBITIONS = [
     "focus": "面积5.1万㎡，870+展商来自20国，印度最大汽配售后展（含润滑油/养护品）",
     "audience": "汽配、润滑油、维修设备、经销商和印度及南亚渠道采购商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://acma-automechanika-newdelhi.in.messefrankfurt.com/newdelhi/en.html"
   },
   {
     "month": 2,
@@ -400,7 +411,8 @@ const EXHIBITIONS = [
     "focus": "印度ITS旗舰展，V2X/MLFF收费/AI交通管理，含C-V2X实物演示",
     "audience": "V2X、智能交通、收费系统、车路协同和印度交通科技采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://trafficinfratechexpo.in.messefrankfurt.com/newdelhi/en/programme-events.html"
   },
   {
     "month": 3,
@@ -413,7 +425,8 @@ const EXHIBITIONS = [
     "focus": "韩国最大出行展，EV/机器人/先进技术，现代起亚主场",
     "audience": "整车、EV、电池、机器人、智能驾驶和韩国市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://mobilityshow.or.kr/ko/main"
   },
   {
     "month": 3,
@@ -426,7 +439,8 @@ const EXHIBITIONS = [
     "focus": "加拿大西海岸最大车展，EV/户外生活车",
     "audience": "整车品牌、EV、经销商、户外车型和加拿大西海岸渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://vancouverinternationalautoshow.com/"
   },
   {
     "month": 3,
@@ -439,7 +453,8 @@ const EXHIBITIONS = [
     "focus": "专注汽车底盘系统技术，含悬挂/转向/制动/轻量化底盘模块",
     "audience": "底盘、制动、转向、悬挂、轮毂和整车厂采购研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.atwexpo.com/"
   },
   {
     "month": 3,
@@ -452,7 +467,8 @@ const EXHIBITIONS = [
     "focus": "永年「中国紧固件之都\"，全球最大紧固件产业集群，成交额8.2亿",
     "audience": "紧固件、设备、模具、原材料、表面处理和汽车制造采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.fastener-expo.com/"
   },
   {
     "month": 3,
@@ -473,7 +489,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "MWC Barcelona（含V2X/车联网）"
-    ]
+    ],
+    "source": "https://www.mwcbarcelona.com/?lg=en"
   },
   {
     "month": 3,
@@ -486,7 +503,8 @@ const EXHIBITIONS = [
     "focus": "全球最大轮胎制造技术展，2.6万㎡/319家展商，聚焦轮胎设计、制造与创新",
     "audience": "轮胎材料、配方、设备、测试和汽车轮胎制造采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://tiretechnology-expo.com/"
   },
   {
     "month": 3,
@@ -499,7 +517,8 @@ const EXHIBITIONS = [
     "focus": "日内瓦区域车展，45+品牌，替代原日内瓦车展",
     "audience": "整车品牌、经销商、汽车设计和瑞士及欧洲区域渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://autoxp.ch/"
   },
   {
     "month": 3,
@@ -512,7 +531,8 @@ const EXHIBITIONS = [
     "focus": "500-1000人规模，200+展商，北美汽车物流旗舰会议，Gold评级",
     "audience": "汽车物流、供应链、仓储、运输、车队和OEM采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://alscglobal.automotivelogistics.media/"
   },
   {
     "month": 3,
@@ -525,7 +545,8 @@ const EXHIBITIONS = [
     "focus": "亚洲电池技术展，动力电池、储能、充电方案",
     "audience": "动力电池、电芯、材料、设备、储能、充电和亚洲买家",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.thebatteryshow.asia/"
   },
   {
     "month": 3,
@@ -538,7 +559,8 @@ const EXHIBITIONS = [
     "focus": "国内顶级改装文化展，性能/外观/越野/低趴",
     "audience": "改装、性能件、越野、车灯、轮毂和汽车用品渠道采购商",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.aitexpo.com/"
   },
   {
     "month": 3,
@@ -551,7 +573,8 @@ const EXHIBITIONS = [
     "focus": "亚洲最大汽车后市场综合展，30万㎡/6000+展商/25万观众，设备区增78%",
     "audience": "维修设备、诊断工具、养护品、汽车用品和后市场渠道采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.yasnshow.com/ciaace/"
   },
   {
     "month": 3,
@@ -564,7 +587,8 @@ const EXHIBITIONS = [
     "focus": "12万㎡，6900+品牌，8.9万专业品，汽车后市场全产业链，膜/内外饰/养护",
     "audience": "汽配、维修设备、膜、内外饰、养护品和汽车后市场采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.yasnshow.com/ciaace/"
   },
   {
     "month": 3,
@@ -577,7 +601,8 @@ const EXHIBITIONS = [
     "focus": "欧洲汽车物流旗舰会议，Stellantis/GM/Volvo等OEM供应链高管齐聚",
     "audience": "欧洲汽车物流、供应链软件、仓储、运输和OEM采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://automotivelogistics.media/events/automotive-logistics-supply-chain-europe"
   },
   {
     "month": 3,
@@ -590,7 +615,8 @@ const EXHIBITIONS = [
     "focus": "韩国唯一汽车测试专业展，ADAS/电动化/SDV验证技术",
     "audience": "ADAS、三电、测试验证、NVH和韩国OEM/Tier1研发采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.testing-expo.com/"
   },
   {
     "month": 3,
@@ -603,7 +629,8 @@ const EXHIBITIONS = [
     "focus": "面积60万㎡，7000+品牌，亚洲唯一覆盖整车到售后全链条展会",
     "audience": "整车、汽车电子、智能驾驶、售后服务和出行生态采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cimpauto.com/"
   },
   {
     "month": 3,
@@ -616,7 +643,8 @@ const EXHIBITIONS = [
     "focus": "含汽车冲压/焊装/涂装/总装线、模具、铸造、锻造等，UFI认证",
     "audience": "汽车制造装备、冲压、焊装、涂装、模具和西部供应链采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://berlin.cwiemeevents.com/Home"
   },
   {
     "month": 3,
@@ -643,7 +671,8 @@ const EXHIBITIONS = [
     "focus": "贝尔格莱德车展",
     "audience": "整车品牌、区域经销商、汽配供应商和巴尔干市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://bgcarshow.com/"
   },
   {
     "month": 3,
@@ -656,7 +685,8 @@ const EXHIBITIONS = [
     "focus": "全球车灯行业旗舰展，ams OSRAM/Nichia等巨头参展，聚焦智能化+数字化",
     "audience": "车灯总成、LED、光学、控制器和整车厂照明研发采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.ale-expo.com/"
   },
   {
     "month": 3,
@@ -683,7 +713,8 @@ const EXHIBITIONS = [
     "focus": "聚焦汽车信息安全强标落地，1000㎡展区，联动智能驾驶/无钥匙进入",
     "audience": "汽车网络安全、功能安全、渗透测试、芯片和智能驾驶研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cnautocyber.org/"
   },
   {
     "month": 3,
@@ -696,7 +727,8 @@ const EXHIBITIONS = [
     "focus": "12万㎡，450+展商，国内改装顶流，专业商贸+文化互动",
     "audience": "改装、性能件、车身、轮毂、底盘和汽车用品渠道采购商",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.gtshow.cn/"
   },
   {
     "month": 3,
@@ -737,7 +769,8 @@ const EXHIBITIONS = [
     "focus": "455家展商，全联汽摩配商会主办，瑞安\"中国汽摩配之都\"",
     "audience": "汽摩配制造商、出口商、经销商和瑞安产业集群采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.ruianautoexpo.com/"
   },
   {
     "month": 3,
@@ -750,7 +783,8 @@ const EXHIBITIONS = [
     "focus": "华南最大工业展，1500+展商，覆盖金属切削/成型/表面处理全流程",
     "audience": "机床、金属加工、自动化、表面处理和汽车制造采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://global.iteschina.com/en/"
   },
   {
     "month": 4,
@@ -777,7 +811,8 @@ const EXHIBITIONS = [
     "focus": "纽约汽配展",
     "audience": "北美汽配、维修设备、零部件品牌和区域经销商开发团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://automechanika-ny.us.messefrankfurt.com/newyork/en.html"
   },
   {
     "month": 4,
@@ -818,7 +853,8 @@ const EXHIBITIONS = [
     "focus": "国内汽保设备第一大展，举升机/诊断仪/ADAS标定/润滑油",
     "audience": "汽保设备、诊断、ADAS标定、润滑油和维修连锁采购团队",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://auto-maintenance.cn.messefrankfurt.com/beijing/en.html"
   },
   {
     "month": 4,
@@ -831,7 +867,8 @@ const EXHIBITIONS = [
     "focus": "全球最大汽保展，8万㎡，含汽车修补漆及涂装设备专区",
     "audience": "汽保、修补漆、涂装设备、车身修复和售后服务商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://auto-maintenance.cn.messefrankfurt.com/beijing/en.html"
   },
   {
     "month": 4,
@@ -844,7 +881,8 @@ const EXHIBITIONS = [
     "focus": "面积7万㎡，1200+展商，48000观众，法兰克福展览系列，覆盖润滑油/养护全链",
     "audience": "润滑油、养护品、化学品、维修连锁和中国售后渠道采购商",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://auto-maintenance.cn.messefrankfurt.com/beijing/en.html"
   },
   {
     "month": 4,
@@ -857,7 +895,8 @@ const EXHIBITIONS = [
     "focus": "74届/8万㎡/1300+展商，中国最大汽保展，聚焦新能源维保与数字化",
     "audience": "维修检测、诊断设备、新能源维保、数字化车间和维修连锁采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://auto-maintenance.cn.messefrankfurt.com/beijing/en.html"
   },
   {
     "month": 4,
@@ -870,7 +909,8 @@ const EXHIBITIONS = [
     "focus": "亚洲第二大汽配展，OEM配套+售后，EV技术专区",
     "audience": "汽配、EV零部件、电子、连接器和台湾及亚洲渠道采购商",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.taipeiampa.com.tw/en/index.html"
   },
   {
     "month": 4,
@@ -898,7 +938,8 @@ const EXHIBITIONS = [
     "focus": "亚洲领先汽车电子专展，覆盖连接器/线束/ADAS/天线/EMS",
     "audience": "汽车电子、连接器、线束、ADAS、天线和EMS采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.taipeiampa.com.tw/en/index.html"
   },
   {
     "month": 4,
@@ -925,7 +966,8 @@ const EXHIBITIONS = [
     "focus": "汽车再营销/二手车专业会",
     "audience": "二手车经销商、拍卖平台、整备维修、金融和车辆再营销服务商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.carconference.com/"
   },
   {
     "month": 4,
@@ -938,7 +980,8 @@ const EXHIBITIONS = [
     "focus": "米兰设计周期间，Rivian/NIO/Polestar/Lotus/SEAT等CMF总监演讲",
     "audience": "汽车设计、CMF、内饰材料、颜色趋势和品牌创新团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://hausofautomotive.com/"
   },
   {
     "month": 4,
@@ -979,7 +1022,8 @@ const EXHIBITIONS = [
     "focus": "全球最大车展（38万㎡），EV/智能驾驶/全产业链，与上海车展交替",
     "audience": "整车品牌、EV、电池、智能驾驶、经销商和中国市场渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.autochinashow.org/"
   },
   {
     "month": 4,
@@ -1006,7 +1050,8 @@ const EXHIBITIONS = [
     "focus": "巴西汽配展",
     "audience": "南美售后零部件、维修设备、车队服务和区域渠道团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://feiraautopar.com.br/"
   },
   {
     "month": 5,
@@ -1019,7 +1064,8 @@ const EXHIBITIONS = [
     "focus": "东北消费车展",
     "audience": "整车品牌、东北经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.syautofair.com/"
   },
   {
     "month": 5,
@@ -1032,7 +1078,8 @@ const EXHIBITIONS = [
     "focus": "东盟汽配核心平台，12538㎡/317展商/16523观众，含碰撞修复培训",
     "audience": "东盟汽配、维修设备、碰撞修复、养护品和区域代理商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://automechanika-kualalumpur.hk.messefrankfurt.com/kualalumpur/en.html"
   },
   {
     "month": 5,
@@ -1073,7 +1120,8 @@ const EXHIBITIONS = [
     "focus": "全球最具影响力铸博会，涵盖铸造全产业链及压铸展",
     "audience": "铸造、压铸、铸造材料、设备和汽车零部件制造采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.metalchina.com/"
   },
   {
     "month": 5,
@@ -1086,7 +1134,8 @@ const EXHIBITIONS = [
     "focus": "中东欧最大汽配展，15000+观众",
     "audience": "汽配、维修设备、经销商和中东欧汽车售后渠道采购商",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://autotechfuture.com/"
   },
   {
     "month": 5,
@@ -1099,7 +1148,8 @@ const EXHIBITIONS = [
     "focus": "全球车辆安全顶级会议，约1000名安全专家/政策制定者参会，UNECE支持",
     "audience": "车辆安全、碰撞测试、法规、约束系统和汽车安全研发团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www-esv.nhtsa.dot.gov/"
   },
   {
     "month": 4,
@@ -1112,7 +1162,8 @@ const EXHIBITIONS = [
     "focus": "国内最大内贸汽配流通展，平价替换件/二三级批发",
     "audience": "汽配批发商、经销商、维修连锁和国内售后渠道采购商",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.cacfair.com/"
   },
   {
     "month": 5,
@@ -1125,7 +1176,8 @@ const EXHIBITIONS = [
     "focus": "日本最大商用车展，卡车/巴士/物流",
     "audience": "卡车、巴士、物流设备、车队和日本商用车渠道采购团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://truck-show.jp/"
   },
   {
     "month": 5,
@@ -1138,7 +1190,8 @@ const EXHIBITIONS = [
     "focus": "23届历史，东盟线束连接器专业展，1万㎡/1.5万买家",
     "audience": "连接器、线束、端子、加工设备和越南及东盟采购商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.ich-expo.com/"
   },
   {
     "month": 5,
@@ -1151,7 +1204,8 @@ const EXHIBITIONS = [
     "focus": "澳洲最大汽车贸易展，2.1万㎡/400+展商，ADAS校准与诊断为重点",
     "audience": "汽车售后、维修设备、ADAS诊断、零部件和澳洲渠道采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://aftermarketexpo.com.au/"
   },
   {
     "month": 5,
@@ -1164,7 +1218,8 @@ const EXHIBITIONS = [
     "focus": "中国轮胎产业集群展，紧固件/橡胶/轮辋",
     "audience": "轮胎、橡胶、轮辋、紧固件、汽配制造商和出口采购商",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.grtireexpo.com/"
   },
   {
     "month": 5,
@@ -1177,7 +1232,8 @@ const EXHIBITIONS = [
     "focus": "南欧新能源车展",
     "audience": "EV整车、充电、能源服务、经销商和葡萄牙市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.ecarshow.pt/"
   },
   {
     "month": 5,
@@ -1190,7 +1246,8 @@ const EXHIBITIONS = [
     "focus": "秘鲁汽配展",
     "audience": "汽配、维修设备、商用车零部件和秘鲁及安第斯渠道采购商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://expomecanica.pt/en/"
   },
   {
     "month": 5,
@@ -1203,7 +1260,8 @@ const EXHIBITIONS = [
     "focus": "匈牙利汽车供应商展，Tier1/Tier2对接",
     "audience": "汽车供应商、Tier1/Tier2、制造设备和中东欧OEM采购团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://automotivexpo.hu/en/"
   },
   {
     "month": 5,
@@ -1231,7 +1289,8 @@ const EXHIBITIONS = [
     "focus": "华中地区最大消费车展",
     "audience": "整车品牌、华中经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whautoexpo.com/"
   },
   {
     "month": 5,
@@ -1244,7 +1303,8 @@ const EXHIBITIONS = [
     "focus": "东盟最大B2B汽配展，4万㎡/1405展商/31国，同期紧固件/轮胎/EV展",
     "audience": "汽配、轮胎、紧固件、EV零部件和东盟渠道采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.inapa-exhibition.net/"
   },
   {
     "month": 5,
@@ -1257,7 +1317,8 @@ const EXHIBITIONS = [
     "focus": "Automotive IQ主办，18年历史，唯一整合座椅+灯光+显示技术的欧洲峰会",
     "audience": "座椅、内饰、灯光、显示、材料和欧洲OEM/Tier1研发团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.automotive-iq.com/events-vehicle-interiors-technology-summit"
   },
   {
     "month": 5,
@@ -1270,7 +1331,8 @@ const EXHIBITIONS = [
     "focus": "对接川渝新能源主机厂（长安/比亚迪/理想），商用车底盘件",
     "audience": "汽配、商用车底盘、新能源零部件和川渝OEM采购团队",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://capas-chengdu.hk.messefrankfurt.com/chengdu/en.html"
   },
   {
     "month": 5,
@@ -1283,7 +1345,8 @@ const EXHIBITIONS = [
     "focus": "葡萄牙汽配展",
     "audience": "汽配、维修设备、商用车零部件和葡萄牙及伊比利亚渠道采购商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://expomecanica.pt/en/"
   },
   {
     "month": 5,
@@ -1296,7 +1359,8 @@ const EXHIBITIONS = [
     "focus": "亚洲最大机床展之一，31万㎡/2400+展商，含金属成形机床",
     "audience": "机床、金属成形、刀具、自动化和汽车制造工程采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cimtshow.com/"
   },
   {
     "month": 5,
@@ -1309,7 +1373,8 @@ const EXHIBITIONS = [
     "focus": "东盟轮胎及MRO展，7645观众/71国，首办AutoMROtive子展",
     "audience": "轮胎、车轮、维修设备、MRO和东盟售后渠道采购商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.tyrexpoasia.com/"
   },
   {
     "month": 5,
@@ -1322,7 +1387,8 @@ const EXHIBITIONS = [
     "focus": "拉美最大电子元器件展，2万㎡/400+展商，汽车电子专区",
     "audience": "汽车电子、连接器、线束、功率器件和墨西哥制造采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.expoelectrica.com.mx/Es/"
   },
   {
     "month": 5,
@@ -1358,7 +1424,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "WIC 世界智能产业博览会（含智能网联汽车）"
-    ]
+    ],
+    "source": "https://www.wicongress.com/"
   },
   {
     "month": 5,
@@ -1371,7 +1438,8 @@ const EXHIBITIONS = [
     "focus": "400+主机厂及总成企业参会，李尔/延锋/佛瑞亚/安道拓/麦格纳等齐聚",
     "audience": "座椅总成、骨架、面套、发泡和内饰材料采购研发团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.eacexpo.com/"
   },
   {
     "month": 5,
@@ -1384,7 +1452,8 @@ const EXHIBITIONS = [
     "focus": "与EAC座椅论坛同期，聚焦碰撞安全/被动安全/约束系统集成",
     "audience": "碰撞安全、约束系统、主动安全和整车安全工程团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.eacexpo.com/"
   },
   {
     "month": 5,
@@ -1397,7 +1466,8 @@ const EXHIBITIONS = [
     "focus": "奇瑞/蔚来/小鹏等齐聚，AI赋能NVH/ANC/声品质等核心议题",
     "audience": "NVH、ANC、声品质、音频系统和整车研发采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.eacexpo.com/"
   },
   {
     "month": 5,
@@ -1410,7 +1480,8 @@ const EXHIBITIONS = [
     "focus": "600+主机厂设计领袖参会，与座椅/安全论坛同期",
     "audience": "汽车设计、CMF、内饰材料、色彩趋势和品牌创新团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.eacexpo.com/"
   },
   {
     "month": 5,
@@ -1423,7 +1494,8 @@ const EXHIBITIONS = [
     "focus": "英国领先塑料展，含汽车模具/医疗模具精密解决方案",
     "audience": "塑料、橡胶、模具、注塑设备和汽车零部件制造采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://interplasuk.com/"
   },
   {
     "month": 6,
@@ -1436,7 +1508,8 @@ const EXHIBITIONS = [
     "focus": "欧洲EV热管理专业峰会，Valeo/Ford/Stellantis等OEM技术负责人演讲",
     "audience": "热管理、空调、冷却系统、材料和欧洲OEM/Tier1研发团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.ecv-events.com/EEVTMS"
   },
   {
     "month": 6,
@@ -1449,7 +1522,8 @@ const EXHIBITIONS = [
     "focus": "氢能与燃料电池展",
     "audience": "燃料电池、电堆、储氢、制氢设备和新能源商用车采购团队",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.snec-h2.com/"
   },
   {
     "month": 6,
@@ -1462,7 +1536,8 @@ const EXHIBITIONS = [
     "focus": "北美表面处理旗舰展，NASF主办，汽车/电动化/电力应用",
     "audience": "电镀、涂装、表面处理、环保设备和北美汽车制造客户",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.nasfsurfin.com/"
   },
   {
     "month": 6,
@@ -1475,7 +1550,8 @@ const EXHIBITIONS = [
     "focus": "1200+参会者，600+商务配对会，北美汽车供应链核心对接平台",
     "audience": "汽车物流、跨境运输、仓储、采购和供应链软件服务商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://road2logistics.com/"
   },
   {
     "month": 6,
@@ -1488,7 +1564,8 @@ const EXHIBITIONS = [
     "focus": "1800+展位/360+参展单位，含道路交通安全专题展区",
     "audience": "交通安全、道路设施、车路协同、智能交通和政府项目采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.intertraffic.com/china/"
   },
   {
     "month": 5,
@@ -1501,7 +1578,8 @@ const EXHIBITIONS = [
     "focus": "英国汽修/钣金展",
     "audience": "维修厂、车身修复、喷涂、诊断设备和英国售后渠道团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://garageandbodyshopevent.uk/"
   },
   {
     "month": 6,
@@ -1514,7 +1592,8 @@ const EXHIBITIONS = [
     "focus": "科隆轮胎展",
     "audience": "轮胎、车轮、橡胶材料、翻新设备和欧洲经销商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.thetirecologne.com/"
   },
   {
     "month": 6,
@@ -1598,7 +1677,8 @@ const EXHIBITIONS = [
     "focus": "双馆扩容至2.5万㎡，400+品牌，设成品油/海外品牌专区，亚洲最大润滑油专业展",
     "audience": "润滑油、基础油、添加剂、金属加工液和汽车工业采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.interlubric.com/"
   },
   {
     "month": 6,
@@ -1625,7 +1705,8 @@ const EXHIBITIONS = [
     "focus": "UFI认证表面处理展，2万㎡/400+展商/3万观众，19届",
     "audience": "电镀、涂装、表面处理材料、环保设备和汽车制造客户",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.sf-expo.com/"
   },
   {
     "month": 6,
@@ -1638,7 +1719,8 @@ const EXHIBITIONS = [
     "focus": "日本专业车灯技术展，聚焦LED/激光/OLED尾灯等前沿方案",
     "audience": "车灯、光学、LED、智能照明、模具和日系汽车供应链团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.automotiveworld.jp/nagoya/en-gb.html"
   },
   {
     "month": 6,
@@ -1665,7 +1747,8 @@ const EXHIBITIONS = [
     "focus": "东南亚润滑油旗舰B2B平台，与INAPA汽配展同期，覆盖EV专用液/生物基润滑油",
     "audience": "润滑油、添加剂、养护品、维修设备和印尼渠道开发团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.lube-indonesia.com/"
   },
   {
     "month": 6,
@@ -1739,7 +1822,8 @@ const EXHIBITIONS = [
     "focus": "西南最大车展",
     "audience": "整车品牌、西南经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.cqautofair.com/"
   },
   {
     "month": 6,
@@ -1752,7 +1836,8 @@ const EXHIBITIONS = [
     "focus": "广西-东盟车展",
     "audience": "整车品牌、广西及东盟经销商、汽配出口商和区域渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.nnautoexpo.com/"
   },
   {
     "month": 6,
@@ -1793,7 +1878,8 @@ const EXHIBITIONS = [
     "focus": "欧洲汽车NVH顶级会议，25周年，68篇论文，Bose/Mercedes/Geely等主题演讲",
     "audience": "NVH、声学、振动、测试验证和汽车舒适性研发团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.isnvh.com/"
   },
   {
     "month": 6,
@@ -1806,7 +1892,8 @@ const EXHIBITIONS = [
     "focus": "智利汽配展",
     "audience": "汽配、维修设备、商用车零部件和智利及南美渠道采购商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.motortec-chile.cl/"
   },
   {
     "month": 6,
@@ -1819,7 +1906,8 @@ const EXHIBITIONS = [
     "focus": "汽车产业链创新技术",
     "audience": "整车、动力电池、电驱、智能驾驶、汽车电子和武汉汽车产业链采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whautotech.com/"
   },
   {
     "month": 6,
@@ -1832,7 +1920,8 @@ const EXHIBITIONS = [
     "focus": "汽车人机界面设计展",
     "audience": "智能座舱、HMI、车载显示、交互设计、软件和欧洲OEM/Tier1研发团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.automotive-iq.com/events/car-hmi-europe"
   },
   {
     "month": 6,
@@ -1845,7 +1934,8 @@ const EXHIBITIONS = [
     "focus": "18万㎡，1200家展商，50万观众，西南最大车展",
     "audience": "整车品牌、西南经销商、汽车服务商、区域渠道和终端购车用户",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.cqautofair.com/"
   },
   {
     "month": 6,
@@ -1858,7 +1948,8 @@ const EXHIBITIONS = [
     "focus": "杭州消费车展",
     "audience": "整车品牌、杭州及长三角经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cmsauto.cn/"
   },
   {
     "month": 6,
@@ -1871,7 +1962,8 @@ const EXHIBITIONS = [
     "focus": "武汉消费车展",
     "audience": "整车品牌、湖北经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cmsauto.cn/"
   },
   {
     "month": 6,
@@ -1884,7 +1976,8 @@ const EXHIBITIONS = [
     "focus": "无锡消费车展",
     "audience": "整车品牌、无锡及苏南经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.cmsauto.cn/"
   },
   {
     "month": 6,
@@ -1897,7 +1990,8 @@ const EXHIBITIONS = [
     "focus": "设智能汽车供应链专区，CATL/小鹏/博世等参展，覆盖芯片/域控/跨境物流",
     "audience": "整车与零部件采购、供应链管理、汽车物流、芯片、域控和跨境贸易团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cisce.org.cn/"
   },
   {
     "month": 6,
@@ -1910,7 +2004,8 @@ const EXHIBITIONS = [
     "focus": "南京消费车展",
     "audience": "整车品牌、南京及苏皖经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cmsauto.cn/"
   },
   {
     "month": 6,
@@ -1923,7 +2018,8 @@ const EXHIBITIONS = [
     "focus": "福州消费车展",
     "audience": "整车品牌、福建及海峡西岸经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.fzautoexpo.com/"
   },
   {
     "month": 6,
@@ -1936,7 +2032,8 @@ const EXHIBITIONS = [
     "focus": "汽车测试验证+内饰技术展，ADAS/NVH/碰撞/材料",
     "audience": "汽车测试、ADAS验证、NVH、内饰材料、质量工程和欧洲OEM/Tier1采购团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.testing-expo.com/uk/"
   },
   {
     "month": 6,
@@ -1957,7 +2054,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Automotive Testing Expo Europe（含ADAS测试）"
-    ]
+    ],
+    "source": "https://www.testing-expo.com/europe/en/"
   },
   {
     "month": 6,
@@ -1970,7 +2068,8 @@ const EXHIBITIONS = [
     "focus": "面积2万㎡，350+展商，欧洲旗舰级ADAS专业展，含测试/验证/仿真专区",
     "audience": "ADAS、自动驾驶、传感器、仿真、功能安全和欧洲OEM/Tier1研发采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.adas-autonomous-vehicle-technology-expo.com/"
   },
   {
     "month": 6,
@@ -1983,7 +2082,8 @@ const EXHIBITIONS = [
     "focus": "欧洲最大汽车内饰专业展，覆盖材料/设计/技术，与Vehicle Tech Week联动",
     "audience": "汽车座椅、内饰材料、表皮、智能内饰、CMF和欧洲OEM/Tier1采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://automotive-interiors-expo.com/"
   },
   {
     "month": 6,
@@ -1996,7 +2096,8 @@ const EXHIBITIONS = [
     "focus": "覆盖碰撞测试/NVH/ADAS验证/排放检测，300+展商",
     "audience": "汽车安全、碰撞测试、制动、ADAS验证、排放和质量工程采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.testing-expo.com/europe/en/"
   },
   {
     "month": 6,
@@ -2009,7 +2110,8 @@ const EXHIBITIONS = [
     "focus": "涵盖锻造/冲压/钣金全领域，同期举办行业大会与采购对接",
     "audience": "冲压、锻造、钣金、模具、金属材料和汽车零部件制造采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.metalformchina.com/"
   },
   {
     "month": 6,
@@ -2022,7 +2124,8 @@ const EXHIBITIONS = [
     "focus": "巴西橡胶展",
     "audience": "橡胶材料、轮胎、密封件、胶粘剂、加工设备和南美汽车供应链采购商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.expobor.com.br/"
   },
   {
     "month": 6,
@@ -2035,7 +2138,8 @@ const EXHIBITIONS = [
     "focus": "台州汽配产业集群核心展",
     "audience": "汽配制造商、发动机件、底盘件、车身件、售后渠道和出口采购商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.tzqcp.com/"
   },
   {
     "month": 6,
@@ -2048,7 +2152,8 @@ const EXHIBITIONS = [
     "focus": "中部地区汽车后市场展",
     "audience": "汽配、维修设备、养护品、汽车美容、经销商和中部区域渠道采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.zzqch.com/"
   },
   {
     "month": 6,
@@ -2061,7 +2166,8 @@ const EXHIBITIONS = [
     "focus": "国际驱动与传动技术大会，热管理为核心议题之一，Hilite等参展",
     "audience": "电驱、传动、热管理、功率电子、系统工程和欧洲OEM/Tier1研发团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.dritev.com/"
   },
   {
     "month": 7,
@@ -2074,7 +2180,8 @@ const EXHIBITIONS = [
     "focus": "慕尼黑上海电子展，车载电子/传感器/半导体",
     "audience": "车规芯片、传感器、连接器、功率电子、嵌入式系统和汽车电子采购团队",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://electronica-china.com.cn/en/"
   },
   {
     "month": 7,
@@ -2087,7 +2194,8 @@ const EXHIBITIONS = [
     "focus": "亚洲第一/全球第二模具展，10万㎡/1025展商，UFI成员，创办于1986年",
     "audience": "模具、冲压、注塑、压铸、机加工、汽车零部件和制造工程采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.diemouldchina.com/"
   },
   {
     "month": 7,
@@ -2100,7 +2208,8 @@ const EXHIBITIONS = [
     "focus": "亚洲顶级电子元器件展，6.5万观众，汽车连接器/线束为重点板块",
     "audience": "连接器、线束、PCB、传感器、半导体和汽车电子OEM/Tier1采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://electronica-china.com.cn/en/"
   },
   {
     "month": 7,
@@ -2113,7 +2222,8 @@ const EXHIBITIONS = [
     "focus": "泰国新能源+自动驾驶",
     "audience": "新能源整车、动力电池、充电、自动驾驶、车队和东盟渠道团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.evautothailand.com/"
   },
   {
     "month": 7,
@@ -2126,7 +2236,8 @@ const EXHIBITIONS = [
     "focus": "10万㎡，面向中亚市场",
     "audience": "整车品牌、新能源汽车、经销商、汽配出口商和中亚市场渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.xjautoexpo.com/"
   },
   {
     "month": 7,
@@ -2139,7 +2250,8 @@ const EXHIBITIONS = [
     "focus": "新能源+智能网联",
     "audience": "新能源整车、动力电池、智能驾驶、充电设施和智慧出行采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.nevexpo.cn/"
   },
   {
     "month": 7,
@@ -2152,7 +2264,8 @@ const EXHIBITIONS = [
     "focus": "欧洲精密冲压专业展，聚焦高效成型与精密智造",
     "audience": "精密冲压、金属成形、模具、自动化和汽车零部件制造工程团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.stanztec-messe.de/en/"
   },
   {
     "month": 7,
@@ -2165,7 +2278,8 @@ const EXHIBITIONS = [
     "focus": "聚焦镁基新材料，与铝业/铜业展同期，6万㎡/650+展商/3.5万观众",
     "audience": "镁合金、轻量化材料、压铸、结构件和汽车材料采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.magnesium-expo.com/"
   },
   {
     "month": 7,
@@ -2178,7 +2292,8 @@ const EXHIBITIONS = [
     "focus": "汽车涂装工程核心展，AI+数字化+绿色CMF涂装解决方案",
     "audience": "汽车冲焊涂总、涂装工程、自动化、工艺装备和OEM/Tier1制造采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.amts.com.cn/"
   },
   {
     "month": 7,
@@ -2191,7 +2306,8 @@ const EXHIBITIONS = [
     "focus": "覆盖冲焊涂总全流程，AGV/AMR/智能线边物流为热门展区",
     "audience": "汽车工厂物流、AGV/AMR、仓储、线边配送和制造工程采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.amts.com.cn/"
   },
   {
     "month": 7,
@@ -2204,7 +2320,8 @@ const EXHIBITIONS = [
     "focus": "亚洲唯一汽车轻量化专业展，680+展商/6万㎡/3.6万观众",
     "audience": "轻量化材料、铝镁合金、复合材料、一体化压铸和汽车结构件采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.lightweight-asia.com/"
   },
   {
     "month": 7,
@@ -2217,7 +2334,8 @@ const EXHIBITIONS = [
     "focus": "8万㎡，850家展商，汽车制造装备旗舰展",
     "audience": "整车厂、Tier1、制造工程、工艺装备、自动化和汽车材料采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.amts.com.cn/"
   },
   {
     "month": 7,
@@ -2230,7 +2348,8 @@ const EXHIBITIONS = [
     "focus": "汽车轻量化材料/技术",
     "audience": "轻量化材料、结构件、连接技术、压铸和汽车研发采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.lightweight-asia.com/"
   },
   {
     "month": 7,
@@ -2243,7 +2362,8 @@ const EXHIBITIONS = [
     "focus": "墨西哥汽配展",
     "audience": "汽配、维修设备、商用车零部件、进口商和墨西哥及拉美区域经销商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://automechanika.messefrankfurt.com/mexico/en.html"
   },
   {
     "month": 7,
@@ -2256,7 +2376,8 @@ const EXHIBITIONS = [
     "focus": "东北最大车展",
     "audience": "整车品牌、东北经销商、新能源汽车、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.ccautoexpo.com/"
   },
   {
     "month": 7,
@@ -2269,7 +2390,8 @@ const EXHIBITIONS = [
     "focus": "西北最大车展",
     "audience": "整车品牌、西北经销商、新能源汽车、汽车服务商和区域渠道团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.xianautoexpo.com/"
   },
   {
     "month": 7,
@@ -2282,7 +2404,8 @@ const EXHIBITIONS = [
     "focus": "海南自贸港车展",
     "audience": "新能源整车、充电设施、海南经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hainanautoexpo.com/"
   },
   {
     "month": 7,
@@ -2295,7 +2418,8 @@ const EXHIBITIONS = [
     "focus": "房车露营展",
     "audience": "房车整车、底盘、改装件、露营装备、经销商和房车用户渠道团队",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.rvhome.com.cn/"
   },
   {
     "month": 7,
@@ -2308,7 +2432,8 @@ const EXHIBITIONS = [
     "focus": "拉丁美洲轮胎汽配展",
     "audience": "轮胎、车轮、汽配、维修设备和中美洲渠道开发团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.latintyreautopartsexpo.com/"
   },
   {
     "month": 7,
@@ -2321,7 +2446,8 @@ const EXHIBITIONS = [
     "focus": "最大压铸行业展，一体化压铸为热点，Nemak等全球巨头参展",
     "audience": "压铸、铸造、铝镁合金、一体化成型、模具和汽车结构件采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.metalchina.com/"
   },
   {
     "month": 7,
@@ -2334,7 +2460,8 @@ const EXHIBITIONS = [
     "focus": "东北最大车展",
     "audience": "整车品牌、东北经销商、新能源汽车、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.ccautoexpo.com/"
   },
   {
     "month": 8,
@@ -2347,7 +2474,8 @@ const EXHIBITIONS = [
     "focus": "电动车/三轮车零部件",
     "audience": "电动车、三轮车、动力电池、电机、电控、零部件制造商和区域经销商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.zzevexpo.com/"
   },
   {
     "month": 7,
@@ -2360,7 +2488,8 @@ const EXHIBITIONS = [
     "focus": "西南消费车展",
     "audience": "整车品牌、西南经销商、新能源汽车、汽车服务商和区域渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.kmautoexpo.com/"
   },
   {
     "month": 7,
@@ -2387,7 +2516,8 @@ const EXHIBITIONS = [
     "focus": "中东汽配门户，1.9万买家/2.1亿美元意向成交，含轮胎轮毂/刹车",
     "audience": "轮胎、轮毂、制动、底盘件、汽配外贸和中东代理商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.metas-expo.com/"
   },
   {
     "month": 8,
@@ -2400,7 +2530,8 @@ const EXHIBITIONS = [
     "focus": "2000+工厂集合展，玉环/瑞安/孟河/十堰产业集群直采",
     "audience": "汽配工厂、底盘件、车身件、车灯、改装件和海外渠道采购商",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.apexpo.com.cn/"
   },
   {
     "month": 8,
@@ -2413,7 +2544,8 @@ const EXHIBITIONS = [
     "focus": "6万㎡，2000+展商，\"中国汽配出海第一展\"",
     "audience": "汽配制造商、出口贸易商、跨境渠道、海外买家和区域代理商",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.apexpo.com.cn/"
   },
   {
     "month": 8,
@@ -2426,7 +2558,8 @@ const EXHIBITIONS = [
     "focus": "北美房车后市场大会",
     "audience": "房车零部件、改装、维修、经销商和北美售后渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.rvaftermarket.com/"
   },
   {
     "month": 8,
@@ -2439,7 +2572,8 @@ const EXHIBITIONS = [
     "focus": "东北消费车展",
     "audience": "整车品牌、东北经销商、新能源汽车、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hrbautoexpo.com/"
   },
   {
     "month": 8,
@@ -2452,7 +2586,8 @@ const EXHIBITIONS = [
     "focus": "纯出口导向，5.1万㎡/2029展商/100+国买家，跨境电商对接",
     "audience": "汽配出口工厂、跨境电商、海外买家、区域经销商和汽车后市场渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.capafair.com/"
   },
   {
     "month": 8,
@@ -2465,7 +2600,8 @@ const EXHIBITIONS = [
     "focus": "拉美轮胎市场核心平台，1万㎡/195家展商，辐射中美洲及加勒比",
     "audience": "轮胎、车轮、橡胶材料、售后服务和拉美区域代理商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.latintyreautopartsexpo.com/"
   },
   {
     "month": 8,
@@ -2478,7 +2614,8 @@ const EXHIBITIONS = [
     "focus": "全球最具规模汽车内外饰展，7万㎡/1200+展商/8万+观众，UFI认证",
     "audience": "汽车内外饰、座椅、表皮、材料、CMF、智能座舱和OEM/Tier1采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.ciaie.com/"
   },
   {
     "month": 8,
@@ -2491,7 +2628,8 @@ const EXHIBITIONS = [
     "focus": "500人规模，聚焦零重力座椅/轻量化/智能化，与CIAIE同期",
     "audience": "座椅总成、骨架、面套、发泡、面料、舒适性和整车厂研发采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ciaie.com/"
   },
   {
     "month": 8,
@@ -2504,7 +2642,8 @@ const EXHIBITIONS = [
     "focus": "聚焦NVH+音频声学全链条，300+展商，与CIAIE同期集群效应",
     "audience": "NVH、声学、扬声器、主动降噪、测试设备和汽车舒适性研发采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://global.cotv.tv/expo/24162"
   },
   {
     "month": 8,
@@ -2517,7 +2656,8 @@ const EXHIBITIONS = [
     "focus": "300人规模，聚焦色彩/表皮材料/触控/感知/轻量化设计",
     "audience": "CMF设计、材料、表皮、触控、氛围灯和整车设计研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ciaie.com/"
   },
   {
     "month": 8,
@@ -2530,7 +2670,8 @@ const EXHIBITIONS = [
     "focus": "宁波汽配产业集群",
     "audience": "汽配制造商、汽车电子、底盘件、车身件、售后渠道和出口采购商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.capafair.com/"
   },
   {
     "month": 8,
@@ -2543,7 +2684,8 @@ const EXHIBITIONS = [
     "focus": "汽车创新技术",
     "audience": "整车、Tier1、汽车电子、智能驾驶、三电和汽车研发采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://sh.iatwchina.com/"
   },
   {
     "month": 8,
@@ -2556,7 +2698,8 @@ const EXHIBITIONS = [
     "focus": "测试/质量监控",
     "audience": "新能源汽车、动力电池、电驱、测试设备、实验室和质量工程团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.auto-testing-expo.com/"
   },
   {
     "month": 8,
@@ -2569,7 +2712,8 @@ const EXHIBITIONS = [
     "focus": "12万㎡，372家展商",
     "audience": "整车品牌、东北经销商、新能源汽车、汽车服务商和区域渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.dalianautoexpo.com/"
   },
   {
     "month": 8,
@@ -2582,7 +2726,8 @@ const EXHIBITIONS = [
     "focus": "4.1万㎡，俄罗斯/独联体汽配核心展",
     "audience": "汽配、维修设备、商用车零部件和俄罗斯/独联体渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://interauto.ru/en/"
   },
   {
     "month": 8,
@@ -2595,7 +2740,8 @@ const EXHIBITIONS = [
     "focus": "10万㎡，1000家展商，西北消费车展",
     "audience": "整车品牌、西北经销商、新能源汽车、汽车服务商和区域渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.lanzhouautoexpo.com/"
   },
   {
     "month": 8,
@@ -2608,7 +2754,8 @@ const EXHIBITIONS = [
     "focus": "8万㎡/1550展商，华南改装+东南亚跨境，轮毂/车灯/美容",
     "audience": "汽配制造商、改装件、车灯、轮毂、美容养护和东南亚渠道采购商",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.aag.org.cn/en/"
   },
   {
     "month": 8,
@@ -2621,7 +2768,8 @@ const EXHIBITIONS = [
     "focus": "8万㎡，英国市场主流车展",
     "audience": "整车品牌、经销商、汽车服务商和英国消费市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://thebritishmotorshow.live/"
   },
   {
     "month": 8,
@@ -2634,7 +2782,8 @@ const EXHIBITIONS = [
     "focus": "8.5万㎡，1850家展商，辐射东南亚，华南最大汽配外贸平台",
     "audience": "汽配工厂、改装件、轮毂车灯、维修连锁、海外买家和东南亚渠道团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.aag.org.cn/en/"
   },
   {
     "month": 8,
@@ -2647,7 +2796,8 @@ const EXHIBITIONS = [
     "focus": "汽车后市场全产业链",
     "audience": "汽配生产商、汽车维修连锁、经销商、跨境采购商和后市场渠道团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.gfaae.com/"
   },
   {
     "month": 8,
@@ -2660,7 +2810,8 @@ const EXHIBITIONS = [
     "focus": "新能源电动车/三轮车零部件",
     "audience": "电动车、三轮车、动力电池、电机、电控和区域经销商采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.jnevexpo.com/"
   },
   {
     "month": 7,
@@ -2673,7 +2824,8 @@ const EXHIBITIONS = [
     "focus": "房车+改装",
     "audience": "房车厂商、改装厂、户外装备品牌、车主和房车营地渠道",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.rvshow-sh.com/"
   },
   {
     "month": 8,
@@ -2686,7 +2838,8 @@ const EXHIBITIONS = [
     "focus": "5万㎡，600家展商",
     "audience": "整车品牌、宁波及华东经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.nbautoexpo.com/"
   },
   {
     "month": 8,
@@ -2699,7 +2852,8 @@ const EXHIBITIONS = [
     "focus": "7.3万㎡/1928展商，东欧最大汽配展",
     "audience": "汽配外贸、维修设备、商用车零部件和东欧区域代理商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://eng.mims.ru/"
   },
   {
     "month": 8,
@@ -2726,7 +2880,8 @@ const EXHIBITIONS = [
     "focus": "聚焦ADAS售后校准与服务，行业高层闭门会议形式",
     "audience": "ADAS校准、诊断设备、维修连锁、保险和北美售后服务商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.adas-symposium.com/"
   },
   {
     "month": 8,
@@ -2739,7 +2894,8 @@ const EXHIBITIONS = [
     "focus": "东南亚改装文化核心展，EV改装/轮毂/车灯",
     "audience": "改装件、车灯、轮毂、性能件和东南亚区域经销商",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.bangkokautosalon.com/"
   },
   {
     "month": 8,
@@ -2766,7 +2922,8 @@ const EXHIBITIONS = [
     "focus": "中国汽车测试20周年旗舰展，5万㎡/330+展商，新能源/SDV/ADAS",
     "audience": "整车厂、Tier 1、测试设备商、认证机构和研发验证团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.testing-expo.com/"
   },
   {
     "month": 8,
@@ -2779,7 +2936,8 @@ const EXHIBITIONS = [
     "focus": "面积2万㎡，350家展商，北美ADAS技术核心平台",
     "audience": "ADAS、自动驾驶、传感器、仿真测试、芯片和北美OEM/Tier1团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.adasautonomousvehicletechnologyexpo.com/"
   },
   {
     "month": 8,
@@ -2792,7 +2950,8 @@ const EXHIBITIONS = [
     "focus": "展会20周年，330+展商，7500+专业观众，聚焦ADAS/SDV/电池测试",
     "audience": "ADAS、SDV、动力电池、仿真软件和测试设备采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.testing-expo.com/"
   },
   {
     "month": 8,
@@ -2805,7 +2964,8 @@ const EXHIBITIONS = [
     "focus": "全球领先汽车测试展，300+展商，涵盖NVH/ADAS/EMC/耐久等",
     "audience": "NVH、EMC、耐久、碰撞和整车验证工程团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.testing-expo.com/"
   },
   {
     "month": 8,
@@ -2818,7 +2978,8 @@ const EXHIBITIONS = [
     "focus": "安道拓联合盖世汽车举办，聚焦座椅舒适/轻量化/智能/结构创新",
     "audience": "座椅厂商、汽车内饰供应商、材料商和整车厂采购研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.adient.com/"
   },
   {
     "month": 8,
@@ -2838,7 +2999,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "ICH2026深圳国际连接器/线缆线束加工展览会"
-    ]
+    ],
+    "source": "https://www.ich-expo.com/"
   },
   {
     "month": 8,
@@ -2851,7 +3013,8 @@ const EXHIBITIONS = [
     "focus": "汽车测试专业展",
     "audience": "整车厂质量、测试认证、实验室和汽车零部件研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.auto-testing-expo.com/"
   },
   {
     "month": 6,
@@ -2864,7 +3027,8 @@ const EXHIBITIONS = [
     "focus": "瑞士汽车展",
     "audience": "汽配、维修设备、汽车服务商和瑞士区域经销商",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.suisse-automotive-show.ch/"
   },
   {
     "month": 8,
@@ -2877,7 +3041,8 @@ const EXHIBITIONS = [
     "focus": "面向中亚/新疆市场",
     "audience": "新能源整车、摩托车、零部件、区域经销商和中亚贸易商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.kashiautoexpo.com/"
   },
   {
     "month": 8,
@@ -2890,7 +3055,8 @@ const EXHIBITIONS = [
     "focus": "15万㎡，300家展商，63.8万观众，西部第一车展",
     "audience": "整车品牌、区域经销商、汽车服务商和西部市场渠道团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.cdmotorshow.com/"
   },
   {
     "month": 8,
@@ -2903,7 +3069,8 @@ const EXHIBITIONS = [
     "focus": "湖南消费车展",
     "audience": "整车品牌、湖南经销商、金融保险和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.csautoexpo.com/"
   },
   {
     "month": 9,
@@ -2916,7 +3083,8 @@ const EXHIBITIONS = [
     "focus": "德国区域汽配技术展",
     "audience": "德国独立维修厂、汽配经销商、诊断设备和售后品牌",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.aag-technik.de/"
   },
   {
     "month": 9,
@@ -2929,7 +3097,8 @@ const EXHIBITIONS = [
     "focus": "亚太领先轮胎轮毂展，4万㎡/400+展商，海外买家覆盖140+国家",
     "audience": "轮胎、轮毂、橡胶制品、轮胎设备和海外分销渠道采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.citexpo.com.cn/"
   },
   {
     "month": 9,
@@ -2942,7 +3111,8 @@ const EXHIBITIONS = [
     "focus": "含铝合金/锻造/钢制/碳纤维轮毂全品类，海外买家占比50%",
     "audience": "轮毂、车轮、轮胎、底盘件制造商和海外渠道采购商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.citexpo.com.cn/"
   },
   {
     "month": 9,
@@ -2955,7 +3125,8 @@ const EXHIBITIONS = [
     "focus": "聚焦座椅舒适/安全/材料/智造，同期举办希熠奖颁奖",
     "audience": "座椅总成、骨架、面套、发泡、面料和内饰材料供应商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cass-expo.com/"
   },
   {
     "month": 9,
@@ -2968,7 +3139,8 @@ const EXHIBITIONS = [
     "focus": "4万㎡，400+展商，亚太最大轮胎展，海外观众占50%",
     "audience": "轮胎、轮毂、轮胎设备、汽配经销商和国际买家",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.citexpo.com.cn/"
   },
   {
     "month": 9,
@@ -2981,7 +3153,8 @@ const EXHIBITIONS = [
     "focus": "10万㎡，1000家展商",
     "audience": "整车品牌、华东经销商、汽车金融和终端购车用户",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.njautoexpo.com/"
   },
   {
     "month": 9,
@@ -2994,7 +3167,8 @@ const EXHIBITIONS = [
     "focus": "4万㎡，400+展商，亚太最大轮胎展",
     "audience": "轮胎、橡胶、车轮、翻新设备和海外售后渠道采购商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.citexpo.com.cn/"
   },
   {
     "month": 9,
@@ -3014,7 +3188,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "第六届中国（温州）国际汽摩配博览会"
-    ]
+    ],
+    "source": "https://www.wzautoexpo.com/"
   },
   {
     "month": 9,
@@ -3027,7 +3202,8 @@ const EXHIBITIONS = [
     "focus": "8万㎡，900家展商，华北重要车展",
     "audience": "整车品牌、华北经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.tjautoexpo.com/"
   },
   {
     "month": 9,
@@ -3099,7 +3275,8 @@ const EXHIBITIONS = [
     "focus": "意大利区域车展",
     "audience": "整车品牌、经销商、汽车设计和意大利市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.torinoautoshow.com/"
   },
   {
     "month": 9,
@@ -3112,7 +3289,8 @@ const EXHIBITIONS = [
     "focus": "工业机器人/自动化/汽车配套",
     "audience": "自动化设备、动力传动、工装夹具和汽车制造工程采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.xaindustrialexpo.com/"
   },
   {
     "month": 9,
@@ -3125,7 +3303,8 @@ const EXHIBITIONS = [
     "focus": "全球最大汽配展，4400+展商，80+国家，14.8万观众，含Classic Cars/Pit Lane赛车区",
     "audience": "全球汽配、维修设备、零部件、经典车和欧洲渠道采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://automechanika.messefrankfurt.com/frankfurt/en.html"
   },
   {
     "month": 9,
@@ -3138,7 +3317,8 @@ const EXHIBITIONS = [
     "focus": "10万㎡，980家展商",
     "audience": "整车品牌、山东及华东经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.qdautoexpo.com/"
   },
   {
     "month": 9,
@@ -3151,7 +3331,8 @@ const EXHIBITIONS = [
     "focus": "8万㎡，700家展商",
     "audience": "整车品牌、华北经销商、汽车零部件和汽车服务渠道",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.sjzautoexpo.com/"
   },
   {
     "month": 9,
@@ -3164,7 +3345,8 @@ const EXHIBITIONS = [
     "focus": "全球最大商用车展，28.2万㎡/2100展商，卡车/挂车/物流/新能源商用车",
     "audience": "商用车、卡车、挂车、物流设备、车队管理和新能源运输采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.iaa-transportation.com/en"
   },
   {
     "month": 9,
@@ -3177,7 +3359,8 @@ const EXHIBITIONS = [
     "focus": "320+展商来自80+国，欧洲润滑油专业旗舰展，覆盖添加剂/基础油/测试",
     "audience": "润滑油、添加剂、基础油、检测设备和欧洲工业及汽车渠道采购商",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.lubricantexpo.com/"
   },
   {
     "month": 9,
@@ -3190,7 +3373,8 @@ const EXHIBITIONS = [
     "focus": "面积27万㎡，全球商用车/物流旗舰展，VDA主办，两年一届，覆盖自动驾驶/车队管理",
     "audience": "商用车、物流服务、车队软件、自动驾驶和运输设备采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.iaa-transportation.com/en"
   },
   {
     "month": 8,
@@ -3203,7 +3387,8 @@ const EXHIBITIONS = [
     "focus": "覆盖制冷/暖通/冷链技术，车载空调专区",
     "audience": "车载空调、热管理、压缩机、换热器和冷链设备采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.avaichina.com/"
   },
   {
     "month": 9,
@@ -3216,7 +3401,8 @@ const EXHIBITIONS = [
     "focus": "3万㎡，澳洲卡车/商用车展",
     "audience": "卡车、挂车、物流装备、车队运营商和澳大利亚渠道商",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.megatrans.com.au/"
   },
   {
     "month": 9,
@@ -3229,7 +3415,8 @@ const EXHIBITIONS = [
     "focus": "3万观众，印度最快增长电子展，汽车高压连接器为重点品类",
     "audience": "车规芯片、连接器、电子制造设备、PCB和印度本地化采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://electronica-india.com/en/"
   },
   {
     "month": 9,
@@ -3242,7 +3429,8 @@ const EXHIBITIONS = [
     "focus": "7万㎡，950+展商，亚洲最大橡胶展，含汽车密封件/减震件",
     "audience": "轮胎、橡胶材料、密封件、减震件和汽车橡胶制品采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.rubbertech-expo.com/"
   },
   {
     "month": 9,
@@ -3255,7 +3443,8 @@ const EXHIBITIONS = [
     "focus": "广西-东盟车展",
     "audience": "整车品牌、广西及东盟经销商、汽配出口商和区域渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.lzautoexpo.com/"
   },
   {
     "month": 9,
@@ -3268,7 +3457,8 @@ const EXHIBITIONS = [
     "focus": "全球最大商用车/运输展，14.4万观众，1699家展商，116国报道",
     "audience": "商用车、物流、运输软件、车队运营和国际贸易采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.iaa-transportation.com/en"
   },
   {
     "month": 9,
@@ -3281,7 +3471,8 @@ const EXHIBITIONS = [
     "focus": "4.5万㎡/600+展商，紧固连接+弹簧全产业链",
     "audience": "紧固件、螺栓螺母、弹簧、连接工艺和汽车制造采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whfastener.com/"
   },
   {
     "month": 9,
@@ -3294,7 +3485,8 @@ const EXHIBITIONS = [
     "focus": "汽车轻量化核心展，5.2万㎡/680+展商，覆盖材料-工艺-部件全链",
     "audience": "轻量化材料、铝镁合金、压铸、复合材料和汽车结构件采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whlightweight.com/"
   },
   {
     "month": 9,
@@ -3307,7 +3499,8 @@ const EXHIBITIONS = [
     "focus": "聚焦新能源汽车与智能驾驶测试验证技术",
     "audience": "新能源、智能驾驶、测试设备、实验室、认证机构和整车验证团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whautotest.com/"
   },
   {
     "month": 9,
@@ -3320,7 +3513,8 @@ const EXHIBITIONS = [
     "focus": "中国汽配源头工厂展，3万㎡/1000+家，底盘制动件为核心品类",
     "audience": "底盘件、制动件、发动机件、车身件制造商和海外汽配采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.acape.com.cn/"
   },
   {
     "month": 9,
@@ -3333,7 +3527,8 @@ const EXHIBITIONS = [
     "focus": "面积1.5万㎡，200+展商，华中最大智能座舱专业展，覆盖域控/HMI/AR-HUD",
     "audience": "智能座舱、车载显示、HMI、HUD、座舱芯片和OEM/Tier1采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wicde.com/"
   },
   {
     "month": 9,
@@ -3346,7 +3541,8 @@ const EXHIBITIONS = [
     "focus": "面积3.5万㎡，450+展商，设200米实景演示长廊，华中车灯旗舰展",
     "audience": "车灯、LED、光学、智能照明、模具和整车厂/Tier1采购研发团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wale-expo.com/"
   },
   {
     "month": 9,
@@ -3359,7 +3555,8 @@ const EXHIBITIONS = [
     "focus": "27000㎡/210+展商，覆盖整车NVH/三电测试/EMC等",
     "audience": "NVH、EMC、耐久、三电测试、测量系统和整车验证采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whautotest.com/"
   },
   {
     "month": 9,
@@ -3372,7 +3569,8 @@ const EXHIBITIONS = [
     "focus": "52000㎡/680+展商/6万观众，聚焦材料革新/结构创新/工艺升级",
     "audience": "轻量化材料、成形、一体化压铸、多材料连接和整车研发团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.whlightweight.com/"
   },
   {
     "month": 9,
@@ -3385,7 +3583,8 @@ const EXHIBITIONS = [
     "focus": "10万㎡/1200+展商，泰科/安费诺等参展，辐射中部汽车产业集群",
     "audience": "连接器、线束、端子、线材、加工设备和车规电子采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wireharness-expo.com/"
   },
   {
     "month": 9,
@@ -3398,7 +3597,8 @@ const EXHIBITIONS = [
     "focus": "线束专业展，\"展会+论坛+晚宴\"模式",
     "audience": "线束制造、连接器、端子、线束设备、质量和汽车电子采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.chinawireharness.com/"
   },
   {
     "month": 9,
@@ -3411,7 +3611,8 @@ const EXHIBITIONS = [
     "focus": "法兰克福品牌首届印尼展，1.5万㎡，中高端定位",
     "audience": "汽配、维修设备、商用车零部件、进口商和印尼及东盟区域经销商",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://automechanika-jakarta.hk.messefrankfurt.com/jakarta/en.html"
   },
   {
     "month": 9,
@@ -3424,7 +3625,8 @@ const EXHIBITIONS = [
     "focus": "10万㎡（三展联动），泰科/安费诺等头部企业参展",
     "audience": "线束加工设备、连接器、端子、线材和汽车电子渠道采购商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wireharness-expo.com/"
   },
   {
     "month": 9,
@@ -3437,7 +3639,8 @@ const EXHIBITIONS = [
     "focus": "玉环汽配产业集群",
     "audience": "汽配制造商、底盘件、制动件、发动机件、出口贸易商和海外采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.acape.com.cn/"
   },
   {
     "month": 9,
@@ -3450,7 +3653,8 @@ const EXHIBITIONS = [
     "focus": "中国新能源汽车顶层学术/产业大会",
     "audience": "整车、动力电池、电驱、充电、政策研究和新能源产业投资团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.wnevc.org.cn/CN/home/"
   },
   {
     "month": 9,
@@ -3463,7 +3667,8 @@ const EXHIBITIONS = [
     "focus": "汽车制造+智能装备",
     "audience": "汽车制造装备、冲焊涂总、自动化、工装、质量和生产工程采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.whmtexpo.com/"
   },
   {
     "month": 9,
@@ -3476,7 +3681,8 @@ const EXHIBITIONS = [
     "focus": "与武汉汽车制造技术展同期",
     "audience": "车规芯片、传感器、连接器、车载电子、域控和整车厂/Tier1采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.auto-electronics-expo.com/"
   },
   {
     "month": 9,
@@ -3519,7 +3725,8 @@ const EXHIBITIONS = [
     "focus": "苏北消费车展",
     "audience": "整车品牌、苏北经销商、新能源汽车、汽车服务商和区域渠道团队",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.ycautoexpo.com/"
   },
   {
     "month": 9,
@@ -3532,7 +3739,8 @@ const EXHIBITIONS = [
     "focus": "地方消费车展",
     "audience": "整车品牌、湖北经销商、新能源汽车、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.jzautoexpo.com/"
   },
   {
     "month": 9,
@@ -3545,7 +3753,8 @@ const EXHIBITIONS = [
     "focus": "柬埔寨汽配及售后展",
     "audience": "汽配、维修设备、摩托车零部件和柬埔寨渠道开发团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://camauto.org/"
   },
   {
     "month": 9,
@@ -3558,7 +3767,8 @@ const EXHIBITIONS = [
     "focus": "北美轮胎制造技术旗舰展，2.5万㎡/450家展商",
     "audience": "轮胎材料、轮胎设备、橡胶加工、测试和北美工厂采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.itec-tire.com/"
   },
   {
     "month": 10,
@@ -3571,7 +3781,8 @@ const EXHIBITIONS = [
     "focus": "6万㎡，380家展商",
     "audience": "整车品牌、湖北及华中经销商、新能源汽车、汽车服务商和区域渠道团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.whautoexpo.com/"
   },
   {
     "month": 10,
@@ -3584,7 +3795,8 @@ const EXHIBITIONS = [
     "focus": "广西消费车展",
     "audience": "整车品牌、广西及东盟经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.gxautoexpo.com/"
   },
   {
     "month": 10,
@@ -3597,7 +3809,8 @@ const EXHIBITIONS = [
     "focus": "10万㎡，1000家展商",
     "audience": "整车品牌、福建及海峡西岸经销商、新能源汽车和区域渠道团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.fzautoexpo.com/"
   },
   {
     "month": 10,
@@ -3608,7 +3821,11 @@ const EXHIBITIONS = [
     "location": "南昌绿地国际博览中心",
     "focus": "江西消费车展",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ncautoexpo.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 南昌绿地国际博览中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3621,7 +3838,8 @@ const EXHIBITIONS = [
     "focus": "欧洲顶级汽车工程学术会议",
     "audience": "动力总成、电驱、智能驾驶、汽车软件和OEM/Tier1研发决策者",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.aachen-colloquium.com/"
   },
   {
     "month": 10,
@@ -3632,7 +3850,11 @@ const EXHIBITIONS = [
     "location": "深圳会展中心（福田）",
     "focus": "8万㎡，700家展商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.szautoshow.com/en/ygaIndex/index.aspx",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 深圳会展中心（福田）",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3643,7 +3865,11 @@ const EXHIBITIONS = [
     "location": "苏州国际博览中心",
     "focus": "10万㎡，1000家展商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.szautoexpo.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 苏州国际博览中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3654,7 +3880,11 @@ const EXHIBITIONS = [
     "location": "湖南国际会展中心（芒果馆）",
     "focus": "10万㎡，980家展商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.csmangocar.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 湖南国际会展中心（芒果馆）",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3667,7 +3897,8 @@ const EXHIBITIONS = [
     "focus": "6万㎡/370展商，俄罗斯最大商用车展",
     "audience": "商用车OEM、卡车零部件、车队、物流和俄罗斯渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://comtrans.moscow/"
   },
   {
     "month": 10,
@@ -3680,7 +3911,8 @@ const EXHIBITIONS = [
     "focus": "全球铝业旗舰展，800+展商/2万+观众，设Surface Pavilion表面处理专区",
     "audience": "铝材、压铸、挤压、表面处理、轻量化和汽车材料采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.aluminium-exhibition.com/"
   },
   {
     "month": 10,
@@ -3784,7 +4016,8 @@ const EXHIBITIONS = [
     "focus": "4万㎡/650展商，北非最大汽配展",
     "audience": "汽配、维修设备、商用车零部件和北非市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://autotechegypt.com/"
   },
   {
     "month": 10,
@@ -3812,7 +4045,8 @@ const EXHIBITIONS = [
     "focus": "五大车展之一，14万㎡/950展商，欧洲EV/概念车首发重镇",
     "audience": "整车品牌、EV供应链、经销商、媒体和欧洲市场调研团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://mondial.paris/en/"
   },
   {
     "month": 10,
@@ -3823,7 +4057,11 @@ const EXHIBITIONS = [
     "location": "中国 上海",
     "focus": "中国工博会核心展，8万㎡/800+企业，智能加工与高端装备",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ciif-expo.com/",
+    "audience": "找材料供应商、找替代材料与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 中国 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3834,7 +4072,11 @@ const EXHIBITIONS = [
     "location": "中国 上海",
     "focus": "30万㎡超大规模，UFI认证，覆盖轻量化材料/核心部件/商用车",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.aluminiumchina.com/",
+    "audience": "找轻量化材料、找成形工艺与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 中国 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3861,7 +4103,8 @@ const EXHIBITIONS = [
     "focus": "中东战后重建汽车市场",
     "audience": "整车品牌、汽配、商用车、经销商和中东渠道开发团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://iraqautoshow.com/"
   },
   {
     "month": 10,
@@ -3874,7 +4117,8 @@ const EXHIBITIONS = [
     "focus": "B2B商务周，与CEATEC同期",
     "audience": "日本OEM/Tier1、移动出行、供应链、技术合作和渠道团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.japan-mobility-show.com/en/"
   },
   {
     "month": 10,
@@ -3885,7 +4129,11 @@ const EXHIBITIONS = [
     "location": "佛山潭洲国际会展中心",
     "focus": "10万㎡，1000+品牌，UFI认证，改装车3000+台，JDM文化，亚洲改装旗舰",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.apaexpo.com/",
+    "audience": "找性能件供应商、找改装品牌与经销商、改装门店团队",
+    "address": "Venue to be confirmed, 佛山潭洲国际会展中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3896,7 +4144,11 @@ const EXHIBITIONS = [
     "location": "温州国际会议展览中心",
     "focus": "温州紧固件产业集群，与机械装备展同期",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.wzfastener.com/",
+    "audience": "找标准件供应商、找替代件与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 温州国际会议展览中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3907,7 +4159,11 @@ const EXHIBITIONS = [
     "location": "温州国际会议展览中心",
     "focus": "含紧固件/模具/机床等，与紧固件展同期",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wzfastener.com/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 温州国际会议展览中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3918,7 +4174,11 @@ const EXHIBITIONS = [
     "location": "晋阳湖国际会展中心",
     "focus": "山西最大车展",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.tyautoexpo.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 晋阳湖国际会展中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3945,7 +4205,8 @@ const EXHIBITIONS = [
     "focus": "韩国商用车+改装展",
     "audience": "商用车、改装、车身件、车灯和韩国售后渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.koaa-gtt.com/"
   },
   {
     "month": 10,
@@ -3958,7 +4219,8 @@ const EXHIBITIONS = [
     "focus": "中亚商用车展",
     "audience": "商用车、卡车零部件、物流车队和中亚区域渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://comtrux.uz/"
   },
   {
     "month": 10,
@@ -3971,7 +4233,8 @@ const EXHIBITIONS = [
     "focus": "北美最大金属成型/焊接/涂装展，70万sqft/1400+展商/3.1万观众",
     "audience": "冲压、焊接、钣金、涂装、机器人和北美汽车制造客户",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.fabtechexpo.com/"
   },
   {
     "month": 10,
@@ -3982,7 +4245,11 @@ const EXHIBITIONS = [
     "location": "中国 北京",
     "focus": "国务院批准的国家级大会，九大展区，4万㎡，全球智能网联汽车旗舰会展",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.wicvc.com/index.html",
+    "audience": "找感知方案、找智驾供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 中国 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -3995,7 +4262,8 @@ const EXHIBITIONS = [
     "focus": "面积4万㎡，463家展商，韩国最大未来出行展",
     "audience": "智能驾驶、EV、机器人、车联网、芯片和韩国OEM/Tier1团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.difa.or.kr/"
   },
   {
     "month": 10,
@@ -4006,7 +4274,11 @@ const EXHIBITIONS = [
     "location": "中国 广州",
     "focus": "面积5万㎡，1200家展商，涵盖汽车电子/智驾/座舱全链",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://gz.iatwchina.com/",
+    "audience": "找感知方案、找智驾供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 中国 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -4017,7 +4289,11 @@ const EXHIBITIONS = [
     "location": "中国 北京",
     "focus": "设车路云一体化/国际合作/具身智能体等特色展区",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wicvc.com/index.html",
+    "audience": "找座舱方案、找网联供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 中国 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -4028,7 +4304,11 @@ const EXHIBITIONS = [
     "location": "中国 广州",
     "focus": "覆盖NVH材料/测试设备/仿真软件/音频系统全产业链",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://global.cotv.tv/expo/24162",
+    "audience": "找NVH测试、找声学材料与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 中国 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -4039,7 +4319,11 @@ const EXHIBITIONS = [
     "location": "山东国际会展中心（济南）",
     "focus": "10万㎡，2300+企业，61年历史，中国汽配行业\"常青树\"，北方重卡产业高地，海外采购商8000+",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.cacfair.com/",
+    "audience": "找售后件供应商、找维修渠道与进口商、经销商团队",
+    "address": "Venue to be confirmed, 山东国际会展中心（济南）",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -4052,7 +4336,8 @@ const EXHIBITIONS = [
     "focus": "东南亚汽配核心展，3.8万㎡/650家展商，轮胎轮毂重要采购平台",
     "audience": "汽配、摩配、轮胎轮毂、维修设备和东盟区域代理商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://malaysiaautopartsexpo.com/"
   },
   {
     "month": 10,
@@ -4063,7 +4348,11 @@ const EXHIBITIONS = [
     "location": "北京（顺义）",
     "focus": "国内智能网联汽车最高规格展，永久落户顺义",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.wicvc.com/index.html",
+    "audience": "找感知方案、找智驾供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 北京（顺义）",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -4074,7 +4363,11 @@ const EXHIBITIONS = [
     "location": "杭州国际博览中心",
     "focus": "杭州改装展",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.raexpo.cn/",
+    "audience": "找性能件供应商、找改装品牌与经销商、改装门店团队",
+    "address": "Venue to be confirmed, 杭州国际博览中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -4086,7 +4379,10 @@ const EXHIBITIONS = [
     "focus": "大众集团供应链展，3.68万㎡/700展商，OEM配套",
     "audience": "OEM/Tier1供应商、汽车电子、材料、制造装备和大众集团配套团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.izb-online.com/",
+    "address": "Venue to be confirmed, 德国 沃尔夫斯堡",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -4099,7 +4395,8 @@ const EXHIBITIONS = [
     "focus": "南非商用车/卡车展",
     "audience": "卡车、挂车、车队、物流装备和非洲商用车渠道采购商",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.futuroad.com/"
   },
   {
     "month": 10,
@@ -4112,7 +4409,8 @@ const EXHIBITIONS = [
     "focus": "欧洲领先汽车供应链展，845展商/4万观众，聚焦零部件技术",
     "audience": "OEM、Tier 1/2、材料、零部件和汽车制造工程采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.izb-online.com/"
   },
   {
     "month": 10,
@@ -4125,7 +4423,8 @@ const EXHIBITIONS = [
     "focus": "280+展商/6000+观众，全球最大NVH/测试/验证技术展",
     "audience": "整车厂、测试设备商、NVH、耐久、ADAS和认证实验室采购团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.testing-expo.com/"
   },
   {
     "month": 10,
@@ -4138,7 +4437,8 @@ const EXHIBITIONS = [
     "focus": "10届CMF展，1万㎡/100+展商/30+国家，同期世界CMF大会，含汽车专区",
     "audience": "汽车内外饰、材料、色彩、表面处理和CMF设计采购研发团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.cmf-expo.com/"
   },
   {
     "month": 10,
@@ -4151,7 +4451,8 @@ const EXHIBITIONS = [
     "focus": "智能网联+未来出行",
     "audience": "智能驾驶、车联网、传感器、域控和整车研发采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.szautoshow.com/en/ygaIndex/index.aspx"
   },
   {
     "month": 10,
@@ -4171,7 +4472,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "第50届Japan Mobility Show（原东京车展）"
-    ]
+    ],
+    "source": "https://www.japan-mobility-show.com/en/"
   },
   {
     "month": 10,
@@ -4184,7 +4486,8 @@ const EXHIBITIONS = [
     "focus": "3.5万㎡，350家展商，中国汽车行业最高学术年会",
     "audience": "整车厂、Tier 1、科研院所、汽车工程师和技术设备供应商",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://cnsaecce.com/"
   },
   {
     "month": 11,
@@ -4197,7 +4500,8 @@ const EXHIBITIONS = [
     "focus": "华南最大车展，EV/电池/智能车",
     "audience": "整车品牌、华南经销商、动力电池和智能汽车供应链团队",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.autoguangzhou.org.cn/index.html"
   },
   {
     "month": 11,
@@ -4210,7 +4514,8 @@ const EXHIBITIONS = [
     "focus": "面向日本OEM的测试验证技术展，HIL/SIL/自动驾驶测试",
     "audience": "日本OEM、测试测量、HIL/SIL、ADAS和认证实验室采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.testing-expo.com/"
   },
   {
     "month": 11,
@@ -4223,7 +4528,8 @@ const EXHIBITIONS = [
     "focus": "全球最大汽车改装展，维修工具/诊断设备/车间装备重要展示平台",
     "audience": "改装厂、维修设备商、诊断工具品牌、车间和北美售后渠道",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.semashow.com/"
   },
   {
     "month": 11,
@@ -4236,7 +4542,8 @@ const EXHIBITIONS = [
     "focus": "印度汽配展",
     "audience": "印度汽配制造商、维修连锁、经销商和南亚出口渠道团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://automechanika.messefrankfurt.com/mumbai/en.html"
   },
   {
     "month": 11,
@@ -4249,7 +4556,8 @@ const EXHIBITIONS = [
     "focus": "汽车内饰技术展，与Automotive Testing Expo同期",
     "audience": "内饰总成、座椅、材料、表面处理和北美OEM/Tier1采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.automotiveinteriors-expo-usa.com/en/"
   },
   {
     "month": 11,
@@ -4272,7 +4580,8 @@ const EXHIBITIONS = [
     "aliases": [
       "SEMA Show（美国拉斯维加斯改装展）",
       "SEMA Show（含润滑油及养护品展区）"
-    ]
+    ],
+    "source": "https://www.semashow.com/"
   },
   {
     "month": 11,
@@ -4295,7 +4604,8 @@ const EXHIBITIONS = [
     "aliases": [
       "AAPEX（美国拉斯维加斯汽配展）",
       "AAPEX（美国拉斯维加斯汽配售后展）"
-    ]
+    ],
+    "source": "https://www.aapexshow.com/"
   },
   {
     "month": 11,
@@ -4308,7 +4618,8 @@ const EXHIBITIONS = [
     "focus": "12万㎡，2300+展商，全球三大汽配展之一，覆盖北美+全球采购",
     "audience": "汽配、维修设备、工具、诊断、养护品和全球售后采购团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.aapexshow.com/"
   },
   {
     "month": 11,
@@ -4321,7 +4632,8 @@ const EXHIBITIONS = [
     "focus": "24万㎡，3500家展商，80万观众，年度压轴国际车展",
     "audience": "整车品牌、华南经销商、汽车供应链、媒体和终端购车用户",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.autoguangzhou.org.cn/index.html"
   },
   {
     "month": 11,
@@ -4334,7 +4646,8 @@ const EXHIBITIONS = [
     "focus": "全球最大改装展，100万平方英尺，全球aftermarket核心展",
     "audience": "改装、性能件、车身、车灯、轮毂和北美渠道团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.semashow.com/"
   },
   {
     "month": 11,
@@ -4347,7 +4660,8 @@ const EXHIBITIONS = [
     "focus": "8万㎡，南美最大商用车展",
     "audience": "商用车OEM、卡车零部件、车队、物流和南美代理商",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.fenatran.com.br/en-us.html"
   },
   {
     "month": 11,
@@ -4360,7 +4674,8 @@ const EXHIBITIONS = [
     "focus": "沙特EV展",
     "audience": "EV整车、动力电池、充电、能源服务和沙特渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://evautoshowonline.com/"
   },
   {
     "month": 11,
@@ -4373,7 +4688,8 @@ const EXHIBITIONS = [
     "focus": "9万㎡，800家展商",
     "audience": "整车品牌、西南经销商、智能网联和未来出行服务商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.kmautoexpo.com/"
   },
   {
     "month": 11,
@@ -4386,7 +4702,8 @@ const EXHIBITIONS = [
     "focus": "中东/非洲转口枢纽，高温工况配件，需GCC认证",
     "audience": "汽配、维修设备、润滑油、商用车零部件和中东非渠道团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://automechanika-dubai.ae.messefrankfurt.com/dubai/en.html"
   },
   {
     "month": 11,
@@ -4399,7 +4716,8 @@ const EXHIBITIONS = [
     "focus": "拉美最大塑料橡胶展，含模具/注塑解决方案",
     "audience": "塑料、橡胶、模具、注塑、材料和拉美汽车制造客户",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://plastimagen.com.mx/"
   },
   {
     "month": 11,
@@ -4412,7 +4730,8 @@ const EXHIBITIONS = [
     "focus": "欧洲车灯技术权威会议，ISELED/智能表面/数字化架构专题",
     "audience": "车灯、光学、LED、智能表面、电子和欧洲OEM/Tier1研发团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.automotive-lighting-conference.com/"
   },
   {
     "month": 11,
@@ -4433,7 +4752,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Automechanika Dubai 迪拜汽配展(含维修设备)"
-    ]
+    ],
+    "source": "https://automechanika-dubai.ae.messefrankfurt.com/dubai/en.html"
   },
   {
     "month": 11,
@@ -4446,7 +4766,8 @@ const EXHIBITIONS = [
     "focus": "36.7万㎡，3400家展商，含汽车/智能出行专区",
     "audience": "整车、汽车零部件、智能出行、贸易商和国际采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.ciie.org/"
   },
   {
     "month": 11,
@@ -4459,7 +4780,8 @@ const EXHIBITIONS = [
     "focus": "第16届，紧固件全产业链+汽车零部件，浙江省十大品牌展",
     "audience": "紧固件、螺栓螺母、冷镦设备、汽车零部件和外贸采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.jiaxingfastener.com/"
   },
   {
     "month": 11,
@@ -4472,7 +4794,8 @@ const EXHIBITIONS = [
     "focus": "充电桩设备专项展",
     "audience": "充电桩、充电运营、储能、电力电子和土耳其渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.evchargeshow.com/"
   },
   {
     "month": 11,
@@ -4485,7 +4808,8 @@ const EXHIBITIONS = [
     "focus": "5万㎡，1500+展商，全国摩配交易会",
     "audience": "摩托车整车、发动机、配件、经销商和东南亚贸易买家",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cimaexpo.com/"
   },
   {
     "month": 11,
@@ -4498,7 +4822,8 @@ const EXHIBITIONS = [
     "focus": "四川消费车展",
     "audience": "整车品牌、四川经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 0
+    "star": 0,
+    "source": "https://www.myautoexpo.com/"
   },
   {
     "month": 11,
@@ -4511,7 +4836,8 @@ const EXHIBITIONS = [
     "focus": "面积4万㎡，700+展商，30国采购商，亚洲最大车用空调/热管理专业展",
     "audience": "车用空调、热泵、压缩机、换热器和电池热管理采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.autocoolexpo.com/en/"
   },
   {
     "month": 11,
@@ -4524,7 +4850,8 @@ const EXHIBITIONS = [
     "focus": "8万㎡，450家展商",
     "audience": "整车品牌、中原经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.zzautoexpo.com/"
   },
   {
     "month": 11,
@@ -4537,7 +4864,8 @@ const EXHIBITIONS = [
     "focus": "东北消费车展",
     "audience": "整车品牌、东北经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hrbautoexpo.com/"
   },
   {
     "month": 11,
@@ -4550,7 +4878,8 @@ const EXHIBITIONS = [
     "focus": "非洲汽配展",
     "audience": "汽配、商用车、维修设备和东非市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://autoexpoafrica.com/"
   },
   {
     "month": 11,
@@ -4563,7 +4892,8 @@ const EXHIBITIONS = [
     "focus": "车用空调/热管理领域旗舰展",
     "audience": "车用空调、热管理、制冷剂、换热器和整车厂采购研发团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.autocoolexpo.com/en/"
   },
   {
     "month": 11,
@@ -4576,7 +4906,8 @@ const EXHIBITIONS = [
     "focus": "五大车展之一，EV/跨界车/西海岸生活方式车型，AutoMobility LA技术日",
     "audience": "整车品牌、EV供应链、经销商、车队和美国西海岸市场团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://laautoshow.com/"
   },
   {
     "month": 11,
@@ -4589,7 +4920,8 @@ const EXHIBITIONS = [
     "focus": "6万㎡，印尼第二大车展",
     "audience": "整车品牌、EV零部件、经销商和印尼市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://jakartaautoweek.com/"
   },
   {
     "month": 11,
@@ -4602,7 +4934,8 @@ const EXHIBITIONS = [
     "focus": "拉美表面处理专业展，AMAS主办，含汽车/航空涂装培训与商贸",
     "audience": "电镀、涂装、表面处理、环保设备和墨西哥汽车制造客户",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://surfacefinishingmexico.com/"
   },
   {
     "month": 11,
@@ -4615,7 +4948,8 @@ const EXHIBITIONS = [
     "focus": "南美新能源车展",
     "audience": "EV整车、动力电池、充电、能源服务和南美渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://cmove.com.br/"
   },
   {
     "month": 11,
@@ -4628,7 +4962,8 @@ const EXHIBITIONS = [
     "focus": "2.8万㎡/450展商，德国商用车展",
     "audience": "商用车OEM、厢式车、物流车队、车身和德国渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://www.transporter-tage.de/"
   },
   {
     "month": 11,
@@ -4641,7 +4976,8 @@ const EXHIBITIONS = [
     "focus": "全球三大改装展之一（欧洲主战场），10.4万㎡，德系改装/轮毂/底盘",
     "audience": "改装、轮毂、底盘、车身、赛车和欧洲区域经销商",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.essen-motorshow.de/automobilmesse/"
   },
   {
     "month": 11,
@@ -4654,7 +4990,8 @@ const EXHIBITIONS = [
     "focus": "亚洲规模领先的座舱+车载显示专业展，覆盖芯片/域控/多模态交互全链",
     "audience": "座舱芯片、域控、车载显示、HUD和智能内饰采购研发团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/"
   },
   {
     "month": 11,
@@ -4667,7 +5004,8 @@ const EXHIBITIONS = [
     "focus": "华南车灯专业展，涵盖矩阵LED/DLP/激光/OLED氛围灯全品类",
     "audience": "车灯总成、LED、光学、激光、控制器和整车厂采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.autolampshow.com/"
   },
   {
     "month": 11,
@@ -4680,7 +5018,8 @@ const EXHIBITIONS = [
     "focus": "聚焦热泵/电池液冷/CO₂冷媒等新能源热管理核心技术",
     "audience": "热泵、液冷板、压缩机、冷媒和动力电池热管理采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.china-autotech.com/"
   },
   {
     "month": 11,
@@ -4693,7 +5032,8 @@ const EXHIBITIONS = [
     "focus": "500+展商，联动轻量化/测试/电子/底盘等8大专题展，覆盖华南供应链",
     "audience": "内饰总成、座椅、材料、饰件和华南OEM/Tier1采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/"
   },
   {
     "month": 11,
@@ -4706,7 +5046,8 @@ const EXHIBITIONS = [
     "focus": "500+展商，8大专题展联动，覆盖钢/铝/镁/复合材料全产业链",
     "audience": "钢铝镁材料、复合材料、成形工艺和轻量化零部件采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/"
   },
   {
     "month": 11,
@@ -4719,7 +5060,8 @@ const EXHIBITIONS = [
     "focus": "氢能+燃料电池",
     "audience": "燃料电池、电堆、储氢、氢能基础设施和商用车采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hydrogenexpo.com.cn/"
   },
   {
     "month": 11,
@@ -4732,7 +5074,8 @@ const EXHIBITIONS = [
     "focus": "含汽车电子/内外饰/底盘/热管理/轻量化/测试等8大专题展，40000+专业观众",
     "audience": "整车厂、Tier 1、汽车电子、底盘、热管理和制造工程采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.china-autotech.com/"
   },
   {
     "month": 11,
@@ -4745,7 +5088,8 @@ const EXHIBITIONS = [
     "focus": "汽车模具/冲压/铸造/锻造/表面处理/3D打印/注塑机/刀具/检测设备，3000+零部件企业，100+主机厂",
     "audience": "模具、冲压、铸造、锻造、注塑、检测设备和汽车制造采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.china-autotech.com/"
   },
   {
     "month": 11,
@@ -4758,7 +5102,8 @@ const EXHIBITIONS = [
     "focus": "24万㎡，3500家展商，含产业链展区",
     "audience": "整车品牌、汽车零部件、改装、汽车文化和华南渠道团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.autoguangzhou.org.cn/index.html"
   },
   {
     "month": 12,
@@ -4771,7 +5116,8 @@ const EXHIBITIONS = [
     "focus": "沙特Vision 2030汽车市场",
     "audience": "整车品牌、EV供应链、经销商和沙特市场渠道团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://riyadhmotorshow.com/"
   },
   {
     "month": 12,
@@ -4784,7 +5130,8 @@ const EXHIBITIONS = [
     "focus": "60万㎡超大规模，120+品牌/7000+企业，含改装轮毂底盘件",
     "audience": "改装、轮毂、底盘、汽车用品、经销商和跨境贸易采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.jzautoecology.com/"
   },
   {
     "month": 12,
@@ -4797,7 +5144,8 @@ const EXHIBITIONS = [
     "focus": "全联主办，瑞安汽配出海",
     "audience": "汽配制造商、瑞安产业集群、出口商和海外采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ruianautoexpo.com/"
   },
   {
     "month": 12,
@@ -4810,7 +5158,8 @@ const EXHIBITIONS = [
     "focus": "3万㎡，16万观众",
     "audience": "整车品牌、EV供应链、经销商和粤港澳/东南亚渠道团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.imxpo.com/"
   },
   {
     "month": 11,
@@ -4829,7 +5178,11 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Automechanika Shanghai"
-    ]
+    ],
+    "source": "https://automechanika-shanghai.hk.messefrankfurt.com/shanghai/en.html",
+    "audience": "找轮胎及橡胶供应商、找制造设备与OEM、经销商团队",
+    "address": "Venue to be confirmed, 中国 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -4840,7 +5193,11 @@ const EXHIBITIONS = [
     "location": "中国 上海",
     "focus": "全球汽配售后旗舰品牌中国展，维修检测诊断设备为核心展区",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://automechanika-shanghai.hk.messefrankfurt.com/shanghai/en.html",
+    "audience": "找诊断设备、找维修方案与经销商、维修渠道团队",
+    "address": "Venue to be confirmed, 中国 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -4853,7 +5210,8 @@ const EXHIBITIONS = [
     "focus": "印度新能源车展",
     "audience": "EV整车、动力电池、电驱、充电和印度客户开发团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://autoevindia.com/"
   },
   {
     "month": 12,
@@ -4864,7 +5222,11 @@ const EXHIBITIONS = [
     "location": "中国 上海",
     "focus": "专注轻量化15年，覆盖原材料/工艺/部件/商用车全链",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.aluminiumchina.com/",
+    "audience": "找轻量化材料、找成形工艺与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 中国 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -4877,7 +5239,8 @@ const EXHIBITIONS = [
     "focus": "中东非洲汽配门户，辐射海湾及北非市场",
     "audience": "轮胎、橡胶、车轮、底盘和中东非区域代理商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://automechanika-dubai.ae.messefrankfurt.com/dubai/en.html"
   },
   {
     "month": 11,
@@ -4890,7 +5253,8 @@ const EXHIBITIONS = [
     "focus": "赛车性能件旗舰展，1000+展商，含高性能轮毂/底盘/赛车部件",
     "audience": "赛车、性能件、轮毂、底盘、发动机和专业赛事渠道团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.performanceracing.com/"
   },
   {
     "month": 12,
@@ -4901,7 +5265,11 @@ const EXHIBITIONS = [
     "location": "上海新国际博览中心",
     "focus": "中国客车行业旗舰展",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cibe-expo.com/",
+    "audience": "找商用车配套、找车队方案与OEM、车队团队",
+    "address": "Venue to be confirmed, 上海新国际博览中心",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -4914,7 +5282,8 @@ const EXHIBITIONS = [
     "focus": "赛车工业展，1100+展商，motorsports专业展",
     "audience": "赛车工业、性能件、赛车队、赛事服务商和专业渠道",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.performanceracing.com/"
   },
   {
     "month": 12,
@@ -4927,7 +5296,8 @@ const EXHIBITIONS = [
     "focus": "沙特东部省新能源展",
     "audience": "EV、动力电池、充电、能源服务和沙特东部客户开发团队",
     "market": "海外",
-    "star": 0
+    "star": 0,
+    "source": "https://evs-saudi.com/"
   },
   {
     "month": 1,
@@ -4940,7 +5310,8 @@ const EXHIBITIONS = [
     "focus": "紧固件/紧固技术(印度市场)",
     "audience": "紧固件、连接件、线束固定和印度汽车制造采购团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.fastenerfairglobal.com/"
   },
   {
     "month": 1,
@@ -4951,7 +5322,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "铜材/铜加工/有色金属",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.copperexpo.com/",
+    "audience": "找材料供应商、找替代材料与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 1,
@@ -4963,7 +5338,10 @@ const EXHIBITIONS = [
     "focus": "汽车安全/碰撞/NHTSA标准",
     "audience": "汽车安全、碰撞测试、约束系统、法规和北美OEM/Tier1团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.automotivesafetyexpo.com/",
+    "address": "Venue to be confirmed, Detroit, 美国",
+    "addressStatus": "待核验"
   },
   {
     "month": 1,
@@ -4986,7 +5364,8 @@ const EXHIBITIONS = [
     "aliases": [
       "CES 2026(汽车芯片展示)",
       "CES 2026"
-    ]
+    ],
+    "source": "https://www.ces.tech/"
   },
   {
     "month": 2,
@@ -4997,7 +5376,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "车联网、传感器、ECU、人机交互",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.automotiveworld.cn/",
+    "audience": "找车载电子方案、找域控供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5010,7 +5393,8 @@ const EXHIBITIONS = [
     "focus": "欧洲顶级车展",
     "audience": "整车品牌、EV供应链、经销商和欧洲市场调研团队",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://genevamotorshow.com/"
   },
   {
     "month": 3,
@@ -5021,7 +5405,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "钢管/管材/汽车用管",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.tubechina.net/",
+    "audience": "找材料供应商、找替代材料与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5032,7 +5420,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "内饰材料/环保材料/智能表面",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.autointerior-expo.com/",
+    "audience": "找内外饰供应商、找材料方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5043,7 +5435,11 @@ const EXHIBITIONS = [
     "location": "合肥",
     "focus": "空调/制冷/热泵/暖通设备",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.airexpo.cn/",
+    "audience": "找热管理供应商、找电池冷却方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 合肥",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5054,7 +5450,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "充换电、光储充",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "http://bjcpse.szevexpo.com/",
+    "audience": "找电池材料、找Pack设备与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5065,7 +5465,11 @@ const EXHIBITIONS = [
     "location": "无锡",
     "focus": "厂家二手车业务、渠道创新",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cada.cn/",
+    "audience": "找再制造件、找二手车服务与经销商、维修渠道团队",
+    "address": "Venue to be confirmed, 无锡",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5076,7 +5480,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "SDV、AUTOSAR中间件、SOA架构",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.autosar.org/news-events/detail/2026-software-defined-vehicle-forum-autosar-china-day-1",
+    "audience": "找软件平台、找OTA和网络安全方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5089,7 +5497,8 @@ const EXHIBITIONS = [
     "focus": "车联网边缘计算、AI出行",
     "audience": "车联网、5G/V2X、边缘计算、AI出行和通信设备团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.mwcbarcelona.com/?lg=en"
   },
   {
     "month": 3,
@@ -5100,7 +5509,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "模具制造/金属加工/3D打印",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.asiamold-china.com/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5111,7 +5524,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "工业科技/模具/制造技术",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.git-expo.com/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5134,7 +5551,8 @@ const EXHIBITIONS = [
     "aliases": [
       "Embedded World 2026(汽车半导体板块)",
       "Embedded World 2026(汽车软件板块)"
-    ]
+    ],
+    "source": "https://www.embedded-world.de/en/"
   },
   {
     "month": 3,
@@ -5147,7 +5565,8 @@ const EXHIBITIONS = [
     "focus": "日本汽配市场、SDV维保",
     "audience": "汽配、维修设备、诊断、养护品和日本售后渠道团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.iaae-jp.com/en/"
   },
   {
     "month": 3,
@@ -5158,7 +5577,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "汽车后市场全产业链、养护、改装",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.yasnshow.com/ciaace/",
+    "audience": "找诊断设备、找维修方案与经销商、维修渠道团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5169,7 +5592,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "汽车养护、美容翻新",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.yasnshow.com/ciaace/",
+    "audience": "找养护品供应商、找润滑油品牌与进口商、经销商团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 6,
@@ -5180,7 +5607,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "华南商用车",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.szcommercialvehicle.com/",
+    "audience": "找商用车配套、找车队方案与OEM、车队团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5191,7 +5622,11 @@ const EXHIBITIONS = [
     "location": "昆山",
     "focus": "智能车灯、Micro LED大灯、AI照明",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.ale-expo.com/",
+    "audience": "找灯具供应商、找光学方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 昆山",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5209,7 +5644,11 @@ const EXHIBITIONS = [
       "汽车半导体/芯片"
     ],
     "relatedSupplyChains": [],
-    "aliases": []
+    "aliases": [],
+    "source": "https://www.semiconchina.org/",
+    "audience": "找车载电子方案、找域控供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5220,7 +5659,11 @@ const EXHIBITIONS = [
     "location": "青岛",
     "focus": "铝工业/金属切削/成型/自动化",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.aluminiumchina.com/",
+    "audience": "找材料供应商、找替代材料与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 青岛",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5231,7 +5674,11 @@ const EXHIBITIONS = [
     "location": "合肥",
     "focus": "新能源商用车",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hfcommercialvehicle.com/",
+    "audience": "找商用车配套、找车队方案与OEM、车队团队",
+    "address": "Venue to be confirmed, 合肥",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -5242,7 +5689,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "精密零件/模具/金属加工",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://global.iteschina.com/en/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5253,7 +5704,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "中国四大A级车展之一",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.autochinashow.org/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5264,7 +5719,11 @@ const EXHIBITIONS = [
     "location": "Essen, 德国",
     "focus": "全球最大经典车展",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.siha.de/tce_uk.php",
+    "audience": "找再制造件、找二手车服务与经销商、维修渠道团队",
+    "address": "Venue to be confirmed, Essen, 德国",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5275,7 +5734,11 @@ const EXHIBITIONS = [
     "location": "Stuttgart, 德国",
     "focus": "全球顶级紧固件/紧固技术全产业链",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.fastenerfairglobal.com/",
+    "audience": "找标准件供应商、找替代件与OEM、Tier1团队",
+    "address": "Venue to be confirmed, Stuttgart, 德国",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5286,7 +5749,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "维修设备、零部件、新能源维保、商用车专区",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://auto-maintenance.cn.messefrankfurt.com/beijing/en.html",
+    "audience": "找诊断设备、找维修方案与经销商、维修渠道团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5297,7 +5764,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "润滑油、养护品、油液管理",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://auto-maintenance.cn.messefrankfurt.com/beijing/en.html",
+    "audience": "找养护品供应商、找润滑油品牌与进口商、经销商团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5308,7 +5779,11 @@ const EXHIBITIONS = [
     "location": "东京, 日本",
     "focus": "3D打印/增材制造/汽车模具应用",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.japan-mfg.jp/en-gb/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 东京, 日本",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5319,7 +5794,11 @@ const EXHIBITIONS = [
     "location": "贵阳",
     "focus": "西南区域车展",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.gyautoexpo.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 贵阳",
+    "addressStatus": "待核验"
   },
   {
     "month": 4,
@@ -5330,7 +5809,11 @@ const EXHIBITIONS = [
     "location": "印度",
     "focus": "汽车测试(印度市场)",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.testing-expo.com/",
+    "audience": "找测试设备、找认证服务与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 印度",
+    "addressStatus": "待核验"
   },
   {
     "month": 5,
@@ -5341,7 +5824,11 @@ const EXHIBITIONS = [
     "location": "莫斯科, 俄罗斯",
     "focus": "模具/3D打印/塑料(东欧市场)",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://rosmould.ru/en/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 莫斯科, 俄罗斯",
+    "addressStatus": "待核验"
   },
   {
     "month": 5,
@@ -5352,7 +5839,11 @@ const EXHIBITIONS = [
     "location": "横滨, 日本",
     "focus": "汽车安全技术/碰撞安全",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.isata.org/",
+    "audience": "找安全测试、找法规认证服务与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 横滨, 日本",
+    "addressStatus": "待核验"
   },
   {
     "month": 5,
@@ -5363,7 +5854,11 @@ const EXHIBITIONS = [
     "location": "Grand Rapids, 美国",
     "focus": "NVH学术会议/噪声振动",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.sae.org/attend/nvc",
+    "audience": "找NVH测试、找声学材料与OEM、Tier1团队",
+    "address": "Venue to be confirmed, Grand Rapids, 美国",
+    "addressStatus": "待核验"
   },
   {
     "month": 5,
@@ -5374,7 +5869,11 @@ const EXHIBITIONS = [
     "location": "义乌",
     "focus": "润滑油、脂、添加剂、养护用品",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ywlubricant.com/",
+    "audience": "找养护品供应商、找润滑油品牌与进口商、经销商团队",
+    "address": "Venue to be confirmed, 义乌",
+    "addressStatus": "待核验"
   },
   {
     "month": 5,
@@ -5385,7 +5884,11 @@ const EXHIBITIONS = [
     "location": "南京",
     "focus": "润滑油技术设备",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.njlubricant.com/",
+    "audience": "找养护品供应商、找润滑油品牌与进口商、经销商团队",
+    "address": "Venue to be confirmed, 南京",
+    "addressStatus": "待核验"
   },
   {
     "month": 5,
@@ -5396,7 +5899,11 @@ const EXHIBITIONS = [
     "location": "成都",
     "focus": "西部消费类车展",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cdmotorshow.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 成都",
+    "addressStatus": "待核验"
   },
   {
     "month": 5,
@@ -5409,7 +5916,8 @@ const EXHIBITIONS = [
     "focus": "华北区域车展",
     "audience": "整车品牌、山西经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.tyautoexpo.com/"
   },
   {
     "month": 5,
@@ -5422,7 +5930,8 @@ const EXHIBITIONS = [
     "focus": "表面处理/电镀涂装(华东)",
     "audience": "电镀、涂装、环保设备、表面处理材料和汽车制造采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cesf-expo.com/"
   },
   {
     "month": 5,
@@ -5435,7 +5944,8 @@ const EXHIBITIONS = [
     "focus": "3D打印/金属打印/增材制造",
     "audience": "增材制造设备、金属粉末、模具、原型和汽车研发采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.zhengzhou3d.com/"
   },
   {
     "month": 5,
@@ -5448,7 +5958,8 @@ const EXHIBITIONS = [
     "focus": "电池材料、设备、Pack、回收",
     "audience": "动力电池、电芯、材料、设备、Pack、回收和整车厂采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.cibf.org.cn/"
   },
   {
     "month": 5,
@@ -5461,7 +5972,8 @@ const EXHIBITIONS = [
     "focus": "金属板材/管材/棒材/汽车用钢",
     "audience": "钢材、铝材、线材、加工设备和汽车冲压制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.gzmetalexpo.com/"
   },
   {
     "month": 5,
@@ -5474,7 +5986,8 @@ const EXHIBITIONS = [
     "focus": "紧固件全产业链(材料/设备/成品/模具/检测)",
     "audience": "紧固件、材料、模具、检测设备和汽车制造采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.afastener.com/"
   },
   {
     "month": 5,
@@ -5487,7 +6000,8 @@ const EXHIBITIONS = [
     "focus": "东南亚车灯后市场",
     "audience": "车灯、汽车电子、售后配件、印尼经销商和东南亚采购商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.inapa-exhibition.net/"
   },
   {
     "month": 5,
@@ -5500,7 +6014,8 @@ const EXHIBITIONS = [
     "focus": "电镀/涂装/表面处理/环保",
     "audience": "电镀、涂装、环保设备、化学品和汽车零部件制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.nbsurface.com/"
   },
   {
     "month": 6,
@@ -5513,7 +6028,8 @@ const EXHIBITIONS = [
     "focus": "建筑紧固件/工业紧固件",
     "audience": "工业紧固件、建筑五金、连接件和汽车供应链采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cihs.com.cn/"
   },
   {
     "month": 6,
@@ -5526,7 +6042,8 @@ const EXHIBITIONS = [
     "focus": "表面处理/电镀/涂装(华北)",
     "audience": "电镀、涂装、表面处理材料、环保设备和华北汽车制造客户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.tj-surface.com/"
   },
   {
     "month": 6,
@@ -5547,7 +6064,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Automotive Testing Expo Europe(含NVH)"
-    ]
+    ],
+    "source": "https://www.testing-expo.com/europe/en/"
   },
   {
     "month": 6,
@@ -5560,7 +6078,8 @@ const EXHIBITIONS = [
     "focus": "汽车锻件/底盘锻件/轮毂锻压",
     "audience": "锻造、轮毂、底盘、材料和汽车零部件工艺采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.chinaforge.org/"
   },
   {
     "month": 6,
@@ -5573,7 +6092,8 @@ const EXHIBITIONS = [
     "focus": "座椅总成/面套/骨架/发泡",
     "audience": "座椅总成、骨架、面套、发泡、面料和内饰材料采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ciaie.com/"
   },
   {
     "month": 6,
@@ -5586,7 +6106,8 @@ const EXHIBITIONS = [
     "focus": "碰撞安全/被动安全/安全标准",
     "audience": "整车厂安全工程、碰撞测试、约束系统和认证机构团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.c-ncap.org.cn/"
   },
   {
     "month": 6,
@@ -5599,7 +6120,8 @@ const EXHIBITIONS = [
     "focus": "综合物流运输、供应链管理",
     "audience": "汽车物流、仓储、运输、供应链软件和车队采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.citl-expo.com/"
   },
   {
     "month": 6,
@@ -5612,7 +6134,8 @@ const EXHIBITIONS = [
     "focus": "汽车电子与半导体技术",
     "audience": "车规芯片、汽车电子、功率半导体和欧洲OEM/Tier1研发团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.bosch-mobility.com/en/"
   },
   {
     "month": 6,
@@ -5625,7 +6148,8 @@ const EXHIBITIONS = [
     "focus": "欧洲顶级经典车展",
     "audience": "经典车、修复、零部件、收藏车和欧洲专业渠道团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.retro-classics.de/en/"
   },
   {
     "month": 6,
@@ -5638,7 +6162,8 @@ const EXHIBITIONS = [
     "focus": "汽车金融、租赁、保险",
     "audience": "汽车金融、租赁、保险、经销商集团和加拿大渠道团队",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.automotivefinancecanada.com/"
   },
   {
     "month": 6,
@@ -5651,7 +6176,8 @@ const EXHIBITIONS = [
     "focus": "EMC测试/电磁兼容/安规认证",
     "audience": "EMC、安规、认证、测试设备和汽车电子研发团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cesif.com/"
   },
   {
     "month": 6,
@@ -5672,7 +6198,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Vehicle Tech Week Europe(汽车设计/测试板块)"
-    ]
+    ],
+    "source": "https://www.vehicletechweek.com/"
   },
   {
     "month": 6,
@@ -5685,7 +6212,8 @@ const EXHIBITIONS = [
     "focus": "汽车电子测试/新能源三电/可靠性/NVH",
     "audience": "三电、汽车电子、可靠性、NVH和整车测试验证采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.atc-expo.com/"
   },
   {
     "month": 6,
@@ -5706,7 +6234,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "ATC汽车测试展(含NVH测试峰会)"
-    ]
+    ],
+    "source": "https://www.atc-expo.com/"
   },
   {
     "month": 6,
@@ -5719,7 +6248,8 @@ const EXHIBITIONS = [
     "focus": "热管理技术/测试/集成模块",
     "audience": "电池热管理、热泵、空调、测试设备和三电研发团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.atc-expo.com/"
   },
   {
     "month": 6,
@@ -5732,7 +6262,8 @@ const EXHIBITIONS = [
     "focus": "北京消费类车展",
     "audience": "整车品牌、北京经销商、汽车服务商和终端购车用户",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.autochina.org.cn/"
   },
   {
     "month": 6,
@@ -5745,7 +6276,8 @@ const EXHIBITIONS = [
     "focus": "汽车模具/3D打印/冲压模具/压铸模具",
     "audience": "汽车模具、3D打印、冲压、压铸和制造工程采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.hz3dexpo.com/"
   },
   {
     "month": 6,
@@ -5758,7 +6290,8 @@ const EXHIBITIONS = [
     "focus": "轻量化成型/新材料/一体化压铸",
     "audience": "轻量化材料、一体化压铸、成形工艺和新能源整车研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.chinaforge.org/"
   },
   {
     "month": 6,
@@ -5771,7 +6304,8 @@ const EXHIBITIONS = [
     "focus": "汽车照明与智能网联技术融合",
     "audience": "车灯、传感器、车联网、智能驾驶和长三角汽车供应链团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hzautoexpo.com/"
   },
   {
     "month": 6,
@@ -5784,7 +6318,8 @@ const EXHIBITIONS = [
     "focus": "长三角车灯产业链",
     "audience": "车灯总成、LED、光学、照明电子和长三角整车厂采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hzautoexpo.com/"
   },
   {
     "month": 6,
@@ -5797,7 +6332,8 @@ const EXHIBITIONS = [
     "focus": "紧固件成品/设备/汽车紧固件/铆接件",
     "audience": "紧固件、铆接件、成形设备、检测和汽车制造采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.fesexpo.com/"
   },
   {
     "month": 6,
@@ -5818,7 +6354,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "中国国际金属成形展(含轻量化成形)"
-    ]
+    ],
+    "source": "https://www.metalformchina.com/"
   },
   {
     "month": 6,
@@ -5831,7 +6368,8 @@ const EXHIBITIONS = [
     "focus": "智慧交通、车路协同、科技成果展示",
     "audience": "车路协同、智慧交通、智能驾驶、交通管理和城市出行采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.gba-smarttransport.com/"
   },
   {
     "month": 7,
@@ -5844,7 +6382,8 @@ const EXHIBITIONS = [
     "focus": "汽车模具/冲压/注塑/压铸/精密装备/模具材料",
     "audience": "汽车模具、冲压、注塑、压铸、精密装备和制造工程采购团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.diemouldchina.com/"
   },
   {
     "month": 7,
@@ -5857,7 +6396,8 @@ const EXHIBITIONS = [
     "focus": "热处理/表面处理/模具材料",
     "audience": "热处理、表面处理、炉具、模具材料和汽车制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.diemouldchina.com/"
   },
   {
     "month": 7,
@@ -5870,7 +6410,8 @@ const EXHIBITIONS = [
     "focus": "轻量化材料/模具/成形技术",
     "audience": "轻量化材料、模具、成形工艺和新能源车身采购研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.diemouldchina.com/"
   },
   {
     "month": 7,
@@ -5883,7 +6424,8 @@ const EXHIBITIONS = [
     "focus": "智能座舱发展趋势、用户体验",
     "audience": "座舱芯片、显示、交互、软件和整车厂研发采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://sh.icvexpo.com/"
   },
   {
     "month": 7,
@@ -5896,7 +6438,8 @@ const EXHIBITIONS = [
     "focus": "汽车物流技术、智能仓储",
     "audience": "汽车物流、智能仓储、运输软件和西部整车供应链采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cqsmartauto.com/"
   },
   {
     "month": 7,
@@ -5909,7 +6452,8 @@ const EXHIBITIONS = [
     "focus": "中国二手车行业年度大会、趋势发布",
     "audience": "二手车交易商、拍卖平台、经销商集团、金融和检测服务商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cada.cn/"
   },
   {
     "month": 7,
@@ -5930,7 +6474,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "中国国际铝工业展(汽车铝材轻量化)"
-    ]
+    ],
+    "source": "https://www.aluminiumchina.com/"
   },
   {
     "month": 7,
@@ -5949,7 +6494,8 @@ const EXHIBITIONS = [
       "汽车设计/工程服务"
     ],
     "relatedSupplyChains": [],
-    "aliases": []
+    "aliases": [],
+    "source": "https://www.amts.com.cn/"
   },
   {
     "month": 7,
@@ -5960,7 +6506,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "未来汽车开发工具、软件同步工程",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.amts.com.cn/",
+    "audience": "找软件平台、找OTA和网络安全方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 7,
@@ -5971,7 +6521,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "涂料/汽车涂装/智能制造/绿色涂料",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.chinacoat.net/",
+    "audience": "找涂装方案、找环保工艺与Tier1、制造工厂团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 7,
@@ -5982,7 +6536,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "表面工程/电镀/涂装/热处理",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.prosfexpo.com/",
+    "audience": "找涂装方案、找环保工艺与Tier1、制造工厂团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 7,
@@ -5993,7 +6551,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车涂料/色彩/涂装工艺",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.chinacoat.net/",
+    "audience": "找内饰材料、找设计方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 7,
@@ -6004,7 +6566,11 @@ const EXHIBITIONS = [
     "location": "昆明",
     "focus": "西南区域车展",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.kmautoexpo.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 昆明",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6015,7 +6581,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "新能源汽车底盘/热管理/零部件",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.eacexpo.com/",
+    "audience": "找底盘供应商、找制动转向方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6026,7 +6596,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车内外饰/智能座舱/CMF/氛围灯",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.eacexpo.com/",
+    "audience": "找内外饰供应商、找材料方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6051,7 +6625,11 @@ const EXHIBITIONS = [
       "EAC易贸展(NVH技术论坛)",
       "EAC易贸展(轻量化专区)",
       "EAC易贸展(CMF论坛与展区)"
-    ]
+    ],
+    "source": "https://www.eacexpo.com/",
+    "audience": "找座椅及零部件供应商、找舒适系统方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6062,7 +6640,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "NVH/声学系统/音频/主动降噪",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://global.cotv.tv/expo/24162",
+    "audience": "找NVH测试、找声学材料与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6073,7 +6655,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "热管理系统/冷却/液冷/电池热管理",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.eacexpo.com/",
+    "audience": "找热管理供应商、找电池冷却方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6084,7 +6670,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "车用空调/热管理/压缩机/冷凝器",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.autocoolexpo.com/en/",
+    "audience": "找热管理供应商、找电池冷却方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6095,7 +6685,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车电子头部分厂商集结",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://electronica-china.com.cn/en/",
+    "audience": "找线束连接器、找电子元件供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6106,7 +6700,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "底盘/制动系统/转向/悬挂",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.atc-expo.com/",
+    "audience": "找底盘供应商、找制动转向方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6125,7 +6723,11 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "上海国际汽车创新技术周(CMF专场)"
-    ]
+    ],
+    "source": "https://sh.iatwchina.com/",
+    "audience": "找内外饰供应商、找材料方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6136,7 +6738,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "热管理系统/压缩机/液冷/热管理材料",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.autocoolexpo.com/en/",
+    "audience": "找热管理供应商、找电池冷却方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6147,7 +6753,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "智能驾驶、智能座舱、车路云一体化",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://sh.icvexpo.com/",
+    "audience": "找感知方案、找智驾供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6158,7 +6768,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "智能座舱域控、车载显示、人机交互",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://sh.icvexpo.com/",
+    "audience": "找座舱方案、找网联供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6169,7 +6783,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车创新技术周、座舱一体化",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://sh.iatwchina.com/",
+    "audience": "找座舱方案、找网联供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6180,7 +6798,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "车灯与座舱光环境融合",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.alic-expo.com/",
+    "audience": "找灯具供应商、找光学方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6191,7 +6813,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车芯片、PCB、智能座舱、ADAS",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.automotiveworld.cn/",
+    "audience": "找车载电子方案、找域控供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6202,7 +6828,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "芯电赋能、汽车电子全链",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://sh.icvexpo.com/",
+    "audience": "找车载电子方案、找域控供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6213,7 +6843,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "新能源汽车技术全链",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://sh.icvexpo.com/",
+    "audience": "找电池材料、找Pack设备与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6224,7 +6858,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "新能源商用车、专用车",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://sh.iatwchina.com/",
+    "audience": "找商用车配套、找车队方案与OEM、车队团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6235,7 +6873,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "芯软融合、OTA、端到端大模型",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.nevexpo.cn/",
+    "audience": "找软件平台、找OTA和网络安全方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6246,7 +6888,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "新能源汽车座椅/内饰零部件",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ciaie.com/",
+    "audience": "找座椅及零部件供应商、找舒适系统方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6257,7 +6903,11 @@ const EXHIBITIONS = [
     "location": "郑州",
     "focus": "充电桩、换电站、光储充",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.zzcharge.com/",
+    "audience": "找电池材料、找Pack设备与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 郑州",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6268,7 +6918,11 @@ const EXHIBITIONS = [
     "location": "成都",
     "focus": "西部最大车展",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cdmotorshow.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 成都",
+    "addressStatus": "待核验"
   },
   {
     "month": 3,
@@ -6279,7 +6933,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "增材制造/精密成型/模具",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.formnext.com/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6290,7 +6948,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "模具制造/精密加工",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.asiamold-china.com/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6301,7 +6963,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车测试/ADAS/电动总成/NVH/碰撞/排放",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.testing-expo.com/",
+    "audience": "找测试设备、找认证服务与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6320,7 +6986,11 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Testing Expo China(含NVH专区)"
-    ]
+    ],
+    "source": "https://www.testing-expo.com/",
+    "audience": "找安全测试、找法规认证服务与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6331,7 +7001,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "充电桩、换电技术、光储充一体化",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.mte-shenzhen.com/",
+    "audience": "找电池材料、找Pack设备与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6342,7 +7016,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "动力电池、储能、电池材料",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.3c-ate.com/",
+    "audience": "找电池材料、找Pack设备与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 9,
@@ -6355,7 +7033,8 @@ const EXHIBITIONS = [
     "focus": "有色金属/压铸/铸造/金属成形",
     "audience": "铸造、压铸、金属成形、模具和汽车零部件制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.metalchina.com/"
   },
   {
     "month": 9,
@@ -6368,7 +7047,8 @@ const EXHIBITIONS = [
     "focus": "汽车测试/NVH/EMC/耐久性",
     "audience": "汽车测试、NVH、EMC、耐久、三电和整车验证采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whautotest.com/"
   },
   {
     "month": 9,
@@ -6381,7 +7061,8 @@ const EXHIBITIONS = [
     "focus": "底盘零部件/制动/转向",
     "audience": "底盘、制动、转向、悬挂、轮毂和整车厂采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.atwexpo.com/"
   },
   {
     "month": 9,
@@ -6394,7 +7075,8 @@ const EXHIBITIONS = [
     "focus": "内饰材料/座椅面料/皮革",
     "audience": "内饰总成、座椅、面料、皮革和汽车材料采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.ciaie.com/"
   },
   {
     "month": 9,
@@ -6413,7 +7095,8 @@ const EXHIBITIONS = [
       "汽车座椅"
     ],
     "relatedSupplyChains": [],
-    "aliases": []
+    "aliases": [],
+    "source": "https://www.ciaie.com/"
   },
   {
     "month": 9,
@@ -6426,7 +7109,8 @@ const EXHIBITIONS = [
     "focus": "NVH/噪声/振动/舒适性",
     "audience": "NVH、声学、振动、测试设备和整车舒适性研发团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://global.cotv.tv/expo/24162"
   },
   {
     "month": 9,
@@ -6439,7 +7123,8 @@ const EXHIBITIONS = [
     "focus": "紧固件/紧固技术(拉美市场)",
     "audience": "紧固件、连接件、工业设备和墨西哥及拉美汽车制造采购商",
     "market": "海外",
-    "star": 1
+    "star": 1,
+    "source": "https://www.fastenerfairglobal.com/"
   },
   {
     "month": 9,
@@ -6460,7 +7145,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Automechanika Frankfurt 2026(油品板块)"
-    ]
+    ],
+    "source": "https://automechanika.messefrankfurt.com/frankfurt/en.html"
   },
   {
     "month": 9,
@@ -6481,7 +7167,8 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "IICIE 2026国际集成电路创新博览会(汽车芯片板块)"
-    ]
+    ],
+    "source": "https://iicieexpo.com/en/Brief.html"
   },
   {
     "month": 9,
@@ -6494,7 +7181,8 @@ const EXHIBITIONS = [
     "focus": "赛车工程技术、动力总成、安全、材料",
     "audience": "赛车工程、动力总成、材料、安全系统和英国性能车渠道团队",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.motorsporttechnologyexpo.com/"
   },
   {
     "month": 9,
@@ -6507,7 +7195,8 @@ const EXHIBITIONS = [
     "focus": "紧固件设备/模具/原材料/表面处理",
     "audience": "紧固件、设备、模具、原材料、表面处理和汽车制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://hdzhanhui.com/"
   },
   {
     "month": 9,
@@ -6520,7 +7209,8 @@ const EXHIBITIONS = [
     "focus": "电池全产业链、储能、氢能",
     "audience": "动力电池、电芯、材料、设备、储能、充电和海外买家",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.battery-expo.com/"
   },
   {
     "month": 9,
@@ -6533,7 +7223,8 @@ const EXHIBITIONS = [
     "focus": "专用汽车、挂车",
     "audience": "专用车、挂车、车轴、物流车队和商用车渠道采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.liangshanexpo.com/"
   },
   {
     "month": 9,
@@ -6546,7 +7237,8 @@ const EXHIBITIONS = [
     "focus": "中国最大摩托车展、全品类",
     "audience": "摩托车整车、发动机、配件、装备、经销商和出口买家",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://en.cimamotor.com/"
   },
   {
     "month": 9,
@@ -6559,7 +7251,8 @@ const EXHIBITIONS = [
     "focus": "冶金装备/钢铁产品/耐火材料/智能制造",
     "audience": "钢铁、冶金装备、耐火材料、金属加工和汽车材料采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.metallurgy-china.com/"
   },
   {
     "month": 9,
@@ -6572,7 +7265,8 @@ const EXHIBITIONS = [
     "focus": "管材/汽车用管/金属管材加工",
     "audience": "管材、汽车用管、金属加工、焊管和零部件采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.tubechina.net/"
   },
   {
     "month": 9,
@@ -6585,7 +7279,8 @@ const EXHIBITIONS = [
     "focus": "轻量化材料/成型技术/一体化压铸/多材料连接",
     "audience": "轻量化材料、成形、一体化压铸、多材料连接和整车研发团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.whlightweight.com/"
   },
   {
     "month": 9,
@@ -6598,7 +7293,8 @@ const EXHIBITIONS = [
     "focus": "新能源物流车、无人配送车",
     "audience": "新能源物流车、无人配送、车队运营和商用车渠道采购商",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whcommercialvehicle.com/"
   },
   {
     "month": 9,
@@ -6611,7 +7307,8 @@ const EXHIBITIONS = [
     "focus": "新能源汽车技术、政策",
     "audience": "整车、动力电池、电驱、充电、政策研究和新能源产业投资团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wnevc.org.cn/CN/home/"
   },
   {
     "month": 9,
@@ -6624,7 +7321,8 @@ const EXHIBITIONS = [
     "focus": "商用车全链、无人车、零部件",
     "audience": "商用车、卡车、物流车、无人车、零部件和车队采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whcommercialvehicle.com/"
   },
   {
     "month": 9,
@@ -6637,7 +7335,8 @@ const EXHIBITIONS = [
     "focus": "汽车零部件、制造装备、供应链",
     "audience": "汽车零部件、智能装备、生产线、工装和供应链采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.whmtexpo.com/"
   },
   {
     "month": 9,
@@ -6650,7 +7349,8 @@ const EXHIBITIONS = [
     "focus": "汽车设计开发、试制工程、轻量化",
     "audience": "汽车设计、试制、工程服务、轻量化和智能制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.whmtexpo.com/"
   },
   {
     "month": 9,
@@ -6663,7 +7363,8 @@ const EXHIBITIONS = [
     "focus": "紧固件/五金工具/金属制品",
     "audience": "紧固件、五金工具、金属制品、设备和汽车维修渠道采购商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cihs.com.cn/"
   },
   {
     "month": 10,
@@ -6676,7 +7377,8 @@ const EXHIBITIONS = [
     "focus": "五金模具/机械/模具制造",
     "audience": "五金模具、机械加工、冲压、注塑和汽车制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.changanexpo.com/"
   },
   {
     "month": 10,
@@ -6689,7 +7391,8 @@ const EXHIBITIONS = [
     "focus": "表面处理/电镀/涂装(UFI认证)",
     "audience": "电镀、涂装、表面处理材料、环保设备和汽车制造客户",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.sfchina.net/"
   },
   {
     "month": 10,
@@ -6702,7 +7405,8 @@ const EXHIBITIONS = [
     "focus": "汽车锻件工艺/轮毂/底盘锻件",
     "audience": "汽车锻件、轮毂、底盘、锻造设备和工艺工程采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.chinaforge.org.cn/"
   },
   {
     "month": 10,
@@ -6715,7 +7419,8 @@ const EXHIBITIONS = [
     "focus": "润滑油、金属加工液",
     "audience": "润滑油、金属加工液、添加剂、检测设备和汽车工业采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.interlubric.com/en"
   },
   {
     "month": 10,
@@ -6728,7 +7433,8 @@ const EXHIBITIONS = [
     "focus": "摩托车出口贸易",
     "audience": "摩托车整车、配件、装备、经销商和海外贸易采购商",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.cimamotor.com/"
   },
   {
     "month": 10,
@@ -6741,7 +7447,8 @@ const EXHIBITIONS = [
     "focus": "新能源智能网联供应链对接",
     "audience": "新能源整车、动力电池、电驱、智能驾驶和供应链企业",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.guocheexpo.com/"
   },
   {
     "month": 10,
@@ -6754,7 +7461,8 @@ const EXHIBITIONS = [
     "focus": "汽车金融、出海、保险科技",
     "audience": "汽车金融、保险、经销商集团、跨境贸易和出海服务机构",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cada.cn/"
   },
   {
     "month": 10,
@@ -6767,7 +7475,8 @@ const EXHIBITIONS = [
     "focus": "电镀/涂装/防腐/表面处理",
     "audience": "电镀、涂装、防腐、环保设备和汽车零部件制造采购团队",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.dahaoexpo.com/"
   },
   {
     "month": 10,
@@ -6786,7 +7495,8 @@ const EXHIBITIONS = [
       "赛车/摩托运动"
     ],
     "relatedSupplyChains": [],
-    "aliases": []
+    "aliases": [],
+    "source": "https://www.apaexpo.com/"
   },
   {
     "month": 10,
@@ -6799,7 +7509,8 @@ const EXHIBITIONS = [
     "focus": "紧固件成品/冷镦机/模具/检测设备",
     "audience": "紧固件、冷镦机、模具、检测设备和汽车制造采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.wzfastener.com/"
   },
   {
     "month": 7,
@@ -6812,7 +7523,8 @@ const EXHIBITIONS = [
     "focus": "国家级智能网联会议、政策标准、国际合作",
     "audience": "智能驾驶、车路云、汽车电子、政策标准和整车研发团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.wicvc.com/index.html"
   },
   {
     "month": 10,
@@ -6825,7 +7537,8 @@ const EXHIBITIONS = [
     "focus": "紧固件/汽车零部件/智能制造",
     "audience": "紧固件、汽车零部件、智能制造设备和苏州产业链采购团队",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.expozm.com/"
   },
   {
     "month": 10,
@@ -6838,7 +7551,8 @@ const EXHIBITIONS = [
     "focus": "智能网联新能源汽车、自动驾驶、车路云一体化",
     "audience": "新能源整车、动力电池、智能驾驶、车路云和产业投资团队",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.nevexpo.cn/"
   },
   {
     "month": 10,
@@ -6849,7 +7563,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "大湾区车灯技术",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.changzhan.net.cn/",
+    "audience": "找灯具供应商、找光学方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -6860,7 +7578,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "数字制造、车身工程、三电工程",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.amts.com.cn/",
+    "audience": "找工程服务商、找开发工具与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 8,
@@ -6880,7 +7602,11 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "AWC深圳国际智能网联汽车产业展览会"
-    ]
+    ],
+    "source": "https://www.szautoshow.com/en/ygaIndex/index.aspx",
+    "audience": "找线束连接器、找电子元件供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -6891,7 +7617,11 @@ const EXHIBITIONS = [
     "location": "Detroit, 美国",
     "focus": "汽车测试/验证(北美)",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.testing-expo.com/",
+    "audience": "找测试设备、找认证服务与OEM、Tier1团队",
+    "address": "Venue to be confirmed, Detroit, 美国",
+    "addressStatus": "待核验"
   },
   {
     "month": 10,
@@ -6902,7 +7632,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "车载触控显示、车载盖板",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.quanchu.com.cn/zh-cn.html",
+    "audience": "找座舱方案、找网联供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6913,7 +7647,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "空调/制冷/热泵/暖通",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.crh-expo.com/",
+    "audience": "找热管理供应商、找电池冷却方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6924,7 +7662,11 @@ const EXHIBITIONS = [
     "location": "Milan, 意大利",
     "focus": "全球顶级摩托车展",
     "market": "海外",
-    "star": 3
+    "star": 3,
+    "source": "https://www.eicma.it/en/",
+    "audience": "找两轮车零部件、找电动化方案与OEM、进口商团队",
+    "address": "Venue to be confirmed, Milan, 意大利",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6935,7 +7677,11 @@ const EXHIBITIONS = [
     "location": "待定",
     "focus": "智能电动汽车供应链",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.auto-friends.com/",
+    "audience": "找供应链服务、找合规与采购方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 待定",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6946,7 +7692,11 @@ const EXHIBITIONS = [
     "location": "北京",
     "focus": "车规级芯片、功率半导体、传感器、MCU",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.ic-china.com.cn/",
+    "audience": "找车规芯片、找功率半导体与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 北京",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6957,7 +7707,11 @@ const EXHIBITIONS = [
     "location": "Las Vegas, 美国",
     "focus": "北美最大汽配展、AI诊断、EV技术",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.aapexshow.com/",
+    "audience": "找诊断设备、找维修方案与经销商、维修渠道团队",
+    "address": "Venue to be confirmed, Las Vegas, 美国",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6968,7 +7722,11 @@ const EXHIBITIONS = [
     "location": "武汉",
     "focus": "国内唯一国家级商用车展、亚洲最大",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.ccvs.asia/en/",
+    "audience": "找商用车配套、找车队方案与OEM、车队团队",
+    "address": "Venue to be confirmed, 武汉",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6987,7 +7745,11 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "中国国际涂料展(CHINACOAT汽车涂料区)"
-    ]
+    ],
+    "source": "https://www.chinacoat.net/",
+    "audience": "找涂装方案、找环保工艺与Tier1、制造工厂团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -6998,7 +7760,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "表面处理/电镀/涂装",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.sfchina.net/",
+    "audience": "找涂装方案、找环保工艺与Tier1、制造工厂团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7009,7 +7775,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "智能驾驶、车联网、新能源电子",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.cpca.org.cn/",
+    "audience": "找车载电子方案、找域控供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7020,7 +7790,11 @@ const EXHIBITIONS = [
     "location": "London, 英国",
     "focus": "「赛车工程达沃斯」、F1技术",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://www.racetechworld.com/",
+    "audience": "找高性能部件、找赛事技术与车队、经销商团队",
+    "address": "Venue to be confirmed, London, 英国",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7031,7 +7805,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "华南车灯市场",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.alic-expo.com/",
+    "audience": "找灯具供应商、找光学方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7042,7 +7820,11 @@ const EXHIBITIONS = [
     "location": "Los Angeles, 美国",
     "focus": "北美重要车展",
     "market": "海外",
-    "star": 2
+    "star": 2,
+    "source": "https://laautoshow.com/",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, Los Angeles, 美国",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7053,7 +7835,11 @@ const EXHIBITIONS = [
     "location": "深圳",
     "focus": "氢能、燃料电池",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.hydrogenexpo.com.cn/",
+    "audience": "找电池材料、找Pack设备与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7064,7 +7850,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "汽车零部件模具/加工技术",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7075,7 +7865,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "汽车测试测量/自动化测试",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找测试设备、找认证服务与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7086,7 +7880,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "底盘技术/制动/轻量化",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找底盘供应商、找制动转向方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7097,7 +7895,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "智能内饰/低碳材料/轻量化内外饰",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找内外饰供应商、找材料方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7108,7 +7910,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "座椅结构/面料/电动调节/加热通风",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找座椅及零部件供应商、找舒适系统方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7119,7 +7925,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "汽车安全系统/ADAS/被动安全",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找安全测试、找法规认证服务与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7130,7 +7940,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "轻量化/多材料/连接技术",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找轻量化材料、找成形工艺与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7141,7 +7955,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "色彩设计/材质创新/表面处理工艺",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找内饰材料、找设计方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7152,7 +7970,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "热管理系统/冷却/热泵空调",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找热管理供应商、找电池冷却方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7163,7 +7985,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "自动驾驶、具身智能、激光雷达、4D毫米波雷达",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找感知方案、找智驾供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7174,7 +8000,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "座舱芯片、车载显示、HUD、智能内饰",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找座舱方案、找网联供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7185,7 +8015,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "车载系统、半导体、测试技术、热管理",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找车载电子方案、找域控供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7196,7 +8030,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "连接器、线束、电容、PCB",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找线束连接器、找电子元件供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7207,7 +8045,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "车规芯片、舱驾域控、感知硬件",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找线束连接器、找电子元件供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7218,7 +8060,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "中国四大A级车展之一、全年收官",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://www.autoguangzhou.org.cn/index.html",
+    "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7229,7 +8075,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "汽车底盘、内外饰、热管理、测试",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找供应链服务、找合规与采购方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7240,7 +8090,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "车规芯片、舱驾一体域控、AI芯片",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找车规芯片、找功率半导体与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 11,
@@ -7251,7 +8105,11 @@ const EXHIBITIONS = [
     "location": "广州",
     "focus": "车载OS、AUTOSAR、SOA、仿真",
     "market": "中国",
-    "star": 2
+    "star": 2,
+    "source": "https://www.china-autotech.com/",
+    "audience": "找软件平台、找OTA和网络安全方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 广州",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -7262,7 +8120,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车零配件/底盘件/售后市场",
     "market": "中国",
-    "star": 3
+    "star": 3,
+    "source": "https://automechanika-shanghai.hk.messefrankfurt.com/shanghai/en.html",
+    "audience": "找底盘供应商、找制动转向方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -7273,7 +8135,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "涂装工程/数字化/AI赋能CMF",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://www.amts.com.cn/",
+    "audience": "找内饰材料、找设计方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -7284,7 +8150,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "汽车热管理/空调/电池冷却",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://atme.atc-sh.com/",
+    "audience": "找热管理供应商、找电池冷却方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -7295,7 +8165,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "智能网联汽车发展峰会、ICV政策、AI车载应用",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://automechanika-shanghai.hk.messefrankfurt.com/shanghai/en.html",
+    "audience": "找感知方案、找智驾供应商与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -7314,7 +8188,11 @@ const EXHIBITIONS = [
     "relatedSupplyChains": [],
     "aliases": [
       "Automechanika Shanghai 2026(润滑油板块)"
-    ]
+    ],
+    "source": "https://automechanika-shanghai.hk.messefrankfurt.com/shanghai/en.html",
+    "audience": "找诊断设备、找维修方案与经销商、维修渠道团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -7337,7 +8215,11 @@ const EXHIBITIONS = [
       "DMP大湾区工博会(汽车内饰件专区)",
       "DMP大湾区工博会(汽车座椅零部件专区)",
       "DMP大湾区工博会(轻量化专区)"
-    ]
+    ],
+    "source": "https://www.dmpsz.com/",
+    "audience": "找模具设备、找工艺方案与OEM、Tier1团队",
+    "address": "Venue to be confirmed, 深圳",
+    "addressStatus": "待核验"
   },
   {
     "month": 12,
@@ -7348,7 +8230,11 @@ const EXHIBITIONS = [
     "location": "上海",
     "focus": "客车、公交、新能源客车",
     "market": "中国",
-    "star": 1
+    "star": 1,
+    "source": "https://busexpo.cn/",
+    "audience": "找商用车配套、找车队方案与OEM、车队团队",
+    "address": "Venue to be confirmed, 上海",
+    "addressStatus": "待核验"
   },
   {
     "year": 2026,
@@ -7466,7 +8352,8 @@ const EXHIBITIONS = [
     "region": "欧洲",
     "star": 3,
     "status": "2027预告",
-    "source": "https://www.autopromotec.com/en/Where-and-when/p28"
+    "source": "https://www.autopromotec.com/en/Where-and-when/p28",
+    "audience": "找售后件供应商、找维修渠道与进口商、经销商团队"
   },
   {
     "year": 2027,
@@ -7518,7 +8405,8 @@ const EXHIBITIONS = [
     "region": "欧洲",
     "star": 3,
     "status": "2027预告",
-    "source": "https://www.iaa-mobility.com/en/visitors"
+    "source": "https://www.iaa-mobility.com/en/visitors",
+    "audience": "找整车技术方案、找工程服务与OEM、Tier1团队"
   },
   {
     "year": 2027,
@@ -7534,7 +8422,8 @@ const EXHIBITIONS = [
     "region": "欧洲",
     "star": 3,
     "status": "2027预告",
-    "source": "https://paris.equipauto.com/en/faq/"
+    "source": "https://paris.equipauto.com/en/faq/",
+    "audience": "找售后件供应商、找维修渠道与进口商、经销商团队"
   }
 ];
 
