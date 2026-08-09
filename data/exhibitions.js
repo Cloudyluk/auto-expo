@@ -3824,8 +3824,8 @@ const EXHIBITIONS = [
     "star": 1,
     "source": "https://www.ncautoexpo.com/",
     "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
-    "address": "Venue to be confirmed, 南昌绿地国际博览中心",
-    "addressStatus": "待核验"
+    "address": "江西省南昌市红谷滩区怀玉山大道1315号",
+    "addressStatus": "已确认"
   },
   {
     "month": 10,
@@ -3853,8 +3853,8 @@ const EXHIBITIONS = [
     "star": 2,
     "source": "https://www.szautoshow.com/en/ygaIndex/index.aspx",
     "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
-    "address": "Venue to be confirmed, 深圳会展中心（福田）",
-    "addressStatus": "待核验"
+    "address": "深圳市福田区福田街道福安社区福华三路（深圳会展中心）",
+    "addressStatus": "已确认"
   },
   {
     "month": 10,
@@ -3868,8 +3868,8 @@ const EXHIBITIONS = [
     "star": 2,
     "source": "https://www.szautoexpo.com/",
     "audience": "看OEM技术路线、寻找整车合作与OEM、经销商团队",
-    "address": "Venue to be confirmed, 苏州国际博览中心",
-    "addressStatus": "待核验"
+    "address": "江苏省苏州工业园区苏州大道东688号",
+    "addressStatus": "已确认"
   },
   {
     "month": 10,
