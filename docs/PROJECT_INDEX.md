@@ -60,6 +60,7 @@
 - 结构化字段覆盖：地址 569 条、官方来源 569 条、适合人群 569 条。
 - 地址中 378 条为已确认场馆地址，191 条明确标记“待核验”；重复主记录已合并，市场归类冲突为 0。
 - 审计命令：`node scripts/audit-exhibitions.js`；严格检查：`node scripts/audit-exhibitions.js --strict`。
+- 月度复核：`node scripts/monthly-review.js`，先看地址、日期和来源待核验队列，再更新数据。
 
 ## 文件地图
 

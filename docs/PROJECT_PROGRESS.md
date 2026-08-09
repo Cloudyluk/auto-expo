@@ -84,7 +84,7 @@ gantt
 - 重复主记录已合并，保留 `relatedCategories`、`relatedSupplyChains` 和 `aliases` 多标签信息。
 - 原始国内/海外标注冲突已处理 81 条，当前严格审计冲突为 0。
 - 为 191 条“待核验”地址补充主办方场馆确认、展商名录和报名入口。
-- 建立展会系列与地区分展清单，继续核查 Motortec、Automechanika、TAPA、Battery Show、SEMICON、Intersolar 等品牌是否存在漏收分展。
+- 已建立 Automechanika、Motortec、TAPA、Battery Show、SEMICON 等系列的页面识别；地区分展仍按月度复核清单持续补充。
 - 地图坐标覆盖已提升至 558 / 562 条 2026 主数据，剩余 4 条无城市信息的“待定”记录不强行定位。
 
 ## 更新规则

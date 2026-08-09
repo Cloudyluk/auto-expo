@@ -2,7 +2,7 @@
 
 ## 适用范围
 
-用于新增、修订、去重和下线汽车产业展会数据。当前数据位于 `index.html` 的 `const exhibitions = [...]` 数组内。
+用于新增、修订、去重和下线汽车产业展会数据。当前主数据位于 `data/exhibitions.js`，页面只负责加载和渲染。
 
 ## 新增一条展会
 
@@ -90,3 +90,13 @@ node scripts/audit-exhibitions.js --strict
 - 延期：更新 `date`、`sortDate` 和 `status: "已延期"`。
 - 日期未核实：使用 `status: "待复核"`，并加入待办看板。
 - 重复记录：保留信息更完整、来源更可靠的一条，其余合并后删除。
+# 月度复核
+
+每月更新前先运行：
+
+```bash
+node scripts/monthly-review.js
+node scripts/audit-exhibitions.js --strict --taxonomy --geo
+```
+
+先处理地址待核验、日期待确认和来源待补记录；官方语言、线上参会和邀请函只在主办方页面明确说明后写入数据。复核结果应同步到 `docs/CHANGELOG.md`，再提交数据变更。
