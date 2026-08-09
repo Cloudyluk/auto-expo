@@ -174,7 +174,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
 .search-close{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--card);
   cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;color:var(--text)}
 .search-results{overflow-y:auto;padding:8px 20px}
-.search-result-item{padding:10px 0;border-bottom:1px solid var(--border)}
+.search-result-item{padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer}.search-result-item:hover{background:var(--card-hover)}
 .search-result-item:last-child{border-bottom:none}
 .search-result-item .sname{font-size:0.88rem;font-weight:600;margin-bottom:4px}
 .search-result-item .smeta{font-size:0.75rem;color:var(--text-sec)}
@@ -204,7 +204,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
       <div class="nav-tab" data-page="starred" onclick="switchPage('starred')">⭐ 推荐</div>
     </div>
     <div class="nav-right">
-      <input class="nav-search" type="text" placeholder="🔍 搜索展会..." onfocus="openSearch()" readonly>
+      <input class="nav-search" type="text" placeholder="🔍 搜索展会..." onfocus="openSearch()" onclick="openSearch()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openSearch()}" readonly>
       <button class="theme-btn" onclick="toggleTheme()" aria-label="主题">☀️</button>
     </div>
   </div>
@@ -578,10 +578,11 @@ function doSearch(){
   }).slice(0,40);
   if(!results.length){document.getElementById('searchResults').innerHTML='<div class="search-empty">未找到匹配的展会</div>';return}
   document.getElementById('searchResults').innerHTML=results.map(e=>
-    '<div class="search-result-item"><div class="sname">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="smeta">'+
+    '<div class="search-result-item" role="button" tabindex="0" onclick="openSearchResult(encodeURIComponent(\''+e.name.replace(/'/g,'%27')+'\'))" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();openSearchResult(encodeURIComponent(\''+e.name.replace(/'/g,'%27')+'\'))}"><div class="sname">'+starStr(e.star)+' '+escapeHtml(e.name)+'</div><div class="smeta">'+
     escapeHtml(e.cat)+' · '+escapeHtml(e.date)+' · '+escapeHtml(e.location)+(e.address?' · '+escapeHtml(e.address):'')+'</div></div>'
   ).join('');
 }
+function openSearchResult(encodedName){const name=decodeURIComponent(encodedName);closeSearch();openExhibitionDetail(name)}
 
 // ===== RENDER HELPERS =====
 function officialLink(e){const officialUrl=e.source||(typeof getOfficialExhibitionUrl==='function'?getOfficialExhibitionUrl(e):''),searchUrl='https://www.bing.com/search?q='+encodeURIComponent(e.name+' 官方网站');return '<div class="source-link" onclick="event.stopPropagation()">'+(officialUrl?'<a href="'+escapeHtml(officialUrl)+'" target="_blank" rel="noopener">🔗 官网 / 官方信息 ↗</a>':'<span class="source-missing">🔗 官网待核验 · </span><a href="'+searchUrl+'" target="_blank" rel="noopener">搜索官网 ↗</a>')+'</div>'}
