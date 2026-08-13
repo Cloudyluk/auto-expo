@@ -14,5 +14,9 @@ assert.match(html, /renderProcurementTaskSelector/, '采购详情页需要渲染
 assert.match(html, /rankProcurementEvents/, '采购展会列表需要按任务重排');
 assert.match(html, /现场要拿到什么/, '采购展会决策需要说明现场产出');
 assert.match(html, /不去的条件/, '采购展会决策需要说明跳过条件');
+assert.match(html, /event\.focus/, '展会级匹配需要使用该展会的主题说明');
+assert.match(html, /event\.audience/, '展会级匹配需要使用该展会的受众信息');
+assert.match(html, /event\.source/, '展会级匹配需要使用该展会的来源完整度');
+assert.match(html, /event\.status/, '展会级匹配需要使用该展会的状态信息');
 
 console.log('Procurement decision contract passed.');
