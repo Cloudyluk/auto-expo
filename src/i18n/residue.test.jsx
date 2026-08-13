@@ -18,6 +18,15 @@ test.each([
 });
 
 test.each([
+  ['/', 'Sales route'],
+  ['/es/', 'Ruta comercial']
+])('published locale %s has no unexpected Chinese business copy in sales routes', (pathname, pageLabel) => {
+  const { container } = render(<App pathname={pathname} />);
+  fireEvent.click(screen.getByText(pageLabel, { exact: true }));
+  expect(unexpectedHan(container)).toEqual([]);
+});
+
+test.each([
   ['/', 'Procurement route', 'Cooling, lubrication & HVAC'],
   ['/es/', 'Ruta de compras', 'Refrigeración, lubricación y HVAC']
 ])('published locale %s has no unexpected Chinese business copy in procurement results', (pathname, pageLabel, assemblyLabel) => {

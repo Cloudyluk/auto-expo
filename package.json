@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "test": "vitest",
-    "verify": "npm test -- --run && npm run build"
+    "test:routes": "npm run build && node scripts/test-static-routes.mjs",
+    "verify": "npm test -- --run && npm run build && node scripts/test-static-routes.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
