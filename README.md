@@ -1,4 +1,4 @@
-# 🌐 全球汽车展会聚合平台
+# Auto Expo · Global Automotive Exhibition Hub
 
 **Global Auto Exhibition Aggregator**
 
@@ -22,14 +22,16 @@
 
 ## 部署
 
-本站为纯静态单页面应用，无需后端服务。
+本站重构为 Vite + React 静态站点，无需后端服务，可部署在 GitHub Pages。
 
 ```bash
-# 本地预览
-open index.html
+# 安装与本地预览
+npm install
+npm run dev
 
-# 或使用任意静态服务器
-npx serve .
+# 生产构建与测试
+npm run build
+npm test
 ```
 
 ## 数据来源
