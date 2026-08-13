@@ -18,5 +18,9 @@ assert.match(html, /event\.focus/, '展会级匹配需要使用该展会的主�
 assert.match(html, /event\.audience/, '展会级匹配需要使用该展会的受众信息');
 assert.match(html, /event\.source/, '展会级匹配需要使用该展会的来源完整度');
 assert.match(html, /event\.status/, '展会级匹配需要使用该展会的状态信息');
+for (const assembly of ['发动机与进排气', '燃油供给、点火与尾气后处理', '冷却、润滑与 HVAC', '启动、发电与低压电气', '传动与四驱系统', '底盘、制动与转向', '轮胎、橡胶与密封', '主动与被动安全', '车身、内外饰、座椅与照明', '电子电气、线束、ECU 与传感器']) {
+  assert.ok(html.includes(assembly), `燃油车采购路径缺少：${assembly}`);
+}
+assert.match(html, /shared:\{label:'横向采购能力'[\s\S]*id:'manufacturing'/, '制造、材料与质量应归入横向采购能力');
 
 console.log('Procurement decision contract passed.');
