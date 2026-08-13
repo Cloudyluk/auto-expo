@@ -9,6 +9,7 @@ import { getSalesRouteProducts, getSalesRule, SALES_ROUTES } from './domain/sale
 import { CATEGORY_IDS, categoryLabel } from './data/taxonomy';
 import { pathLabel } from './data/path-content';
 import { localizeLocation } from './data/display';
+import { WorldMap } from './components/WorldMap';
 
 const NAV = ['map', 'overview', 'procurement', 'sales', 'monthly', 'category', 'country', 'preview', 'starred'];
 const TASKS = ['supplier', 'technology', 'cost', 'qualification', 'aftermarket'];
@@ -37,6 +38,7 @@ export function App({ pathname = window.location.pathname }) {
   const filtered = useMemo(() => EXHIBITIONS.filter((event) => JSON.stringify(event).toLowerCase().includes(query.toLowerCase())), [query]);
   const categories = [...new Set(EXHIBITIONS.map((event) => event.taxonomy.categoryId))].sort();
   const countries = [...new Set(EXHIBITIONS.map(countryFor))].sort();
+  const countryCounts = Object.fromEntries(countries.map((code) => [code, EXHIBITIONS.filter((event) => countryFor(event) === code).length]));
   const activeAssembly = selection && BUYER_PATHS[selection.mode]?.assemblies.find((assembly) => assembly.id === selection.id);
   const matched = activeAssembly ? rankProcurementEvents(getProcurementAssemblyEvents(EXHIBITIONS, { ...activeAssembly, categoryIds: activeAssembly.cats.map((cat) => CATEGORY_IDS[cat]).filter(Boolean) }, taskId)) : [];
 
@@ -54,7 +56,7 @@ export function App({ pathname = window.location.pathname }) {
       </nav>
       <label className="search"><span>{t(locale, 'common.search')}</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t(locale, 'search.placeholder')} /></label>
       {page === 'overview' && <section><h1>{t(locale, 'overview.featured')}</h1><div className="expo-grid">{featured.map((exhibition) => <ExhibitionCard key={exhibition.id} exhibition={exhibition} locale={locale} />)}</div></section>}
-      {page === 'map' && <section><h1>{t(locale, 'map.title')}</h1><p>{t(locale, 'map.distribution')}</p><div className="country-map">{countries.map((code) => <button key={code} onClick={() => { setCountry(code); setPage('country'); }}>{(countryNames[locale] || countryNames.en)[code]} <b>{EXHIBITIONS.filter((event) => countryFor(event) === code).length}</b></button>)}</div></section>}
+      {page === 'map' && <section><h1>{t(locale, 'map.title')}</h1><p>{t(locale, 'map.distribution')}</p><WorldMap locale={locale} counts={countryCounts} labels={countryNames[locale] || countryNames.en} onCountry={(code) => { setCountry(code); setPage('country'); }} /><div className="country-map">{countries.map((code) => <button key={code} onClick={() => { setCountry(code); setPage('country'); }}>{(countryNames[locale] || countryNames.en)[code]} <b>{countryCounts[code]}</b></button>)}</div></section>}
       {page === 'monthly' && <section><h1>{t(locale, 'nav.monthly')}</h1><div className="chips">{Array.from({ length: 12 }, (_, index) => <button className={month === index + 1 ? 'active' : ''} key={index} onClick={() => setMonth(index + 1)}>{index + 1}</button>)}</div><Cards events={filtered.filter((event) => event.date.month === month)} locale={locale} /></section>}
       {page === 'category' && <section><h1>{t(locale, 'nav.category')}</h1><div className="chips"><button onClick={() => setCategory('all')}>{t(locale, 'common.all')}</button>{categories.map((id) => <button key={id} onClick={() => setCategory(id)}>{categoryLabel(id, locale)}</button>)}</div><Cards events={filtered.filter((event) => category === 'all' || event.taxonomy.categoryId === category)} locale={locale} /></section>}
       {page === 'country' && <section><h1>{t(locale, 'nav.country')}</h1><div className="chips"><button onClick={() => setCountry('all')}>{t(locale, 'common.all')}</button>{countries.map((code) => <button key={code} onClick={() => setCountry(code)}>{(countryNames[locale] || countryNames.en)[code]}</button>)}</div><Cards events={filtered.filter((event) => country === 'all' || countryFor(event) === country)} locale={locale} /></section>}
