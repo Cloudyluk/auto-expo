@@ -13,6 +13,8 @@ for (const task of ['新供应商开发 / 第二供应商', '技术选型与方�
 assert.match(html, /renderProcurementTaskSelector/, '采购详情页需要渲染任务选择器');
 assert.match(html, /rankProcurementEvents/, '采购展会列表需要按任务重排');
 assert.match(html, /getProcurementEventMatch/, '采购展会需要逐展计算匹配依据');
+assert.match(html, /procurementTaskEvidence/, '采购展会匹配需要考虑当前采购任务');
+assert.match(html, /precise\.length\?precise/, '存在精准展会时不应混入分类泛匹配');
 assert.match(html, /keywords:/, '采购总成需要声明业务关键词');
 assert.match(html, /event\.name/, '展会级匹配需要使用展会名称');
 assert.match(html, /现场要拿到什么/, '采购展会决策需要说明现场产出');
