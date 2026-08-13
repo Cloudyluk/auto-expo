@@ -1,0 +1,18 @@
+import { fireEvent, render, screen } from '@testing-library/react';
+import { App } from '../App';
+
+function unexpectedHan(container) {
+  return [...container.querySelectorAll('*')]
+    .filter((element) => element.children.length === 0 && /[\u3400-\u9fff]/.test(element.textContent || '') && !element.closest('[data-official-name],[data-language-name]'))
+    .map((element) => element.textContent.trim())
+    .filter(Boolean);
+}
+
+test.each([
+  ['/', 'Featured exhibitions'],
+  ['/es/', 'Ferias destacadas']
+])('published locale %s has no unexpected Chinese business copy in exhibition cards', (pathname, pageLabel) => {
+  const { container } = render(<App pathname={pathname} />);
+  fireEvent.click(screen.getByText(pageLabel, { exact: true }));
+  expect(unexpectedHan(container)).toEqual([]);
+});

@@ -18,6 +18,15 @@ const CATEGORY_LABELS = {
     lightweighting: 'Lightweighting', 'finance-insurance': 'Automotive Finance & Insurance', aftermarket: 'Aftermarket', 'lubricants-care': 'Lubricants & Car Care', 'thermal-management': 'Thermal Management & HVAC',
     fasteners: 'Fasteners', 'surface-treatment': 'Surface Treatment & Coating', motorsport: 'Motorsport', 'connected-cockpit': 'Connected Vehicle & Cockpit', 'wheels-chassis': 'Wheels & Chassis', 'tyres-rubber': 'Tyres & Rubber'
   },
+  es: {
+    'used-classic-vehicles': 'Vehículos usados y clásicos', 'commercial-vehicles': 'Vehículos comerciales', motorcycles: 'Motocicletas', customization: 'Personalización', 'vehicle-show': 'Salón del automóvil',
+    'new-energy-ev': 'Nueva energía y vehículos eléctricos', 'automated-driving': 'Conducción automatizada', 'materials-metalworking': 'Materiales y metalmecánica', 'tooling-stamping': 'Herramental y estampación', 'automotive-cmf': 'CMF automotriz',
+    'automotive-nvh': 'NVH automotriz', 'automotive-supply-chain': 'Cadena de suministro automotriz', 'interior-exterior': 'Interior y exterior', 'automotive-semiconductors': 'Semiconductores para automoción', 'automotive-safety': 'Seguridad automotriz',
+    'automotive-seating': 'Asientos automotrices', 'automotive-technology': 'Tecnología automotriz', 'testing-validation': 'Pruebas y validación', 'automotive-lighting': 'Iluminación automotriz', 'automotive-logistics': 'Logística automotriz',
+    'automotive-electronics': 'Electrónica automotriz', 'electronic-components': 'Componentes electrónicos', 'repair-equipment': 'Equipos de reparación', 'design-engineering': 'Diseño e ingeniería', 'automotive-software': 'Software automotriz y OTA',
+    lightweighting: 'Aligeramiento', 'finance-insurance': 'Financiación y seguros de automoción', aftermarket: 'Posventa', 'lubricants-care': 'Lubricantes y cuidado del automóvil', 'thermal-management': 'Gestión térmica y HVAC',
+    fasteners: 'Elementos de fijación', 'surface-treatment': 'Tratamiento de superficies y pintura', motorsport: 'Deporte del motor', 'connected-cockpit': 'Vehículo conectado y cabina', 'wheels-chassis': 'Ruedas y chasis', 'tyres-rubber': 'Neumáticos y caucho'
+  },
   zh: Object.fromEntries(Object.entries(CATEGORY_IDS).map(([label, id]) => [id, label]))
 };
 

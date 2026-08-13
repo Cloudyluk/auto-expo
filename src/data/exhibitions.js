@@ -1,4 +1,5 @@
 // Generated from the preserved pre-refactor exhibition dataset.
+import { localizedBusinessContent } from './localized-content';
 export const EXHIBITIONS = [
   {
     "id": "33-1",
@@ -32560,13 +32561,14 @@ export const EXHIBITIONS = [
 
 export function getLocalizedExhibition(record, locale) {
   const content = record.content[locale] || {};
+  const business = locale === 'zh' ? content : localizedBusinessContent(record, locale);
   return {
     name: record.official.names[locale] || record.official.defaultName,
-    focus: content.focus || (locale === 'en' ? 'English content is being verified.' : ''),
-    audience: content.audience || (locale === 'en' ? 'English content is being verified.' : ''),
-    buyerValue: content.buyerValue || [],
-    sellerValue: content.sellerValue || [],
-    buyerTasks: content.buyerTasks || [],
-    sellerTargets: content.sellerTargets || []
+    focus: business.focus || (locale === 'en' ? 'English content is being verified.' : ''),
+    audience: business.audience || (locale === 'en' ? 'English content is being verified.' : ''),
+    buyerValue: business.buyerValue || [],
+    sellerValue: business.sellerValue || [],
+    buyerTasks: business.buyerTasks || [],
+    sellerTargets: business.sellerTargets || []
   };
 }

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "vitest"
+    "test": "vitest",
+    "verify": "npm test -- --run && npm run build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

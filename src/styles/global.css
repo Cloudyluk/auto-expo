@@ -2,9 +2,13 @@
 body { margin: 0; background: #f0f4f8; color: #1e293b; }
 main { max-width: 1400px; margin: 0 auto; padding: 1.5rem; }
 nav { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem; padding-bottom: 1rem; border-bottom: 1px solid #cbd5e1; }
-nav a { color: #0f766e; text-decoration: none; }
+nav a, button { color: #0f766e; text-decoration: none; background: #fff; border: 1px solid #cbd5e1; border-radius: .45rem; padding: .35rem .55rem; cursor: pointer; }
+button.active, button:hover { background: #ccfbf1; border-color: #0d9488; }
 .language-menu { margin-left: auto; display: flex; gap: .5rem; flex-wrap: wrap; font-size: .8rem; }
 .language-menu span { color: #64748b; }
 .expo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
 .expo-card { background: white; border: 1px solid #dbe3ef; border-radius: .75rem; padding: 1rem; }
 .expo-card h3 { margin: 0 0 .5rem; font-size: 1rem; }.meta { color: #475569; font-size: .85rem; }
+.search { display: block; margin: 1.25rem 0; }.search span { display: block; font-size: .8rem; color: #475569; }.search input { width: min(100%, 32rem); padding: .6rem; border: 1px solid #94a3b8; border-radius: .45rem; }
+.chips, .country-map { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }.country-map button b { display: inline-grid; place-items:center; margin-left: .25rem; min-width: 1.4rem; border-radius: 1rem; background: #0f766e; color: white; }
+.path-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }.path-grid section { background: #fff; border: 1px solid #dbe3ef; border-radius: .75rem; padding: 1rem; }.path-grid section button { display: block; width: 100%; text-align: left; margin: .35rem 0; }.decision { margin: -.35rem 1rem 1rem; padding: .75rem; background: #f0fdfa; border-left: 3px solid #0d9488; font-size: .86rem; }.decision p { margin: .25rem 0 .7rem; }

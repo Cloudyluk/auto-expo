@@ -1,9 +1,9 @@
-export const SUPPORTED_LOCALES = ['en', 'zh'];
+export const SUPPORTED_LOCALES = ['en', 'zh', 'es'];
 
 export const LANGUAGE_MENU = [
   { code: 'en', label: 'English', status: 'available' },
   { code: 'zh', label: '中文', status: 'available' },
-  { code: 'es', label: 'Español', status: 'comingSoon' },
+  { code: 'es', label: 'Español', status: 'available' },
   { code: 'pt', label: 'Português', status: 'comingSoon' },
   { code: 'fr', label: 'Français', status: 'comingSoon' },
   { code: 'de', label: 'Deutsch', status: 'comingSoon' },
