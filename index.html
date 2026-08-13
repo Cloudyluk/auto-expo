@@ -198,8 +198,7 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
       <div class="nav-tab" data-page="sales" onclick="switchPage('sales')">📈 销售路径</div>
       <div class="nav-tab" data-page="monthly" onclick="switchPage('monthly')">📅 月度</div>
       <div class="nav-tab" data-page="category" onclick="switchPage('category')">🏷️ 分类</div>
-      <div class="nav-tab" data-page="domestic" onclick="switchPage('domestic')">🇨🇳 国内</div>
-      <div class="nav-tab" data-page="overseas" onclick="switchPage('overseas')">🌍 海外</div>
+      <div class="nav-tab" data-page="country" onclick="switchPage('country')">🌍 按国家</div>
       <div class="nav-tab" data-page="preview2027" onclick="switchPage('preview2027')">🔭 2027预告</div>
       <div class="nav-tab" data-page="starred" onclick="switchPage('starred')">⭐ 推荐</div>
     </div>
@@ -273,18 +272,12 @@ html.light .search-panel-input{background:rgba(0,0,0,0.04);color:#1e293b}
   <div class="expo-list" id="catContent"></div>
 </div>
 
-<!-- PAGE 4: DOMESTIC -->
-<div class="page" id="page-domestic">
-  <div class="section-title"><span class="icon">🇨🇳</span> 国内展会</div>
-  <div class="month-count" id="domesticCount"></div>
-  <div id="domesticContent"></div>
-</div>
-
-<!-- PAGE 5: OVERSEAS -->
-<div class="page" id="page-overseas">
-  <div class="section-title"><span class="icon">🌍</span> 海外展会</div>
-  <div class="month-count" id="overseasCount"></div>
-  <div id="overseasContent"></div>
+<!-- PAGE 4: COUNTRY -->
+<div class="page" id="page-country">
+  <div class="section-title"><span class="icon">🌍</span> 按国家浏览</div>
+  <div class="cat-chips" id="countryChips"></div>
+  <div class="month-count" id="countryCount"></div>
+  <div class="expo-list" id="countryContent"></div>
 </div>
 
 <!-- PAGE 6: 2027 PREVIEW -->
@@ -994,7 +987,11 @@ function getCountry(loc){
     ['Japan','日本'],['Tokyo','日本'],['Nagoya','日本'],['Yokohama','日本'],['Aichi','日本'],['Makuhari','日本'],
     ['UK','英国'],['Birmingham','英国'],['London','英国'],['France','法国'],['Paris','法国'],['Italy','意大利'],['Milan','意大利'],
     ['Spain','西班牙'],['Barcelona','西班牙'],['Thailand','泰国'],['Bangkok','泰国'],['India','印度'],['Poland','波兰'],
-    ['Warsaw','波兰'],['Brazil','巴西'],['Sao Paulo','巴西'],['Netherlands','荷兰'],['Sweden','瑞典'],['Australia','澳大利亚']
+    ['Warsaw','波兰'],['Brazil','巴西'],['Sao Paulo','巴西'],['Netherlands','荷兰'],['Sweden','瑞典'],['Australia','澳大利亚'],
+    ['Canada','加拿大'],['Mexico','墨西哥'],['Belgium','比利时'],['Switzerland','瑞士'],['Austria','奥地利'],['Portugal','葡萄牙'],
+    ['Czech','捷克'],['Turkey','土耳其'],['Russia','俄罗斯'],['Hungary','匈牙利'],['Korea','韩国'],['Seoul','韩国'],
+    ['Indonesia','印度尼西亚'],['Vietnam','越南'],['Malaysia','马来西亚'],['Philippines','菲律宾'],['Singapore','新加坡'],['Cambodia','柬埔寨'],
+    ['Argentina','阿根廷'],['Peru','秘鲁'],['Chile','智利'],['Egypt','埃及'],['UAE','阿联酋'],['Dubai','阿联酋'],['Saudi','沙特'],['Serbia','塞尔维亚']
   ];
   const hit=englishHints.find(([k])=>loc.toLowerCase().includes(k.toLowerCase()));
   if(hit)return hit[1];
@@ -1003,6 +1000,12 @@ function getCountry(loc){
 }
 function isChinaLocation(loc){
   return getCountry(loc).startsWith('中国')||/北京|上海|广州|深圳|重庆|成都|武汉|天津|苏州|南京|宁波|温州|瑞安|邯郸|永年|济南|青岛|石家庄|长沙|大连|哈尔滨|兰州|西安|沈阳|南昌|福州|佛山|昆山|玉环|广饶|海口|喀什|台北|香港/.test(loc||'');
+}
+function countryLabel(e){
+  const country=getCountry([e.location,e.address].filter(Boolean).join(' '));
+  const known=['中国','中国香港','中国台湾','美国','加拿大','墨西哥','德国','法国','意大利','西班牙','英国','荷兰','瑞士','奥地利','波兰','捷克','土耳其','俄罗斯','葡萄牙','比利时','瑞典','匈牙利','日本','韩国','泰国','印度尼西亚','印尼','越南','马来西亚','菲律宾','新加坡','柬埔寨','印度','巴西','阿根廷','秘鲁','智利','埃及','阿联酋','沙特','伊拉克','澳大利亚','塞尔维亚'];
+  if(known.includes(country))return country;
+  return isChinaLocation(e.location)?'中国':'其他国家';
 }
 function regionLabel(e){
   if(e.region)return e.region;
@@ -1048,6 +1051,7 @@ function verticalLabel(e){
 function normalizeRecord(e){
   const profile=typeof getSupplyChainProfile==='function'?getSupplyChainProfile(e):{sc:supplyChainLabel(e),vertical:verticalLabel(e),buyerValue:['找供应商'],sellerValue:['开发产业客户'],buyerTasks:['供应商开发'],sellerTargets:['OEM'],marketUse:{}};
   if(isChinaLocation(e.location))e.market='中国';
+  if(!e.country)e.country=countryLabel(e);
   if(!e.region)e.region=regionLabel(e);
   if(!e.sc)e.sc=profile.sc;
   if(!e.vertical)e.vertical=profile.vertical;
@@ -1337,37 +1341,25 @@ function renderCatContent(){
     '<div style="color:var(--text-dim);padding:40px;text-align:center">暂无展会</div>';
 }
 
-// ===== PAGE 4: DOMESTIC =====
-function renderDomestic(){
-  const items=currentExhibitions().filter(e=>e.market==='中国').sort((a,b)=>a.sortDate-b.sortDate);
-  document.getElementById('domesticCount').textContent='共 '+items.length+' 场国内展会';
-  const grouped={};
-  items.forEach(e=>{const m=getMonth(e);if(!grouped[m])grouped[m]=[];grouped[m].push(e)});
-  const mNames=["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
-  let html='';
-  for(let m=1;m<=12;m++){
-    if(!grouped[m]||!grouped[m].length)continue;
-    html+='<div class="group-section"><div class="group-header">'+mNames[m]+' <span class="group-count">'+grouped[m].length+'场</span></div><div class="expo-list">'+grouped[m].map(expoItem).join('')+'</div></div>';
-  }
-  document.getElementById('domesticContent').innerHTML=html;
+// ===== PAGE 4: COUNTRY =====
+let curCountry='全部';
+function renderCountryChips(){
+  const counts=new Map();
+  currentExhibitions().forEach(event=>counts.set(event.country,(counts.get(event.country)||0)+1));
+  const countries=[...counts.keys()].sort((a,b)=>a==='中国'?-1:b==='中国'?1:(counts.get(b)-counts.get(a)||a.localeCompare(b,'zh')));
+  document.getElementById('countryChips').innerHTML=['全部',...countries].map(country=>'<div class="cat-chip'+(country===curCountry?' active':'')+'" data-country="'+escapeHtml(country)+'" onclick="selectCountry(this)">'+escapeHtml(country)+(country==='全部'?'':' · '+counts.get(country)+'场')+'</div>').join('');
+  renderCountryContent();
 }
-
-// ===== PAGE 5: OVERSEAS =====
-function renderOverseas(){
-  const items=currentExhibitions().filter(e=>e.market!=='中国').sort((a,b)=>a.sortDate-b.sortDate);
-  document.getElementById('overseasCount').textContent='共 '+items.length+' 场海外展会';
-  const regions={'🇪🇺 欧洲':[],'🇺🇸 北美':[],'🇯🇵🇰🇷 日韩':[],'🌏 东南亚':[],'🇮🇳 印度':[],'🌎 拉美':[],'🕌 中东/非洲':[],'🌐 其他海外':[]};
-  const regionKeys={'欧洲':'🇪🇺 欧洲','北美':'🇺🇸 北美','日韩':'🇯🇵🇰🇷 日韩','东南亚':'🌏 东南亚','印度':'🇮🇳 印度','拉美':'🌎 拉美','中东/非洲':'🕌 中东/非洲','其他海外':'🌐 其他海外'};
-  items.forEach(e=>{
-    const key=regionKeys[regionLabel(e)]||'🌐 其他海外';
-    regions[key].push(e);
-  });
-  let html='';
-  for(const [r,list] of Object.entries(regions)){
-    if(!list.length)continue;
-    html+='<div class="group-section"><div class="group-header">'+r+' <span class="group-count">'+list.length+'场</span></div><div class="expo-list">'+list.map(expoItem).join('')+'</div></div>';
-  }
-  document.getElementById('overseasContent').innerHTML=html;
+function selectCountry(el){
+  curCountry=el.getAttribute('data-country');
+  document.querySelectorAll('#countryChips .cat-chip').forEach(chip=>chip.classList.remove('active'));
+  el.classList.add('active');
+  renderCountryContent();
+}
+function renderCountryContent(){
+  const items=currentExhibitions().filter(event=>curCountry==='全部'||event.country===curCountry).sort((a,b)=>a.sortDate-b.sortDate);
+  document.getElementById('countryCount').textContent=(curCountry==='全部'?'全部国家':curCountry)+' · 共 '+items.length+' 场展会';
+  document.getElementById('countryContent').innerHTML=items.length?items.map(expoItem).join(''):'<div class="search-empty">该国家暂未收录当年展会</div>';
 }
 
 // ===== PAGE 6: STARRED =====
@@ -1402,8 +1394,7 @@ renderSalesRoutes();
 renderMonthTabs();
 renderCatChips();
 renderSupplyChainChips();
-renderDomestic();
-renderOverseas();
+renderCountryChips();
 renderStarred();
 renderPreview2027();
 loadWorldMap();
