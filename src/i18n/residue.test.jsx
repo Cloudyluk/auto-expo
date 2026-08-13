@@ -16,3 +16,13 @@ test.each([
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));
   expect(unexpectedHan(container)).toEqual([]);
 });
+
+test.each([
+  ['/', 'Procurement route', 'Cooling, lubrication & HVAC'],
+  ['/es/', 'Ruta de compras', 'Refrigeración, lubricación y HVAC']
+])('published locale %s has no unexpected Chinese business copy in procurement results', (pathname, pageLabel, assemblyLabel) => {
+  const { container } = render(<App pathname={pathname} />);
+  fireEvent.click(screen.getByText(pageLabel, { exact: true }));
+  fireEvent.click(screen.getByText(assemblyLabel, { exact: true }));
+  expect(unexpectedHan(container)).toEqual([]);
+});

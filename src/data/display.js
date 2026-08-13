@@ -25,9 +25,14 @@ export function localizeLocation(value = '', locale) {
 }
 
 export function localizeDate(value = '', locale) {
-  if (locale === 'zh' || !/\d+月/.test(value)) return value;
-  const dated = value.replace(/(\d{1,2})月(\d{1,2})(?:日)?(?:-(\d{1,2})日?)?/g, (_, month, start, end) => locale === 'es'
+  if (locale === 'zh') return value;
+  if (!/\d+月/.test(value)) return value.replace(/待定|待确认/g, locale === 'es' ? 'Por confirmar' : 'To be confirmed').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'por confirmar' : 'to be confirmed');
+  const months = MONTHS[locale];
+  const crossMonth = value.replace(/(\d{1,2})月(\d{1,2})日-(\d{1,2})月(\d{1,2})日/g, (_, monthA, dayA, monthB, dayB) => locale === 'es'
+    ? `${dayA} de ${months[Number(monthA) - 1]}–${dayB} de ${months[Number(monthB) - 1]}`
+    : `${months[Number(monthA) - 1]} ${dayA}–${months[Number(monthB) - 1]} ${dayB}`);
+  const dated = crossMonth.replace(/(\d{1,2})月(\d{1,2})(?:日)?(?:-(\d{1,2})日?)?/g, (_, month, start, end) => locale === 'es'
     ? `${start}${end ? `–${end}` : ''} de ${MONTHS.es[Number(month) - 1]}`
     : `${MONTHS.en[Number(month) - 1]} ${start}${end ? `–${end}` : ''}`);
-  return dated.replace(/(\d{1,2})月（春季）/g, (_, month) => locale === 'es' ? `${MONTHS.es[Number(month) - 1]} (primavera)` : `${MONTHS.en[Number(month) - 1]} (spring)`).replace(/(\d{1,2})月（秋季）/g, (_, month) => locale === 'es' ? `${MONTHS.es[Number(month) - 1]} (otoño)` : `${MONTHS.en[Number(month) - 1]} (autumn)`).replace(/待定|待确认/g, locale === 'es' ? 'Por confirmar' : 'To be confirmed');
+  return dated.replace(/(\d{1,2})月（春季）/g, (_, month) => locale === 'es' ? `${months[Number(month) - 1]} (primavera)` : `${months[Number(month) - 1]} (spring)`).replace(/(\d{1,2})月（秋季）/g, (_, month) => locale === 'es' ? `${months[Number(month) - 1]} (otoño)` : `${months[Number(month) - 1]} (autumn)`).replace(/(\d{1,2})月/g, (_, month) => months[Number(month) - 1]).replace(/待定|待确认|具体/g, locale === 'es' ? 'Por confirmar' : 'To be confirmed').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'por confirmar' : 'to be confirmed');
 }
