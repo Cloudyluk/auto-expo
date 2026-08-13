@@ -36,5 +36,11 @@ const evSection = html.slice(evStart, sharedStart);
 const sharedSection = html.slice(sharedStart, html.indexOf('};\nconst SALES_ROUTES'));
 assert.ok(!evSection.includes("id:'smart'") && !evSection.includes("id:'software'"), '智能化与软件不应继续放在新能源车路径');
 assert.ok(sharedSection.includes("id:'smart'") && sharedSection.includes("id:'software'"), '智能化与软件应移入横向采购能力');
+for (const assembly of ['测试、认证与法规', '制造工艺、材料与质量', '制造装备与厂内物流', '智能驾驶与智能座舱', '软件、数据与供应链服务', '供应链风险与韧性', '贸易合规与出海', '售后、再制造与逆向物流']) {
+  assert.ok(sharedSection.includes(assembly), `横向采购能力缺少：${assembly}`);
+}
+assert.ok(sharedSection.includes("id:'risk'"), '横向采购能力需要供应链风险与韧性入口');
+assert.ok(!sharedSection.includes("id:'digital'"), '供应链软件与数字化应整合到软件、数据与供应链服务');
+assert.match(html, /适用范围/, '横向采购能力需要展示适用范围');
 
 console.log('Procurement decision contract passed.');
