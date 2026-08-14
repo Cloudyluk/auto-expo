@@ -26,3 +26,9 @@ test('renders French at /fr/', () => {
   expect(screen.getByRole('navigation')).toHaveTextContent('Carte mondiale');
   expect(screen.getByText('Expositions mondiales ce mois-ci')).toBeInTheDocument();
 });
+
+test('renders German at /de/', () => {
+  render(<App pathname="/de/" />);
+  expect(screen.getByText('Weltkarte')).toBeInTheDocument();
+  expect(screen.getByText('Globale Messen in diesem Monat')).toBeInTheDocument();
+});

@@ -13,6 +13,7 @@ test.each([
   ['/es/', 'Ferias destacadas'],
   ['/pt/', 'Exposições em destaque'],
   ['/fr/', 'Expositions à la une']
+  ,['/de/', 'Empfohlene Messen']
 ])('published locale %s has no unexpected Chinese business copy in exhibition cards', (pathname, pageLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));
@@ -24,6 +25,7 @@ test.each([
   ['/es/', 'Ruta comercial'],
   ['/pt/', 'Rota comercial'],
   ['/fr/', 'Parcours commercial']
+  ,['/de/', 'Vertriebsweg']
 ])('published locale %s has no unexpected Chinese business copy in sales routes', (pathname, pageLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));
@@ -35,6 +37,7 @@ test.each([
   ['/es/', 'Ruta de compras', 'Refrigeración, lubricación y HVAC'],
   ['/pt/', 'Rota de compras', 'Arrefecimento, lubrificação e HVAC'],
   ['/fr/', 'Parcours d’achat', 'Refroidissement, lubrification et HVAC']
+  ,['/de/', 'Beschaffungsweg', 'Kühlung, Schmierung und HVAC']
 ])('published locale %s has no unexpected Chinese business copy in procurement results', (pathname, pageLabel, assemblyLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));

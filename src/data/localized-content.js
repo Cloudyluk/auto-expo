@@ -28,12 +28,21 @@ const CATEGORY_SUMMARIES = {
     'tooling-stamping': 'Ferramentaria, estampagem, fundição sob pressão e equipamentos de produção.', 'surface-treatment': 'Engenharia de superfícies, revestimentos e processos de pintura.', 'wheels-chassis': 'Chassi, freios, direção, rodas e componentes relacionados.',
     'vehicle-show': 'Lançamentos de veículos, tendências de mobilidade e atividade de mercado dos OEMs.', 'connected-cockpit': 'Veículos conectados, cabines inteligentes, comunicações e HMI.',
     'automotive-software': 'Veículos definidos por software, OTA, AUTOSAR, SOA e cibersegurança.', 'automotive-logistics': 'Logística de veículos e peças, armazenagem e intralogística.'
+  },
+  de: {
+    'new-energy-ev': 'Batterien, elektrische Antriebe, Ladeinfrastruktur und Elektrifizierung.', 'automated-driving': 'ADAS, Sensoren, Domänencontroller und Technologien für automatisiertes Fahren.', 'thermal-management': 'Thermomanagement, HVAC, Kühlung und Fluidtechnik.',
+    aftermarket: 'Ersatzteile, Diagnose, Werkstattausrüstung und Aftermarket-Services.', 'automotive-electronics': 'Fahrzeugelektronik, E/E-Systeme und Integrationstechnologien.', 'electronic-components': 'Steckverbinder, Kabelsätze, Leiterplatten und elektronische Komponenten.',
+    'automotive-semiconductors': 'Automotive-Chips, Leistungshalbleiter und elektronische Architekturen.', 'testing-validation': 'Prüfung, Validierung, Zertifizierung und Laborkapazitäten.',
+    'automotive-supply-chain': 'Beschaffung, Fertigung und Geschäftsanbahnung in der automobilen Lieferkette.', 'materials-metalworking': 'Werkstoffe, Metallumformung und Fertigungsverfahren.',
+    'tooling-stamping': 'Werkzeuge, Pressen, Druckguss und Produktionstechnik.', 'surface-treatment': 'Oberflächentechnik, Beschichtungen und Lackierverfahren.', 'wheels-chassis': 'Fahrwerk, Bremsen, Lenkung, Räder und verwandte Komponenten.',
+    'vehicle-show': 'Fahrzeugpremieren, Mobilitätstrends und OEM-Marktaktivitäten.', 'connected-cockpit': 'Vernetzte Fahrzeuge, intelligente Cockpits, Kommunikation und HMI.',
+    'automotive-software': 'Softwaredefinierte Fahrzeuge, OTA, AUTOSAR, SOA und Cybersicherheit.', 'automotive-logistics': 'Fahrzeug- und Teilelogistik, Lagerung und Intralogistik.'
   }
 };
 
 export function localizedBusinessContent(exhibition, locale) {
   const content = exhibition.content[locale] || {};
-  const generic = CATEGORY_SUMMARIES[locale]?.[exhibition.taxonomy?.categoryId] || (locale === 'pt' ? 'Informações da exposição em processo de verificação.' : locale === 'es' ? 'Información de la feria en proceso de verificación.' : 'English content is being verified.');
+  const generic = CATEGORY_SUMMARIES[locale]?.[exhibition.taxonomy?.categoryId] || (locale === 'pt' ? 'Informações da exposição em processo de verificação.' : locale === 'es' ? 'Información de la feria en proceso de verificación.' : locale === 'fr' ? 'Les informations de cette exposition sont en cours de vérification.' : locale === 'de' ? 'Die Informationen zu dieser Messe werden derzeit geprüft.' : 'English content is being verified.');
   return {
     focus: content.focus || generic,
     audience: content.audience || generic,
