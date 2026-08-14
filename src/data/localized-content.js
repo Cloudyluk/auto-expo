@@ -40,12 +40,15 @@ const CATEGORY_SUMMARIES = {
   },
   ja: {
     'new-energy-ev': 'バッテリー、電動パワートレイン、充電、電動化技術。', 'automated-driving': 'ADAS、センサー、ドメインコントローラー、自動運転技術。', 'thermal-management': '熱マネジメント、HVAC、冷却、流体システム技術。', aftermarket: '部品、診断、整備機器、アフターマーケットサービス。', 'automotive-electronics': '車載エレクトロニクス、E/Eシステム、統合技術。', 'electronic-components': 'コネクター、ワイヤーハーネス、PCB、電子部品。', 'automotive-semiconductors': '車載用チップ、パワー半導体、電子アーキテクチャ。', 'testing-validation': '試験、検証、認証、ラボ機能。', 'automotive-supply-chain': '自動車サプライチェーンの調達、製造、ビジネス連携。', 'materials-metalworking': '材料、金属成形、製造プロセス。', 'tooling-stamping': '金型、プレス、ダイカスト、生産設備。', 'surface-treatment': '表面技術、コーティング、塗装プロセス。', 'wheels-chassis': 'シャシー、ブレーキ、ステアリング、ホイール、関連部品。', 'vehicle-show': '車両発表、モビリティ動向、OEM市場活動。', 'connected-cockpit': 'コネクテッドカー、インテリジェントコックピット、通信、HMI。', 'automotive-software': 'ソフトウェア定義車両、OTA、AUTOSAR、SOA、サイバーセキュリティ。', 'automotive-logistics': '車両・部品物流、倉庫、イントラロジスティクス。'
+  },
+  ko: {
+    'new-energy-ev': '배터리, 전기 파워트레인, 충전 및 전동화 기술.', 'automated-driving': 'ADAS, 센서, 도메인 컨트롤러 및 자율주행 기술.', 'thermal-management': '열관리, HVAC, 냉각 및 유체 시스템 기술.', aftermarket: '부품, 진단, 정비 장비 및 애프터마켓 서비스.', 'automotive-electronics': '차량 전장, E/E 시스템 및 통합 기술.', 'electronic-components': '커넥터, 와이어 하네스, PCB 및 전자 부품.', 'automotive-semiconductors': '차량용 칩, 전력 반도체 및 전자 아키텍처.', 'testing-validation': '시험, 검증, 인증 및 실험실 역량.', 'automotive-supply-chain': '자동차 공급망 조달, 제조 및 비즈니스 협업.', 'materials-metalworking': '소재, 금속 성형 및 제조 공정.', 'tooling-stamping': '금형, 프레스, 다이캐스팅 및 생산 장비.', 'surface-treatment': '표면 기술, 코팅 및 도장 공정.', 'wheels-chassis': '섀시, 제동, 조향, 휠 및 관련 부품.', 'vehicle-show': '차량 공개, 모빌리티 동향 및 OEM 시장 활동.', 'connected-cockpit': '커넥티드카, 지능형 콕핏, 통신 및 HMI.', 'automotive-software': '소프트웨어 정의 차량, OTA, AUTOSAR, SOA 및 사이버보안.', 'automotive-logistics': '차량·부품 물류, 창고 및 인트라로지스틱스.'
   }
 };
 
 export function localizedBusinessContent(exhibition, locale) {
   const content = exhibition.content[locale] || {};
-  const generic = CATEGORY_SUMMARIES[locale]?.[exhibition.taxonomy?.categoryId] || (locale === 'pt' ? 'Informações da exposição em processo de verificação.' : locale === 'es' ? 'Información de la feria en proceso de verificación.' : locale === 'fr' ? 'Les informations de cette exposition sont en cours de vérification.' : locale === 'de' ? 'Die Informationen zu dieser Messe werden derzeit geprüft.' : locale === 'ja' ? 'この展示会の情報は確認中です。' : 'English content is being verified.');
+  const generic = CATEGORY_SUMMARIES[locale]?.[exhibition.taxonomy?.categoryId] || (locale === 'pt' ? 'Informações da exposição em processo de verificação.' : locale === 'es' ? 'Información de la feria en proceso de verificación.' : locale === 'fr' ? 'Les informations de cette exposition sont en cours de vérification.' : locale === 'de' ? 'Die Informationen zu dieser Messe werden derzeit geprüft.' : locale === 'ja' ? 'この展示会の情報は確認中です。' : locale === 'ko' ? '이 전시회 정보는 검토 중입니다.' : 'English content is being verified.');
   return {
     focus: content.focus || generic,
     audience: content.audience || generic,
