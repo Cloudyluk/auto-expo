@@ -7,8 +7,9 @@ import de from './de';
 import ja from './ja';
 import ko from './ko';
 import ar from './ar';
+import hi from './hi';
 
-const dictionaries = { en, zh, es, pt, fr, de, ja, ko, ar };
+const dictionaries = { en, zh, es, pt, fr, de, ja, ko, ar, hi };
 
 export function t(locale, key, variables = {}) {
   const value = key.split('.').reduce((current, segment) => current?.[segment], dictionaries[locale]);

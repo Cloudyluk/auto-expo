@@ -27,7 +27,7 @@ function Decision({ locale, match, taskId }) {
 }
 
 export function App({ pathname = window.location.pathname }) {
-  const locale = pathname.startsWith('/zh') ? 'zh' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/pt') ? 'pt' : pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/ja') ? 'ja' : pathname.startsWith('/ko') ? 'ko' : pathname.startsWith('/ar') ? 'ar' : 'en';
+  const locale = pathname.startsWith('/zh') ? 'zh' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/pt') ? 'pt' : pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/ja') ? 'ja' : pathname.startsWith('/ko') ? 'ko' : pathname.startsWith('/ar') ? 'ar' : pathname.startsWith('/hi') ? 'hi' : 'en';
   const [page, setPage] = useState('map');
   const [query, setQuery] = useState('');
   const [month, setMonth] = useState(new Date().getMonth() + 1);

@@ -51,3 +51,9 @@ test('renders Arabic at /ar/', () => {
   expect(screen.getByText('المعارض العالمية هذا الشهر')).toBeInTheDocument();
   expect(document.documentElement.dir).toBe('rtl');
 });
+
+test('renders Hindi at /hi/', () => {
+  render(<App pathname="/hi/" />);
+  expect(screen.getByText('विश्व मानचित्र')).toBeInTheDocument();
+  expect(screen.getByText('इस महीने की वैश्विक प्रदर्शनियाँ')).toBeInTheDocument();
+});
