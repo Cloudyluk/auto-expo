@@ -1,4 +1,4 @@
-export const SUPPORTED_LOCALES = ['en', 'zh', 'es', 'pt', 'fr', 'de'];
+export const SUPPORTED_LOCALES = ['en', 'zh', 'es', 'pt', 'fr', 'de', 'ja', 'ko', 'ar', 'hi', 'id', 'ru', 'it', 'tr'];
 
 export const LANGUAGE_MENU = [
   { code: 'en', label: 'English', flag: '🇬🇧', status: 'available' },
