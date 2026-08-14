@@ -15,6 +15,12 @@ test('renders Spanish at /es/', () => {
   expect(screen.getByText('Ferias mundiales de este mes')).toBeInTheDocument();
 });
 
+test('renders Spanish when served from the GitHub Pages project path', () => {
+  render(<App pathname="/auto-expo/es/" />);
+  expect(screen.getByRole('navigation')).toHaveTextContent('Mapa global');
+  expect(screen.getByText('Ferias mundiales de este mes')).toBeInTheDocument();
+});
+
 test('renders Portuguese at /pt/', () => {
   render(<App pathname="/pt/" />);
   expect(screen.getByRole('navigation')).toHaveTextContent('Mapa global');

@@ -10,6 +10,7 @@ import { CATEGORY_IDS, categoryLabel } from './data/taxonomy';
 import { pathLabel } from './data/path-content';
 import { localizeLocation } from './data/display';
 import { WorldMap } from './components/WorldMap';
+import { SUPPORTED_LOCALES } from './i18n/locales';
 
 const NAV = ['map', 'overview', 'procurement', 'sales', 'monthly', 'category', 'country', 'preview', 'starred'];
 const TASKS = ['supplier', 'technology', 'cost', 'qualification', 'aftermarket'];
@@ -27,7 +28,7 @@ function Decision({ locale, match, taskId }) {
 }
 
 export function App({ pathname = window.location.pathname }) {
-  const locale = pathname.startsWith('/zh') ? 'zh' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/pt') ? 'pt' : pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/ja') ? 'ja' : pathname.startsWith('/ko') ? 'ko' : pathname.startsWith('/ar') ? 'ar' : pathname.startsWith('/hi') ? 'hi' : pathname.startsWith('/id') ? 'id' : pathname.startsWith('/ru') ? 'ru' : pathname.startsWith('/it') ? 'it' : pathname.startsWith('/tr') ? 'tr' : 'en';
+  const locale = pathname.split('/').find((segment) => SUPPORTED_LOCALES.includes(segment)) || 'en';
   const [page, setPage] = useState('map');
   const [query, setQuery] = useState('');
   const [month, setMonth] = useState(new Date().getMonth() + 1);
