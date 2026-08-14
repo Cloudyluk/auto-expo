@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import worldAtlas from 'world-atlas/countries-110m.json';
 import { feature } from 'topojson-client';
+import { geoEquirectangular, geoPath } from 'd3-geo';
 import { ExhibitionCard } from './ExhibitionCard';
 import { getMapGroups } from '../data/geo';
 import { t } from '../i18n/translate';
@@ -8,11 +9,9 @@ import { t } from '../i18n/translate';
 const project = ([longitude, latitude]) => [((longitude + 180) / 360) * 1000, ((90 - latitude) / 180) * 500];
 const WORLD_COUNTRY_NAMES = { 'United States': 'United States of America' };
 const countries = feature(worldAtlas, worldAtlas.objects.countries).features;
-
-function geometryPath(geometry) {
-  const polygons = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
-  return polygons.map((polygon) => polygon.map((ring) => ring.map((point, index) => { const [x, y] = project(point); return `${index ? 'L' : 'M'}${x.toFixed(2)},${y.toFixed(2)}`; }).join('') + 'Z').join('')).join('');
-}
+// geoPath clips and splits rings at the antimeridian. Directly joining raw
+// GeoJSON coordinates creates an erroneous horizontal band for those countries.
+const worldPath = geoPath(geoEquirectangular().scale(1000 / (2 * Math.PI)).translate([500, 250]));
 
 export function WorldMap({ locale, events, year, month, onYear, onMonth }) {
   const [selected, setSelected] = useState('');
@@ -43,7 +42,7 @@ export function WorldMap({ locale, events, year, month, onYear, onMonth }) {
     <div className="map-workspace">
       <div className="world-map">
         <svg viewBox={`${view.x} ${view.y} ${view.width} ${view.height}`} role="img" aria-label={t(locale, 'map.distribution')} onPointerDown={startDrag} onPointerMove={moveDrag} onPointerUp={stopDrag} onPointerCancel={stopDrag} className={drag ? 'is-panning' : ''}>
-          <g>{countries.map((country) => { const name = country.properties.name; const active = countriesWithEvents.has(name); return <path key={name} d={geometryPath(country.geometry)} className={`map-country ${active ? 'has-events' : ''}`} tabIndex={active ? 0 : undefined} role={active ? 'button' : undefined} onClick={() => active && selectCountry(groups.find((group) => (WORLD_COUNTRY_NAMES[group.country] || group.country) === name)?.country)} onKeyDown={(event) => { if (active && (event.key === 'Enter' || event.key === ' ')) selectCountry(groups.find((group) => (WORLD_COUNTRY_NAMES[group.country] || group.country) === name)?.country); }}><title>{name}</title></path>; })}</g>
+          <g>{countries.map((country) => { const name = country.properties.name; const active = countriesWithEvents.has(name); return <path key={name} d={worldPath(country) || ''} className={`map-country ${active ? 'has-events' : ''}`} tabIndex={active ? 0 : undefined} role={active ? 'button' : undefined} onClick={() => active && selectCountry(groups.find((group) => (WORLD_COUNTRY_NAMES[group.country] || group.country) === name)?.country)} onKeyDown={(event) => { if (active && (event.key === 'Enter' || event.key === ' ')) selectCountry(groups.find((group) => (WORLD_COUNTRY_NAMES[group.country] || group.country) === name)?.country); }}><title>{name}</title></path>; })}</g>
           {groups.map((group) => { const [x, y] = project([group.longitude, group.latitude]); const selectedMarker = selected === group.key; return <g key={group.key} className={`map-marker ${selectedMarker ? 'selected' : ''}`} role="button" tabIndex="0" onClick={() => setSelected(group.key)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') setSelected(group.key); }}><circle cx={x} cy={y} r={Math.min(17, 8 + group.events.length)} /><text x={x} y={y + 4} textAnchor="middle">{group.events.length}</text><title>{group.city || group.country} · {group.events.length}</title></g>; })}
         </svg>
       </div>
