@@ -14,5 +14,5 @@ export const LANGUAGE_MENU = [
   { code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩', status: 'available' },
   { code: 'ru', label: 'Русский', flag: '🇷🇺', status: 'available' },
   { code: 'it', label: 'Italiano', flag: '🇮🇹', status: 'available' },
-  { code: 'tr', label: 'Türkçe', flag: '🇹🇷', status: 'comingSoon' }
+  { code: 'tr', label: 'Türkçe', flag: '🇹🇷', status: 'available' }
 ];

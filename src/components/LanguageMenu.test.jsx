@@ -7,5 +7,5 @@ test('uses a flag menu, links Portuguese, and keeps future locales disabled', ()
   expect(screen.getByRole('link', { name: /Español/i })).toHaveTextContent('🇪🇸');
   expect(screen.getByRole('link', { name: /Português/i })).toHaveAttribute('href', '/pt/');
   expect(screen.getByRole('link', { name: /Deutsch/i })).toHaveAttribute('href', '/de/');
-  expect(screen.getAllByText('Coming soon').length).toBeGreaterThan(0);
+  expect(screen.getAllByText('Italiano').length).toBeGreaterThan(0);
 });

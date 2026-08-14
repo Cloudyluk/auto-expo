@@ -29,7 +29,7 @@ export function localizeDate(value = '', locale) {
   if (locale === 'zh') return value;
   if (locale === 'ja') value = value.replace(/January/g, '1月').replace(/February/g, '2月').replace(/March/g, '3月').replace(/April/g, '4月').replace(/May/g, '5月').replace(/June/g, '6月').replace(/July/g, '7月').replace(/August/g, '8月').replace(/September/g, '9月').replace(/October/g, '10月').replace(/November/g, '11月').replace(/December/g, '12月');
   if (!/\d+月/.test(value)) return value.replace(/待定|待确认/g, locale === 'es' ? 'Por confirmar' : locale === 'pt' ? 'A confirmar' : locale === 'fr' ? 'À confirmer' : locale === 'de' ? 'Noch zu bestätigen' : locale === 'ja' ? '確認中' : 'To be confirmed').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'por confirmar' : locale === 'pt' ? 'a confirmar' : locale === 'fr' ? 'à confirmer' : locale === 'de' ? 'noch zu bestätigen' : locale === 'ja' ? '確認中' : 'to be confirmed');
-  const months = MONTHS[locale];
+  const months = MONTHS[locale] || MONTHS.en;
   const crossMonth = value.replace(/(\d{1,2})月(\d{1,2})日-(\d{1,2})月(\d{1,2})日/g, (_, monthA, dayA, monthB, dayB) => locale === 'es' || locale === 'pt' || locale === 'fr'
     ? `${dayA} de ${months[Number(monthA) - 1]}–${dayB} de ${months[Number(monthB) - 1]}`
     : `${months[Number(monthA) - 1]} ${dayA}–${months[Number(monthB) - 1]} ${dayB}`);

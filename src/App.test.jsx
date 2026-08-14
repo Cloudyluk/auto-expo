@@ -75,3 +75,9 @@ test('renders Italian at /it/', () => {
   expect(screen.getByText('Mappa globale')).toBeInTheDocument();
   expect(screen.getByText('Fiere globali di questo mese')).toBeInTheDocument();
 });
+
+test('renders Turkish at /tr/', () => {
+  render(<App pathname="/tr/" />);
+  expect(screen.getByText('Dünya haritası')).toBeInTheDocument();
+  expect(screen.getByText('Bu ayın küresel fuarları')).toBeInTheDocument();
+});
