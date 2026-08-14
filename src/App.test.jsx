@@ -63,3 +63,9 @@ test('renders Indonesian at /id/', () => {
   expect(screen.getByText('Peta dunia')).toBeInTheDocument();
   expect(screen.getByText('Pameran global bulan ini')).toBeInTheDocument();
 });
+
+test('renders Russian at /ru/', () => {
+  render(<App pathname="/ru/" />);
+  expect(screen.getByText('Карта мира')).toBeInTheDocument();
+  expect(screen.getByText('Мировые выставки в этом месяце')).toBeInTheDocument();
+});
