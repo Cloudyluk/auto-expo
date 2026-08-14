@@ -8,7 +8,7 @@ export default {
     noResults: 'No hay ferias que coincidan con los filtros actuales.', unavailable: 'El contenido en español está en proceso de verificación.', back: 'Volver', zoomIn: 'Ampliar mapa', zoomOut: 'Reducir mapa', resetMap: 'Restablecer mapa', theme: 'Cambiar tema'
   },
   overview: { featured: 'Ferias destacadas', upcoming: 'Este mes y el próximo', exhibitions: 'Ferias de 2026', categories: 'Categorías de ferias', coverage: 'Países y regiones cubiertos', thisMonth: 'Este mes' },
-  map: { title: 'Ferias mundiales de este mes', distribution: 'Distribución mundial de ferias', noEvents: 'No hay ferias en esta zona durante el mes seleccionado.', loadError: 'No se pudieron cargar los resultados.' },
+  map: { title: 'Ferias mundiales de este mes', distribution: 'Distribución mundial de ferias', noEvents: 'No hay ferias en esta zona durante el mes seleccionado.', loadError: 'No se pudieron cargar los resultados.', schedule: 'Calendario', preview: 'Avance', events: 'ferias', allEvents: 'Todas las ferias', clearSelection: 'Borrar selección' },
   procurement: {
     title: 'Ruta de compras', intro: 'Empiece por la arquitectura del vehículo y localice proveedores, rutas tecnológicas y ferias relevantes por conjunto.',
     whyMatch: '¿Por qué esta coincidencia?', obtain: 'Qué obtener en la feria', doNotAttend: 'Cuándo no asistir', alternative: 'Acción alternativa', preliminary: 'Coincidencia preliminar basada en la información disponible.', noMatches: 'No se encontraron coincidencias con la información proporcionada.',

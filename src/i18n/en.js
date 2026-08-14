@@ -15,7 +15,7 @@ export default {
     resetMap: 'Reset map view', theme: 'Toggle theme'
   },
   overview: { featured: 'Featured exhibitions', upcoming: 'This month & next month', exhibitions: '2026 exhibitions', categories: 'Exhibition categories', coverage: 'Countries and regions covered', thisMonth: 'This month' },
-  map: { title: 'Global exhibitions this month', distribution: 'Global exhibition distribution', noEvents: 'No exhibitions in this area for the selected month.', loadError: "We couldn't load the results." },
+  map: { title: 'Global exhibitions this month', distribution: 'Global exhibition distribution', noEvents: 'No exhibitions in this area for the selected month.', loadError: "We couldn't load the results.", schedule: 'Schedule', preview: 'Preview', events: 'exhibitions', allEvents: 'All exhibitions', clearSelection: 'Clear selection' },
   procurement: {
     title: 'Procurement route', intro: 'Start with vehicle architecture, then identify suppliers, technology routes and relevant exhibitions by assembly.',
     whyMatch: 'Why this match?', obtain: 'What to obtain onsite', doNotAttend: 'When not to attend', alternative: 'Alternative action',
