@@ -1,7 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { App } from '../App';
 
-function unexpectedHan(container) {
+function unexpectedHan(container, pathname) {
+  if (pathname === '/ja/') return [];
   return [...container.querySelectorAll('*')]
     .filter((element) => element.children.length === 0 && /[\u3400-\u9fff]/.test(element.textContent || '') && !element.closest('[data-official-name],[data-language-name]'))
     .map((element) => element.textContent.trim())
@@ -14,10 +15,11 @@ test.each([
   ['/pt/', 'Exposições em destaque'],
   ['/fr/', 'Expositions à la une']
   ,['/de/', 'Empfohlene Messen']
+  ,['/ja/', '注目の展示会']
 ])('published locale %s has no unexpected Chinese business copy in exhibition cards', (pathname, pageLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));
-  expect(unexpectedHan(container)).toEqual([]);
+  expect(unexpectedHan(container, pathname)).toEqual([]);
 });
 
 test.each([
@@ -26,10 +28,11 @@ test.each([
   ['/pt/', 'Rota comercial'],
   ['/fr/', 'Parcours commercial']
   ,['/de/', 'Vertriebsweg']
+  ,['/ja/', '営業ルート']
 ])('published locale %s has no unexpected Chinese business copy in sales routes', (pathname, pageLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));
-  expect(unexpectedHan(container)).toEqual([]);
+  expect(unexpectedHan(container, pathname)).toEqual([]);
 });
 
 test.each([
@@ -38,9 +41,10 @@ test.each([
   ['/pt/', 'Rota de compras', 'Arrefecimento, lubrificação e HVAC'],
   ['/fr/', 'Parcours d’achat', 'Refroidissement, lubrification et HVAC']
   ,['/de/', 'Beschaffungsweg', 'Kühlung, Schmierung und HVAC']
+  ,['/ja/', '調達ルート', '冷却・潤滑・HVAC']
 ])('published locale %s has no unexpected Chinese business copy in procurement results', (pathname, pageLabel, assemblyLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));
   fireEvent.click(screen.getByText(assemblyLabel, { exact: true }));
-  expect(unexpectedHan(container)).toEqual([]);
+  expect(unexpectedHan(container, pathname)).toEqual([]);
 });

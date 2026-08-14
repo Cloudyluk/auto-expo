@@ -32,3 +32,9 @@ test('renders German at /de/', () => {
   expect(screen.getByText('Weltkarte')).toBeInTheDocument();
   expect(screen.getByText('Globale Messen in diesem Monat')).toBeInTheDocument();
 });
+
+test('renders Japanese at /ja/', () => {
+  render(<App pathname="/ja/" />);
+  expect(screen.getByText('世界地図')).toBeInTheDocument();
+  expect(screen.getByText('今月の世界の展示会')).toBeInTheDocument();
+});
