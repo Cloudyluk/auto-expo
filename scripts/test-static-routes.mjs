@@ -7,7 +7,8 @@ const routes = [
   ['dist/pt/index.html', 'lang="pt-BR"'],
   ['dist/fr/index.html', 'lang="fr-FR"'],
   ['dist/de/index.html', 'lang="de-DE"'],
-  ['dist/ja/index.html', 'lang="ja-JP"']
+  ['dist/ja/index.html', 'lang="ja-JP"'],
+  ['dist/ko/index.html', 'lang="ko-KR"']
 ];
 
 for (const [path, language] of routes) {
