@@ -11,7 +11,7 @@ export const LANGUAGE_MENU = [
   { code: 'ko', label: '한국어', flag: '🇰🇷', status: 'available' },
   { code: 'ar', label: 'العربية', flag: '🇸🇦', status: 'available' },
   { code: 'hi', label: 'हिन्दी', flag: '🇮🇳', status: 'available' },
-  { code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩', status: 'comingSoon' },
+  { code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩', status: 'available' },
   { code: 'ru', label: 'Русский', flag: '🇷🇺', status: 'comingSoon' },
   { code: 'it', label: 'Italiano', flag: '🇮🇹', status: 'comingSoon' },
   { code: 'tr', label: 'Türkçe', flag: '🇹🇷', status: 'comingSoon' }

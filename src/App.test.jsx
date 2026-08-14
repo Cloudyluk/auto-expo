@@ -57,3 +57,9 @@ test('renders Hindi at /hi/', () => {
   expect(screen.getByText('विश्व मानचित्र')).toBeInTheDocument();
   expect(screen.getByText('इस महीने की वैश्विक प्रदर्शनियाँ')).toBeInTheDocument();
 });
+
+test('renders Indonesian at /id/', () => {
+  render(<App pathname="/id/" />);
+  expect(screen.getByText('Peta dunia')).toBeInTheDocument();
+  expect(screen.getByText('Pameran global bulan ini')).toBeInTheDocument();
+});
