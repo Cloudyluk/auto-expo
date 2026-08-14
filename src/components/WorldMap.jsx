@@ -31,7 +31,7 @@ export function WorldMap({ locale, events, year, month, onYear, onMonth }) {
   const startDrag = (event) => { if (zoom === 1) return; event.currentTarget.setPointerCapture?.(event.pointerId); setDrag({ id: event.pointerId, x: event.clientX, y: event.clientY, center }); };
   const moveDrag = (event) => { if (!drag || event.pointerId !== drag.id) return; const rect = event.currentTarget.getBoundingClientRect(); setCenter([drag.center[0] - (event.clientX - drag.x) * width / rect.width, drag.center[1] - (event.clientY - drag.y) * height / rect.height]); };
   const stopDrag = () => setDrag(null);
-  const localeCode = locale === 'zh' ? 'zh-CN' : locale === 'es' ? 'es-ES' : locale === 'pt' ? 'pt-BR' : 'en-US';
+  const localeCode = locale === 'zh' ? 'zh-CN' : locale === 'es' ? 'es-ES' : locale === 'pt' ? 'pt-BR' : locale === 'fr' ? 'fr-FR' : 'en-US';
   const period = new Intl.DateTimeFormat(localeCode, { month: 'long' }).format(new Date(year, month - 1, 1));
   return <div className="map-shell">
     <div className="map-toolbar">

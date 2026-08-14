@@ -20,3 +20,9 @@ test('renders Portuguese at /pt/', () => {
   expect(screen.getByRole('navigation')).toHaveTextContent('Mapa global');
   expect(screen.getByText('Exposições globais deste mês')).toBeInTheDocument();
 });
+
+test('renders French at /fr/', () => {
+  render(<App pathname="/fr/" />);
+  expect(screen.getByRole('navigation')).toHaveTextContent('Carte mondiale');
+  expect(screen.getByText('Expositions mondiales ce mois-ci')).toBeInTheDocument();
+});

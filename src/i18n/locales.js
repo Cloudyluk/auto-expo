@@ -5,7 +5,7 @@ export const LANGUAGE_MENU = [
   { code: 'zh', label: '中文', flag: '🇨🇳', status: 'available' },
   { code: 'es', label: 'Español', flag: '🇪🇸', status: 'available' },
   { code: 'pt', label: 'Português', flag: '🇧🇷', status: 'available' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷', status: 'comingSoon' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷', status: 'available' },
   { code: 'de', label: 'Deutsch', flag: '🇩🇪', status: 'comingSoon' },
   { code: 'ja', label: '日本語', flag: '🇯🇵', status: 'comingSoon' },
   { code: 'ko', label: '한국어', flag: '🇰🇷', status: 'comingSoon' },
