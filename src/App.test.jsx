@@ -44,3 +44,10 @@ test('renders Korean at /ko/', () => {
   expect(screen.getByText('세계 지도')).toBeInTheDocument();
   expect(screen.getByText('이번 달 글로벌 전시회')).toBeInTheDocument();
 });
+
+test('renders Arabic at /ar/', () => {
+  render(<App pathname="/ar/" />);
+  expect(screen.getByText('الخريطة العالمية')).toBeInTheDocument();
+  expect(screen.getByText('المعارض العالمية هذا الشهر')).toBeInTheDocument();
+  expect(document.documentElement.dir).toBe('rtl');
+});

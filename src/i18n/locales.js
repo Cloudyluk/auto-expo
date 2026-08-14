@@ -9,7 +9,7 @@ export const LANGUAGE_MENU = [
   { code: 'de', label: 'Deutsch', flag: '🇩🇪', status: 'available' },
   { code: 'ja', label: '日本語', flag: '🇯🇵', status: 'available' },
   { code: 'ko', label: '한국어', flag: '🇰🇷', status: 'available' },
-  { code: 'ar', label: 'العربية', flag: '🇸🇦', status: 'comingSoon' },
+  { code: 'ar', label: 'العربية', flag: '🇸🇦', status: 'available' },
   { code: 'hi', label: 'हिन्दी', flag: '🇮🇳', status: 'comingSoon' },
   { code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩', status: 'comingSoon' },
   { code: 'ru', label: 'Русский', flag: '🇷🇺', status: 'comingSoon' },

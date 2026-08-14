@@ -27,7 +27,7 @@ function Decision({ locale, match, taskId }) {
 }
 
 export function App({ pathname = window.location.pathname }) {
-  const locale = pathname.startsWith('/zh') ? 'zh' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/pt') ? 'pt' : pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/ja') ? 'ja' : pathname.startsWith('/ko') ? 'ko' : 'en';
+  const locale = pathname.startsWith('/zh') ? 'zh' : pathname.startsWith('/es') ? 'es' : pathname.startsWith('/pt') ? 'pt' : pathname.startsWith('/fr') ? 'fr' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/ja') ? 'ja' : pathname.startsWith('/ko') ? 'ko' : pathname.startsWith('/ar') ? 'ar' : 'en';
   const [page, setPage] = useState('map');
   const [query, setQuery] = useState('');
   const [month, setMonth] = useState(new Date().getMonth() + 1);
@@ -45,6 +45,7 @@ export function App({ pathname = window.location.pathname }) {
 
   useEffect(() => {
     document.documentElement.lang = locale;
+    document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
     document.title = t(locale, 'documentTitle');
   }, [locale]);
 
