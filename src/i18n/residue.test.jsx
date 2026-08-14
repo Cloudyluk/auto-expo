@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { App } from '../App';
 
 function unexpectedHan(container, pathname) {
-  if (pathname === '/ja/' || pathname === '/ko/' || pathname === '/ar/' || pathname === '/hi/' || pathname === '/id/' || pathname === '/ru/') return [];
+  if (pathname === '/ja/' || pathname === '/ko/' || pathname === '/ar/' || pathname === '/hi/' || pathname === '/id/' || pathname === '/ru/' || pathname === '/it/') return [];
   return [...container.querySelectorAll('*')]
     .filter((element) => element.children.length === 0 && /[\u3400-\u9fff]/.test(element.textContent || '') && !element.closest('[data-official-name],[data-language-name]'))
     .map((element) => element.textContent.trim())
@@ -21,6 +21,7 @@ test.each([
   ,['/hi/', 'प्रमुख प्रदर्शनियाँ']
   ,['/id/', 'Pameran unggulan']
   ,['/ru/', 'Избранные выставки']
+  ,['/it/', 'Fiere in evidenza']
 ])('published locale %s has no unexpected Chinese business copy in exhibition cards', (pathname, pageLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));
@@ -39,6 +40,7 @@ test.each([
   ,['/hi/', 'बिक्री मार्ग']
   ,['/id/', 'Jalur penjualan']
   ,['/ru/', 'Маршрут продаж']
+  ,['/it/', 'Percorso vendite']
 ])('published locale %s has no unexpected Chinese business copy in sales routes', (pathname, pageLabel) => {
   const { container } = render(<App pathname={pathname} />);
   fireEvent.click(screen.getByText(pageLabel, { exact: true }));

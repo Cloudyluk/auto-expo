@@ -69,3 +69,9 @@ test('renders Russian at /ru/', () => {
   expect(screen.getByText('Карта мира')).toBeInTheDocument();
   expect(screen.getByText('Мировые выставки в этом месяце')).toBeInTheDocument();
 });
+
+test('renders Italian at /it/', () => {
+  render(<App pathname="/it/" />);
+  expect(screen.getByText('Mappa globale')).toBeInTheDocument();
+  expect(screen.getByText('Fiere globali di questo mese')).toBeInTheDocument();
+});

@@ -12,7 +12,8 @@ const routes = [
   ['dist/ar/index.html', 'lang="ar-SA"'],
   ['dist/hi/index.html', 'lang="hi-IN"'],
   ['dist/id/index.html', 'lang="id-ID"'],
-  ['dist/ru/index.html', 'lang="ru-RU"']
+  ['dist/ru/index.html', 'lang="ru-RU"'],
+  ['dist/it/index.html', 'lang="it-IT"']
 ];
 
 for (const [path, language] of routes) {
