@@ -15,24 +15,24 @@ const PLACES = {
   '巴黎': { en: 'Paris', es: 'París' }, '米兰': { en: 'Milan', es: 'Milán' }, '罗马': { en: 'Rome', es: 'Roma' }, '伦敦': { en: 'London', es: 'Londres' }, '伯明翰': { en: 'Birmingham', es: 'Birmingham' },
   '东京': { en: 'Tokyo', es: 'Tokio' }, '名古屋': { en: 'Nagoya', es: 'Nagoya' }, '千叶': { en: 'Chiba', es: 'Chiba' }, '首尔': { en: 'Seoul', es: 'Seúl' }, '圣保罗': { en: 'São Paulo', es: 'São Paulo' }
 };
-const MONTHS = { en: ['January','February','March','April','May','June','July','August','September','October','November','December'], es: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'] };
+const MONTHS = { en: ['January','February','March','April','May','June','July','August','September','October','November','December'], es: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'], pt: ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'] };
 
 export function localizeLocation(value = '', locale) {
   if (locale === 'zh') return value;
   let display = value;
-  for (const [source, labels] of Object.entries(PLACES)) display = display.split(source).join(labels[locale] || source);
-  return display.replace(/[市省]/g, '').replace(/会展中心/g, locale === 'es' ? 'Centro de Exposiciones' : 'Exhibition Center').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'recinto ferial' : 'exhibition venue');
+  for (const [source, labels] of Object.entries(PLACES)) display = display.split(source).join(labels[locale] || labels.en || source);
+  return display.replace(/[市省]/g, '').replace(/会展中心/g, locale === 'es' ? 'Centro de Exposiciones' : locale === 'pt' ? 'Centro de Exposições' : 'Exhibition Center').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'recinto ferial' : locale === 'pt' ? 'centro de exposições' : 'exhibition venue');
 }
 
 export function localizeDate(value = '', locale) {
   if (locale === 'zh') return value;
-  if (!/\d+月/.test(value)) return value.replace(/待定|待确认/g, locale === 'es' ? 'Por confirmar' : 'To be confirmed').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'por confirmar' : 'to be confirmed');
+  if (!/\d+月/.test(value)) return value.replace(/待定|待确认/g, locale === 'es' ? 'Por confirmar' : locale === 'pt' ? 'A confirmar' : 'To be confirmed').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'por confirmar' : locale === 'pt' ? 'a confirmar' : 'to be confirmed');
   const months = MONTHS[locale];
-  const crossMonth = value.replace(/(\d{1,2})月(\d{1,2})日-(\d{1,2})月(\d{1,2})日/g, (_, monthA, dayA, monthB, dayB) => locale === 'es'
+  const crossMonth = value.replace(/(\d{1,2})月(\d{1,2})日-(\d{1,2})月(\d{1,2})日/g, (_, monthA, dayA, monthB, dayB) => locale === 'es' || locale === 'pt'
     ? `${dayA} de ${months[Number(monthA) - 1]}–${dayB} de ${months[Number(monthB) - 1]}`
     : `${months[Number(monthA) - 1]} ${dayA}–${months[Number(monthB) - 1]} ${dayB}`);
-  const dated = crossMonth.replace(/(\d{1,2})月(\d{1,2})(?:日)?(?:-(\d{1,2})日?)?/g, (_, month, start, end) => locale === 'es'
-    ? `${start}${end ? `–${end}` : ''} de ${MONTHS.es[Number(month) - 1]}`
+  const dated = crossMonth.replace(/(\d{1,2})月(\d{1,2})(?:日)?(?:-(\d{1,2})日?)?/g, (_, month, start, end) => locale === 'es' || locale === 'pt'
+    ? `${start}${end ? `–${end}` : ''} de ${months[Number(month) - 1]}`
     : `${MONTHS.en[Number(month) - 1]} ${start}${end ? `–${end}` : ''}`);
-  return dated.replace(/(\d{1,2})月（春季）/g, (_, month) => locale === 'es' ? `${months[Number(month) - 1]} (primavera)` : `${months[Number(month) - 1]} (spring)`).replace(/(\d{1,2})月（秋季）/g, (_, month) => locale === 'es' ? `${months[Number(month) - 1]} (otoño)` : `${months[Number(month) - 1]} (autumn)`).replace(/(\d{1,2})月/g, (_, month) => months[Number(month) - 1]).replace(/待定|待确认|具体/g, locale === 'es' ? 'Por confirmar' : 'To be confirmed').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'por confirmar' : 'to be confirmed');
+  return dated.replace(/(\d{1,2})月（春季）/g, (_, month) => `${months[Number(month) - 1]} (${locale === 'es' ? 'primavera' : locale === 'pt' ? 'primavera' : 'spring'})`).replace(/(\d{1,2})月（秋季）/g, (_, month) => `${months[Number(month) - 1]} (${locale === 'es' ? 'otoño' : locale === 'pt' ? 'outono' : 'autumn'})`).replace(/(\d{1,2})月/g, (_, month) => months[Number(month) - 1]).replace(/待定|待确认|具体/g, locale === 'es' ? 'Por confirmar' : locale === 'pt' ? 'A confirmar' : 'To be confirmed').replace(/[\u3400-\u9fff]+/g, locale === 'es' ? 'por confirmar' : locale === 'pt' ? 'a confirmar' : 'to be confirmed');
 }

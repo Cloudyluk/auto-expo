@@ -16,12 +16,21 @@ const CATEGORY_SUMMARIES = {
     'tooling-stamping': 'Herramental, estampación, fundición a presión y equipos de producción.', 'surface-treatment': 'Ingeniería de superficies, recubrimientos y procesos de pintura.', 'wheels-chassis': 'Chasis, frenos, dirección, ruedas y componentes relacionados.',
     'vehicle-show': 'Lanzamientos de vehículos, tendencias de movilidad y actividad de mercado de OEM.', 'connected-cockpit': 'Vehículos conectados, cabinas inteligentes, comunicaciones y HMI.',
     'automotive-software': 'Vehículos definidos por software, OTA, AUTOSAR, SOA y ciberseguridad.', 'automotive-logistics': 'Logística de vehículos y piezas, almacenamiento e intralogística.'
+  },
+  pt: {
+    'new-energy-ev': 'Tecnologias de baterias, propulsão elétrica, recarga e eletrificação.', 'automated-driving': 'Tecnologias de ADAS, sensores, controladores de domínio e condução automatizada.', 'thermal-management': 'Tecnologias de gestão térmica, HVAC, arrefecimento e sistemas de fluidos.',
+    aftermarket: 'Peças, diagnóstico, equipamentos de oficina e serviços de pós-venda.', 'automotive-electronics': 'Eletrônica veicular, sistemas E/E e tecnologias de integração.', 'electronic-components': 'Conectores, chicotes, PCB e componentes eletrônicos.',
+    'automotive-semiconductors': 'Chips automotivos, semicondutores de potência e arquiteturas eletrônicas.', 'testing-validation': 'Capacidades de testes, validação, certificação e laboratório.',
+    'automotive-supply-chain': 'Compras, fabricação e colaboração empresarial na cadeia de suprimentos automotiva.', 'materials-metalworking': 'Materiais, conformação de metais e processos de fabricação.',
+    'tooling-stamping': 'Ferramentaria, estampagem, fundição sob pressão e equipamentos de produção.', 'surface-treatment': 'Engenharia de superfícies, revestimentos e processos de pintura.', 'wheels-chassis': 'Chassi, freios, direção, rodas e componentes relacionados.',
+    'vehicle-show': 'Lançamentos de veículos, tendências de mobilidade e atividade de mercado dos OEMs.', 'connected-cockpit': 'Veículos conectados, cabines inteligentes, comunicações e HMI.',
+    'automotive-software': 'Veículos definidos por software, OTA, AUTOSAR, SOA e cibersegurança.', 'automotive-logistics': 'Logística de veículos e peças, armazenagem e intralogística.'
   }
 };
 
 export function localizedBusinessContent(exhibition, locale) {
   const content = exhibition.content[locale] || {};
-  const generic = CATEGORY_SUMMARIES[locale]?.[exhibition.taxonomy?.categoryId] || (locale === 'es' ? 'Información de la feria en proceso de verificación.' : 'English content is being verified.');
+  const generic = CATEGORY_SUMMARIES[locale]?.[exhibition.taxonomy?.categoryId] || (locale === 'pt' ? 'Informações da exposição em processo de verificação.' : locale === 'es' ? 'Información de la feria en proceso de verificación.' : 'English content is being verified.');
   return {
     focus: content.focus || generic,
     audience: content.audience || generic,

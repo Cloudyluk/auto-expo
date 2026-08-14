@@ -31,13 +31,14 @@ export function WorldMap({ locale, events, year, month, onYear, onMonth }) {
   const startDrag = (event) => { if (zoom === 1) return; event.currentTarget.setPointerCapture?.(event.pointerId); setDrag({ id: event.pointerId, x: event.clientX, y: event.clientY, center }); };
   const moveDrag = (event) => { if (!drag || event.pointerId !== drag.id) return; const rect = event.currentTarget.getBoundingClientRect(); setCenter([drag.center[0] - (event.clientX - drag.x) * width / rect.width, drag.center[1] - (event.clientY - drag.y) * height / rect.height]); };
   const stopDrag = () => setDrag(null);
-  const period = new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'es' ? 'es-ES' : 'en-US', { month: 'long' }).format(new Date(year, month - 1, 1));
+  const localeCode = locale === 'zh' ? 'zh-CN' : locale === 'es' ? 'es-ES' : locale === 'pt' ? 'pt-BR' : 'en-US';
+  const period = new Intl.DateTimeFormat(localeCode, { month: 'long' }).format(new Date(year, month - 1, 1));
   return <div className="map-shell">
     <div className="map-toolbar">
       <div className="map-year-tabs">{[2026, 2027].map((value) => <button key={value} className={year === value ? 'active' : ''} onClick={() => changeYear(value)}>{value} {value === 2027 ? t(locale, 'map.preview') : t(locale, 'map.schedule')}</button>)}</div>
       <div className="map-controls"><button aria-label={t(locale, 'common.zoomOut')} onClick={() => changeZoom(-.5)}>−</button><span>{Math.round(zoom * 100)}%</span><button aria-label={t(locale, 'common.zoomIn')} onClick={() => changeZoom(.5)}>+</button><button onClick={() => { setZoom(1); setCenter([500, 250]); }}>{t(locale, 'common.resetMap')}</button></div>
     </div>
-    <div className="map-month-tabs">{Array.from({ length: 12 }, (_, index) => <button key={index} className={month === index + 1 ? 'active' : ''} onClick={() => changeMonth(index + 1)}>{new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'es' ? 'es-ES' : 'en-US', { month: 'short' }).format(new Date(2026, index, 1))}</button>)}</div>
+    <div className="map-month-tabs">{Array.from({ length: 12 }, (_, index) => <button key={index} className={month === index + 1 ? 'active' : ''} onClick={() => changeMonth(index + 1)}>{new Intl.DateTimeFormat(localeCode, { month: 'short' }).format(new Date(2026, index, 1))}</button>)}</div>
     <p className="map-period">{year} · {period} · {groups.length ? `${visibleEvents.length} ${t(locale, 'map.events')}` : t(locale, 'map.noEvents')}</p>
     <div className="map-workspace">
       <div className="world-map">

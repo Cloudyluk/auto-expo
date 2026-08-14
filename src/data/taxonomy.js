@@ -27,6 +27,15 @@ const CATEGORY_LABELS = {
     lightweighting: 'Aligeramiento', 'finance-insurance': 'Financiación y seguros de automoción', aftermarket: 'Posventa', 'lubricants-care': 'Lubricantes y cuidado del automóvil', 'thermal-management': 'Gestión térmica y HVAC',
     fasteners: 'Elementos de fijación', 'surface-treatment': 'Tratamiento de superficies y pintura', motorsport: 'Deporte del motor', 'connected-cockpit': 'Vehículo conectado y cabina', 'wheels-chassis': 'Ruedas y chasis', 'tyres-rubber': 'Neumáticos y caucho'
   },
+  pt: {
+    'used-classic-vehicles': 'Veículos usados e clássicos', 'commercial-vehicles': 'Veículos comerciais', motorcycles: 'Motocicletas', customization: 'Personalização', 'vehicle-show': 'Salão do automóvel',
+    'new-energy-ev': 'Nova energia e veículos elétricos', 'automated-driving': 'Condução automatizada', 'materials-metalworking': 'Materiais e metalurgia', 'tooling-stamping': 'Ferramentaria e estampagem', 'automotive-cmf': 'CMF automotivo',
+    'automotive-nvh': 'NVH automotivo', 'automotive-supply-chain': 'Cadeia de suprimentos automotiva', 'interior-exterior': 'Interior e exterior', 'automotive-semiconductors': 'Semicondutores automotivos', 'automotive-safety': 'Segurança automotiva',
+    'automotive-seating': 'Bancos automotivos', 'automotive-technology': 'Tecnologia automotiva', 'testing-validation': 'Testes e validação', 'automotive-lighting': 'Iluminação automotiva', 'automotive-logistics': 'Logística automotiva',
+    'automotive-electronics': 'Eletrônica automotiva', 'electronic-components': 'Componentes eletrônicos', 'repair-equipment': 'Equipamentos de reparação', 'design-engineering': 'Design e engenharia', 'automotive-software': 'Software automotivo e OTA',
+    lightweighting: 'Redução de peso', 'finance-insurance': 'Financiamento e seguros automotivos', aftermarket: 'Pós-venda', 'lubricants-care': 'Lubrificantes e cuidados automotivos', 'thermal-management': 'Gestão térmica e HVAC',
+    fasteners: 'Elementos de fixação', 'surface-treatment': 'Tratamento de superfícies e pintura', motorsport: 'Automobilismo', 'connected-cockpit': 'Veículo conectado e cabine', 'wheels-chassis': 'Rodas e chassi', 'tyres-rubber': 'Pneus e borracha'
+  },
   zh: Object.fromEntries(Object.entries(CATEGORY_IDS).map(([label, id]) => [id, label]))
 };
 

@@ -14,3 +14,9 @@ test('renders Spanish at /es/', () => {
   expect(screen.getByRole('navigation')).toHaveTextContent('Mapa global');
   expect(screen.getByText('Ferias mundiales de este mes')).toBeInTheDocument();
 });
+
+test('renders Portuguese at /pt/', () => {
+  render(<App pathname="/pt/" />);
+  expect(screen.getByRole('navigation')).toHaveTextContent('Mapa global');
+  expect(screen.getByText('Exposições globais deste mês')).toBeInTheDocument();
+});

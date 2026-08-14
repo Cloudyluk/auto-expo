@@ -1,10 +1,10 @@
-export const SUPPORTED_LOCALES = ['en', 'zh', 'es'];
+export const SUPPORTED_LOCALES = ['en', 'zh', 'es', 'pt'];
 
 export const LANGUAGE_MENU = [
   { code: 'en', label: 'English', flag: '🇬🇧', status: 'available' },
   { code: 'zh', label: '中文', flag: '🇨🇳', status: 'available' },
   { code: 'es', label: 'Español', flag: '🇪🇸', status: 'available' },
-  { code: 'pt', label: 'Português', flag: '🇧🇷', status: 'comingSoon' },
+  { code: 'pt', label: 'Português', flag: '🇧🇷', status: 'available' },
   { code: 'fr', label: 'Français', flag: '🇫🇷', status: 'comingSoon' },
   { code: 'de', label: 'Deutsch', flag: '🇩🇪', status: 'comingSoon' },
   { code: 'ja', label: '日本語', flag: '🇯🇵', status: 'comingSoon' },
