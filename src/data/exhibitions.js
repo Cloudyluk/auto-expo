@@ -17,9 +17,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "待定",
-      "sortDate": 101,
+      "month": 10,
+      "label": "2026年10月13-20日",
+      "sortDate": 20261020,
       "status": ""
     },
     "location": {
@@ -69,9 +69,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "待定",
-      "sortDate": 101,
+      "month": 6,
+      "label": "2026年6月3日",
+      "sortDate": 20260603,
       "status": ""
     },
     "location": {
@@ -121,9 +121,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "待定",
-      "sortDate": 101,
+      "month": 4,
+      "label": "2026年4月19日",
+      "sortDate": 20260419,
       "status": ""
     },
     "location": {
@@ -173,9 +173,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "待定",
-      "sortDate": 101,
+      "month": 4,
+      "label": "2026年4月24日",
+      "sortDate": 20260424,
       "status": ""
     },
     "location": {
@@ -226,8 +226,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 1,
-      "label": "待定",
-      "sortDate": 101,
+      "label": "12月2-13日",
+      "sortDate": 20261202,
       "status": ""
     },
     "location": {
@@ -278,8 +278,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 1,
-      "label": "待定",
-      "sortDate": 101,
+      "label": "2026年1月6-9日",
+      "sortDate": 20260109,
       "status": ""
     },
     "location": {
@@ -329,9 +329,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "待定",
-      "sortDate": 101,
+      "month": 7,
+      "label": "2026年7月9日",
+      "sortDate": 20260709,
       "status": ""
     },
     "location": {
@@ -1735,9 +1735,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 3,
-      "label": "3月(待定)",
-      "sortDate": 301,
+      "month": 6,
+      "label": "2026年6月3-6日",
+      "sortDate": 20260606,
       "status": ""
     },
     "location": {
@@ -3051,9 +3051,9 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 4,
-      "label": "4月（待定）",
-      "sortDate": 401,
-      "status": ""
+      "label": "2027年4月6-8日(两年一届，2026年停办)",
+      "sortDate": 20270406,
+      "status": "两年一届"
     },
     "location": {
       "label": "Stuttgart, Germany",
@@ -3105,9 +3105,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 4,
-      "label": "4月（待定）",
-      "sortDate": 401,
+      "month": 1,
+      "label": "2026年1月6-9日",
+      "sortDate": 20260109,
       "status": ""
     },
     "location": {
@@ -6570,9 +6570,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 6,
-      "label": "6月（具体日期待定）",
-      "sortDate": 610,
+      "month": 11,
+      "label": "2026年11月25-27日",
+      "sortDate": 20261127,
       "status": ""
     },
     "location": {
@@ -17347,9 +17347,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 11,
-      "label": "11月(待定)",
-      "sortDate": 1101,
+      "month": 9,
+      "label": "2026年9月9日",
+      "sortDate": 20260909,
       "status": ""
     },
     "location": {
@@ -17403,8 +17403,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 11,
-      "label": "11月(具体日期待定)",
-      "sortDate": 1101,
+      "label": "2026年11月3-11日",
+      "sortDate": 20261111,
       "status": ""
     },
     "location": {
@@ -17457,9 +17457,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 11,
-      "label": "待定",
-      "sortDate": 1101,
+      "month": 12,
+      "label": "2026年12月2日",
+      "sortDate": 20261202,
       "status": ""
     },
     "location": {
@@ -17512,9 +17512,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 11,
-      "label": "待定",
-      "sortDate": 1101,
+      "month": 1,
+      "label": "2026年1月6-9日",
+      "sortDate": 20260109,
       "status": ""
     },
     "location": {
@@ -19933,8 +19933,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 12,
-      "label": "12月(待定)",
-      "sortDate": 1201,
+      "label": "2026年12月2-5日",
+      "sortDate": 20261205,
       "status": ""
     },
     "location": {
@@ -19987,9 +19987,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 12,
-      "label": "待定",
-      "sortDate": 1201,
+      "month": 5,
+      "label": "2026年5月7-5日",
+      "sortDate": 20260505,
       "status": ""
     },
     "location": {
@@ -20099,7 +20099,7 @@ export const EXHIBITIONS = [
       "year": 2026,
       "month": 11,
       "label": "12月2-5日",
-      "sortDate": 1202,
+      "sortDate": 20261202,
       "status": ""
     },
     "location": {
@@ -20151,7 +20151,7 @@ export const EXHIBITIONS = [
       "year": 2026,
       "month": 12,
       "label": "12月2-5日",
-      "sortDate": 1202,
+      "sortDate": 20261202,
       "status": ""
     },
     "location": {
@@ -20203,7 +20203,7 @@ export const EXHIBITIONS = [
       "year": 2026,
       "month": 12,
       "label": "12月2-5日",
-      "sortDate": 1202,
+      "sortDate": 20261202,
       "status": ""
     },
     "location": {
@@ -20632,9 +20632,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "待定(通常下半年)",
-      "sortDate": 20260000,
+      "month": 7,
+      "label": "2026年7月24-26日",
+      "sortDate": 20260726,
       "status": ""
     },
     "location": {
@@ -20687,9 +20687,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "1月(具体待定)",
-      "sortDate": 20260101,
+      "month": 12,
+      "label": "2026年12月3日",
+      "sortDate": 20261203,
       "status": ""
     },
     "location": {
@@ -20739,9 +20739,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 1,
-      "label": "1月(具体待定)",
-      "sortDate": 20260101,
+      "month": 10,
+      "label": "2026年10月27-29日",
+      "sortDate": 20261029,
       "status": ""
     },
     "location": {
@@ -21066,9 +21066,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 3,
-      "label": "3月(具体待定)",
-      "sortDate": 20260301,
+      "month": 12,
+      "label": "2026年12月3-5日",
+      "sortDate": 20261205,
       "status": ""
     },
     "location": {
@@ -21118,9 +21118,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 3,
-      "label": "3月(具体待定)",
-      "sortDate": 20260301,
+      "month": 4,
+      "label": "2026年4月24日",
+      "sortDate": 20260424,
       "status": ""
     },
     "location": {
@@ -21170,9 +21170,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 3,
-      "label": "3月(具体待定)",
-      "sortDate": 20260301,
+      "month": 10,
+      "label": "2026年10月10日",
+      "sortDate": 20261010,
       "status": ""
     },
     "location": {
@@ -21222,9 +21222,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 3,
-      "label": "3月(待定)",
-      "sortDate": 20260301,
+      "month": 8,
+      "label": "2026年8月5-8日",
+      "sortDate": 20260808,
       "status": ""
     },
     "location": {
@@ -21274,9 +21274,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 3,
-      "label": "3月(待定)",
-      "sortDate": 20260301,
+      "month": 7,
+      "label": "2026年7月8日",
+      "sortDate": 20260708,
       "status": ""
     },
     "location": {
@@ -21327,8 +21327,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 3,
-      "label": "3月(待定)",
-      "sortDate": 20260301,
+      "label": "2026年3月18日",
+      "sortDate": 20260318,
       "status": ""
     },
     "location": {
@@ -22329,9 +22329,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 4,
-      "label": "4月(待定)",
-      "sortDate": 20260401,
+      "month": 11,
+      "label": "2026年11月6-8日",
+      "sortDate": 20261108,
       "status": ""
     },
     "location": {
@@ -22693,9 +22693,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 5,
-      "label": "5月(具体待定)",
-      "sortDate": 20260501,
+      "month": 6,
+      "label": "2026年6月16日",
+      "sortDate": 20260616,
       "status": ""
     },
     "location": {
@@ -22746,8 +22746,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 5,
-      "label": "5月(具体待定)",
-      "sortDate": 20260501,
+      "label": "2026年5月27-29日",
+      "sortDate": 20260529,
       "status": ""
     },
     "location": {
@@ -22798,9 +22798,9 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 5,
-      "label": "5月(具体待定)",
-      "sortDate": 20260501,
-      "status": ""
+      "label": "2027年5月10-13日(两年一届，2026年停办)",
+      "sortDate": 20270510,
+      "status": "两年一届"
     },
     "location": {
       "label": "Grand Rapids, 美国",
@@ -22850,8 +22850,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 5,
-      "label": "待定",
-      "sortDate": 20260501,
+      "label": "2026年5月27-5日",
+      "sortDate": 20260505,
       "status": ""
     },
     "location": {
@@ -22901,10 +22901,10 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 5,
-      "label": "待定",
-      "sortDate": 20260501,
-      "status": ""
+      "month": 9,
+      "label": "待定(2025年9月21-23日举办，2026日期待定)",
+      "sortDate": 20260901,
+      "status": "日期待定"
     },
     "location": {
       "label": "南京",
@@ -23501,8 +23501,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 6,
-      "label": "6月(具体待定)",
-      "sortDate": 20260601,
+      "label": "2026年6月10-6日",
+      "sortDate": 20260606,
       "status": ""
     },
     "location": {
@@ -23556,8 +23556,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 6,
-      "label": "6月(具体待定)",
-      "sortDate": 20260601,
+      "label": "2026年6月23-6日",
+      "sortDate": 20260606,
       "status": ""
     },
     "location": {
@@ -23665,9 +23665,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 6,
-      "label": "6月(具体待定)",
-      "sortDate": 20260601,
+      "month": 7,
+      "label": "2026年7月29-31日",
+      "sortDate": 20260731,
       "status": ""
     },
     "location": {
@@ -23720,9 +23720,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 6,
-      "label": "6月(具体待定)",
-      "sortDate": 20260601,
+      "month": 4,
+      "label": "2026年4月20日",
+      "sortDate": 20260420,
       "status": ""
     },
     "location": {
@@ -23776,8 +23776,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 6,
-      "label": "6月(具体待定)",
-      "sortDate": 20260601,
+      "label": "2026年6月23-6日",
+      "sortDate": 20260606,
       "status": ""
     },
     "location": {
@@ -23831,8 +23831,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 6,
-      "label": "6月(待定)",
-      "sortDate": 20260601,
+      "label": "2026年6月24-6日",
+      "sortDate": 20260606,
       "status": ""
     },
     "location": {
@@ -23885,9 +23885,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 6,
-      "label": "6月(待定)",
-      "sortDate": 20260601,
+      "month": 1,
+      "label": "2026年1月6日",
+      "sortDate": 20260106,
       "status": ""
     },
     "location": {
@@ -23940,9 +23940,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 6,
-      "label": "3月(待定)",
-      "sortDate": 20260601,
+      "month": 11,
+      "label": "2026年11月6-8日",
+      "sortDate": 20261108,
       "status": ""
     },
     "location": {
@@ -23995,9 +23995,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 6,
-      "label": "6月(待定)",
-      "sortDate": 20260601,
+      "month": 2,
+      "label": "2026年2月10日",
+      "sortDate": 20260210,
       "status": ""
     },
     "location": {
@@ -25095,9 +25095,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 7,
-      "label": "9月(待定)",
-      "sortDate": 20260701,
+      "month": 9,
+      "label": "2026年9月7-9日",
+      "sortDate": 20260909,
       "status": ""
     },
     "location": {
@@ -25150,9 +25150,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 7,
-      "label": "7月(待定)",
-      "sortDate": 20260701,
+      "month": 6,
+      "label": "2026年6月13-21日",
+      "sortDate": 20260621,
       "status": ""
     },
     "location": {
@@ -25206,8 +25206,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 7,
-      "label": "7月(待定)",
-      "sortDate": 20260701,
+      "label": "2026年7月8日",
+      "sortDate": 20260708,
       "status": ""
     },
     "location": {
@@ -25737,9 +25737,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 10,
+      "label": "2026年10月21日",
+      "sortDate": 20261021,
       "status": ""
     },
     "location": {
@@ -25789,9 +25789,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 5,
+      "label": "2026年5月28日",
+      "sortDate": 20260528,
       "status": ""
     },
     "location": {
@@ -25841,9 +25841,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 5,
+      "label": "2026年5月28日",
+      "sortDate": 20260528,
       "status": ""
     },
     "location": {
@@ -25893,9 +25893,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 1,
+      "label": "2026年1月6-9日",
+      "sortDate": 20260109,
       "status": ""
     },
     "location": {
@@ -25946,8 +25946,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "label": "2026年8月12-14日",
+      "sortDate": 20260814,
       "status": ""
     },
     "location": {
@@ -25997,9 +25997,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 5,
+      "label": "2026年5月28-29日",
+      "sortDate": 20260529,
       "status": ""
     },
     "location": {
@@ -26049,9 +26049,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 7,
+      "label": "2026年7月8日",
+      "sortDate": 20260708,
       "status": ""
     },
     "location": {
@@ -26101,9 +26101,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 5,
+      "label": "2026年5月28-29日",
+      "sortDate": 20260529,
       "status": ""
     },
     "location": {
@@ -26154,8 +26154,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "label": "2026年8月12-14日",
+      "sortDate": 20260814,
       "status": ""
     },
     "location": {
@@ -26205,9 +26205,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "8月(具体待定)",
-      "sortDate": 20260801,
+      "month": 11,
+      "label": "2026年11月16日",
+      "sortDate": 20261116,
       "status": ""
     },
     "location": {
@@ -26257,9 +26257,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 8,
-      "label": "待定",
-      "sortDate": 20260801,
+      "month": 7,
+      "label": "2026年7月1日",
+      "sortDate": 20260701,
       "status": ""
     },
     "location": {
@@ -27505,9 +27505,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 9,
-      "label": "9月(具体待定)",
-      "sortDate": 20260901,
+      "month": 6,
+      "label": "2026年6月24-6日",
+      "sortDate": 20260606,
       "status": ""
     },
     "location": {
@@ -27561,8 +27561,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 9,
-      "label": "9月(具体待定)",
-      "sortDate": 20260901,
+      "label": "2026年9月22日",
+      "sortDate": 20260922,
       "status": ""
     },
     "location": {
@@ -27616,8 +27616,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 9,
-      "label": "9月(具体待定)",
-      "sortDate": 20260901,
+      "label": "2026年9月22-9日",
+      "sortDate": 20260909,
       "status": ""
     },
     "location": {
@@ -27671,8 +27671,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 9,
-      "label": "9月(具体待定)",
-      "sortDate": 20260901,
+      "label": "2026年9月22日",
+      "sortDate": 20260922,
       "status": ""
     },
     "location": {
@@ -27726,8 +27726,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 9,
-      "label": "9月(具体待定)",
-      "sortDate": 20260901,
+      "label": "2026年9月22日",
+      "sortDate": 20260922,
       "status": ""
     },
     "location": {
@@ -27781,8 +27781,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 9,
-      "label": "9月(具体待定)",
-      "sortDate": 20260901,
+      "label": "2026年9月22-9日",
+      "sortDate": 20260909,
       "status": ""
     },
     "location": {
@@ -27835,9 +27835,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 9,
-      "label": "9月(具体待定)",
-      "sortDate": 20260901,
+      "month": 8,
+      "label": "2026年8月12-14日",
+      "sortDate": 20260814,
       "status": ""
     },
     "location": {
@@ -28936,8 +28936,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 10,
-      "label": "10月(具体待定)",
-      "sortDate": 20261001,
+      "label": "2026年10月1-10日",
+      "sortDate": 20261010,
       "status": ""
     },
     "location": {
@@ -28990,9 +28990,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 10,
-      "label": "10月(具体待定)",
-      "sortDate": 20261001,
+      "month": 3,
+      "label": "2026年3月26日",
+      "sortDate": 20260326,
       "status": ""
     },
     "location": {
@@ -29045,9 +29045,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 10,
-      "label": "10月(具体待定)",
-      "sortDate": 20261001,
+      "month": 6,
+      "label": "2026年6月24-27日",
+      "sortDate": 20260627,
       "status": ""
     },
     "location": {
@@ -29100,9 +29100,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 10,
-      "label": "10月(待定)",
-      "sortDate": 20261001,
+      "month": 6,
+      "label": "2026年6月9日",
+      "sortDate": 20260609,
       "status": ""
     },
     "location": {
@@ -29155,9 +29155,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 10,
-      "label": "10月(待定)",
-      "sortDate": 20261001,
+      "month": 9,
+      "label": "2026年9月19日",
+      "sortDate": 20260919,
       "status": ""
     },
     "location": {
@@ -29210,9 +29210,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 10,
-      "label": "10月(待定)",
-      "sortDate": 20261001,
+      "month": 9,
+      "label": "2026年9月16日",
+      "sortDate": 20260916,
       "status": ""
     },
     "location": {
@@ -29265,9 +29265,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 10,
-      "label": "10月(待定)",
-      "sortDate": 20261001,
+      "month": 5,
+      "label": "2026年5月27-29日",
+      "sortDate": 20260529,
       "status": ""
     },
     "location": {
@@ -30069,9 +30069,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 11,
-      "label": "11月(具体待定)",
-      "sortDate": 20261101,
+      "month": 4,
+      "label": "2026年4月8日",
+      "sortDate": 20260408,
       "status": ""
     },
     "location": {
@@ -30122,8 +30122,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 11,
-      "label": "11月(待定)",
-      "sortDate": 20261101,
+      "label": "11月5-8日",
+      "sortDate": 20261105,
       "status": ""
     },
     "location": {
@@ -30173,9 +30173,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 11,
-      "label": "11月(待定)",
-      "sortDate": 20261101,
+      "month": 3,
+      "label": "2026年3月24日",
+      "sortDate": 20260324,
       "status": ""
     },
     "location": {
@@ -30226,8 +30226,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 11,
-      "label": "11月(待定)",
-      "sortDate": 20261101,
+      "label": "2026年11月12-14日",
+      "sortDate": 20261114,
       "status": ""
     },
     "location": {
@@ -31734,8 +31734,8 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 12,
-      "label": "12月(具体待定)",
-      "sortDate": 20261201,
+      "label": "12月2-5日",
+      "sortDate": 20261202,
       "status": ""
     },
     "location": {
@@ -31785,9 +31785,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 12,
-      "label": "12月(具体待定)",
-      "sortDate": 20261201,
+      "month": 7,
+      "label": "2026年7月8-10日",
+      "sortDate": 20260710,
       "status": ""
     },
     "location": {
@@ -31837,9 +31837,9 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 12,
-      "label": "12月(具体待定)",
-      "sortDate": 20261201,
+      "month": 6,
+      "label": "2026年6月3-6日",
+      "sortDate": 20260606,
       "status": ""
     },
     "location": {
@@ -31890,7 +31890,7 @@ export const EXHIBITIONS = [
     "date": {
       "year": 2026,
       "month": 12,
-      "label": "12月2日",
+      "label": "12月2-5日",
       "sortDate": 20261202,
       "status": ""
     },
