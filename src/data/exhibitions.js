@@ -22886,11 +22886,11 @@ export const EXHIBITIONS = [
     }
   },
   {
-    "id": "23-428",
+    "id": "24-428",
     "official": {
-      "defaultName": "第23届中国(南京)国际润滑油脂添加剂养护用品及技术设备展",
+      "defaultName": "第24届中国(义乌)国际润滑油脂添加剂养护用品及技术设备展",
       "names": {
-        "zh": "第23届中国(南京)国际润滑油脂添加剂养护用品及技术设备展"
+        "zh": "第24届中国(义乌)国际润滑油脂添加剂养护用品及技术设备展"
       },
       "url": ""
     },
@@ -22901,19 +22901,19 @@ export const EXHIBITIONS = [
     },
     "date": {
       "year": 2026,
-      "month": 9,
-      "label": "待定(2025年9月21-23日举办，2026日期待定)",
-      "sortDate": 20260901,
-      "status": "日期待定"
+      "month": 3,
+      "label": "3月31日-4月2日",
+      "sortDate": 20260331,
+      "status": ""
     },
     "location": {
-      "label": "南京",
+      "label": "义乌国际博览中心",
       "address": "",
       "region": ""
     },
     "content": {
       "zh": {
-        "focus": "润滑油技术设备",
+        "focus": "中国国际油品展会巡回展，润滑油、脂、添加剂、养护用品及技术设备",
         "audience": "",
         "buyerValue": [],
         "sellerValue": [],
@@ -22927,8 +22927,8 @@ export const EXHIBITIONS = [
         "lubricants-care"
       ],
       "keywords": [
-        "第23届中国(南京)国际润滑油脂添加剂养护用品及技术设备展",
-        "润滑油技术设备"
+        "第24届中国(义乌)国际润滑油脂添加剂养护用品及技术设备展",
+        "中国国际油品展会巡回展"
       ],
       "audiences": []
     },
@@ -34011,6 +34011,58 @@ export const EXHIBITIONS = [
     "meta": {
       "market": "海外",
       "star": 2
+    }
+  },
+  {
+    "id": "25-428",
+    "official": {
+      "defaultName": "第25届中国(西安)国际润滑油脂添加剂养护用品及技术设备展",
+      "names": {
+        "zh": "第25届中国(西安)国际润滑油脂添加剂养护用品及技术设备展"
+      },
+      "url": ""
+    },
+    "taxonomy": {
+      "categoryId": "lubricants-care",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月19-21日",
+      "sortDate": 20270319,
+      "status": ""
+    },
+    "location": {
+      "label": "西安浐灞国际会展中心",
+      "address": "",
+      "region": ""
+    },
+    "content": {
+      "zh": {
+        "focus": "中国国际油品展会巡回展，润滑油、脂、添加剂、养护用品及技术设备",
+        "audience": "",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "lubricants-care"
+      ],
+      "keywords": [
+        "第25届中国(西安)国际润滑油脂添加剂养护用品及技术设备展",
+        "中国国际油品展会巡回展"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "中国",
+      "star": 1
     }
   }
 ];
