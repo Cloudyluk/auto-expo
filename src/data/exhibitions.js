@@ -33960,6 +33960,58 @@ export const EXHIBITIONS = [
       "market": "海外",
       "star": 2
     }
+  },
+  {
+    "id": "acma-automechanika-new-delhi-2028-636",
+    "official": {
+      "defaultName": "ACMA Automechanika New Delhi 2028",
+      "names": {
+        "zh": "ACMA Automechanika New Delhi 2028"
+      },
+      "url": "https://acma-automechanika-newdelhi.in.messefrankfurt.com/newdelhi/en.html"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2028,
+      "month": 2,
+      "label": "2月3-5日",
+      "sortDate": 20280203,
+      "status": "2028预告"
+    },
+    "location": {
+      "label": "印度 新德里 Yashobhoomi (IICC)",
+      "address": "Yashobhoomi (India International Convention & Expo Centre), Dwarka, New Delhi, 110061, India",
+      "region": ""
+    },
+    "content": {
+      "zh": {
+        "focus": "印度最大的汽车后市场与零部件采购展，两年一届",
+        "audience": "OEM、分销商、车库、车队运营商、服务提供商和国际买家",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "ACMA Automechanika New Delhi",
+        "印度汽配展"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
   }
 ];
 
