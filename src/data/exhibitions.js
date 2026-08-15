@@ -32556,6 +32556,1202 @@ export const EXHIBITIONS = [
       "market": "海外",
       "star": 3
     }
+  },
+  {
+    "id": "ces-2027-2027-609",
+    "official": {
+      "defaultName": "CES 2027",
+      "names": {
+        "zh": "CES 2027"
+      },
+      "url": "https://www.ces.tech/plan-your-visit/dates-and-hours"
+    },
+    "taxonomy": {
+      "categoryId": "auto-tech",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 1,
+      "label": "1月6-9日",
+      "sortDate": 20270106,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "美国 拉斯维加斯 Las Vegas Convention Center",
+      "address": "3150 Paradise Road, Las Vegas, NV 89109, USA",
+      "region": "北美"
+    },
+    "content": {
+      "zh": {
+        "focus": "消费电子与汽车智能化新品发布平台，覆盖ADAS、自动驾驶、车载AI和智能座舱",
+        "audience": "OEM/Tier1研发、车规芯片、智能驾驶、座舱、软件与海外客户开发团队",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "auto-tech"
+      ],
+      "keywords": [
+        "CES 2027",
+        "消费电子与汽车智能化新品发布平台，覆盖ADAS、自动驾驶、车载AI和智能座舱"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "detroit-auto-show-2027-2027-610",
+    "official": {
+      "defaultName": "Detroit Auto Show 2027",
+      "names": {
+        "zh": "Detroit Auto Show 2027"
+      },
+      "url": "https://detroitautoshow.com/"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 1,
+      "label": "1月14-24日",
+      "sortDate": 20270114,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "美国 底特律 Huntington Place",
+      "address": "1 Washington Boulevard, Detroit, MI 48226, USA",
+      "region": "北美"
+    },
+    "content": {
+      "zh": {
+        "focus": "北美整车、智能出行与电动化展示平台，适合OEM、经销商和零部件企业开展市场调研",
+        "audience": "整车/OEM、零部件、经销商、车队和北美市场拓展团队",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "Detroit Auto Show 2027",
+        "北美整车、智能出行与电动化展示平台，适合OEM、经销商和零部件企业开展市场调研"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "tokyo-auto-salon-2027-2027-611",
+    "official": {
+      "defaultName": "Tokyo Auto Salon 2027",
+      "names": {
+        "zh": "Tokyo Auto Salon 2027"
+      },
+      "url": "https://www.tokyoautosalon.jp/2027/"
+    },
+    "taxonomy": {
+      "categoryId": "tuning",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 1,
+      "label": "1月15-17日",
+      "sortDate": 20270115,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "日本 千叶 Makuhari Messe",
+      "address": "2-1 Nakase, Mihama-ku, Chiba 261-0023, Japan",
+      "region": "亚洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "JDM改装、性能件、车身外观与赛车文化核心展会，适合改装品牌和日本渠道开发",
+        "audience": "改装件、性能件、车灯、车身件、赛车用品品牌和日本渠道商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "tuning"
+      ],
+      "keywords": [
+        "Tokyo Auto Salon 2027",
+        "JDM改装、性能件、车身外观与赛车文化核心展会，适合改装品牌和日本渠道开发"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "nada-show-2027-2027-612",
+    "official": {
+      "defaultName": "NADA Show 2027",
+      "names": {
+        "zh": "NADA Show 2027"
+      },
+      "url": "https://www.nada.org/nada-show-attend"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 2,
+      "label": "2月17-20日",
+      "sortDate": 20270217,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "美国 奥兰多 Orange County Convention Center",
+      "address": "9800 International Drive, Orlando, FL 32819, USA",
+      "region": "北美"
+    },
+    "content": {
+      "zh": {
+        "focus": "美国汽车经销商年度大会，覆盖经销商经营、OEM销售、金融、售后和数字化服务",
+        "audience": "汽车经销商集团、OEM销售、金融、售后和经销商软件服务商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "NADA Show 2027",
+        "美国汽车经销商年度大会，覆盖经销商经营、OEM销售、金融、售后和数字化服务"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "automotive-world-tokyo-2027-2027-613",
+    "official": {
+      "defaultName": "Automotive World Tokyo 2027",
+      "names": {
+        "zh": "Automotive World Tokyo 2027"
+      },
+      "url": "https://www.automotiveworld.jp/tokyo/en-gb.html"
+    },
+    "taxonomy": {
+      "categoryId": "auto-tech",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 2,
+      "label": "2月17-19日",
+      "sortDate": 20270217,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "日本 东京 Tokyo Big Sight",
+      "address": "3-11-1 Ariake, Koto-ku, Tokyo 135-0063, Japan",
+      "region": "亚洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "汽车电子、自动驾驶、EV/HV/FCV、轻量化、制造技术与可持续出行综合展",
+        "audience": "日系OEM/Tier1研发、连接器、汽车电子、EV和轻量化供应商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "auto-tech"
+      ],
+      "keywords": [
+        "Automotive World Tokyo 2027",
+        "汽车电子、自动驾驶、EV/HV/FCV、轻量化、制造技术与可持续出行综合展"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "iaae-tokyo-2027-2027-614",
+    "official": {
+      "defaultName": "IAAE Tokyo 2027",
+      "names": {
+        "zh": "IAAE Tokyo 2027"
+      },
+      "url": "https://www.iaae-jp.com/en/outline/"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月10-12日",
+      "sortDate": 20270310,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "日本 东京 Tokyo Big Sight",
+      "address": "Tokyo Big Sight South Hall 1-4, 3-11-1 Ariake, Koto-ku, Tokyo 135-0063, Japan",
+      "region": "亚洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "日本汽车后市场、维修诊断、养护品、零部件与SDV维保技术专业展",
+        "audience": "汽配、维修设备、诊断、养护品和日本售后渠道团队",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "IAAE Tokyo 2027",
+        "日本汽车后市场、维修诊断、养护品、零部件与SDV维保技术专业展"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "new-york-auto-show-2027-2027-615",
+    "official": {
+      "defaultName": "New York Auto Show 2027",
+      "names": {
+        "zh": "New York Auto Show 2027"
+      },
+      "url": "https://www.autoshowny.com/"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月26日-4月4日",
+      "sortDate": 20270326,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "美国 纽约 Jacob K. Javits Convention Center",
+      "address": "429 11th Avenue, New York, NY 10001, USA",
+      "region": "北美"
+    },
+    "content": {
+      "zh": {
+        "focus": "北美东北部大型整车展，展示新车、EV与智能出行，适合品牌发布和区域市场调研",
+        "audience": "整车品牌、经销商、车队、汽车服务商和美国东北市场调研团队",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "New York Auto Show 2027",
+        "北美东北部大型整车展，展示新车、EV与智能出行，适合品牌发布和区域市场调研"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "sema-show-2027-2027-616",
+    "official": {
+      "defaultName": "SEMA Show 2027",
+      "names": {
+        "zh": "SEMA Show 2027"
+      },
+      "url": "https://www.semashow.com/"
+    },
+    "taxonomy": {
+      "categoryId": "tuning",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 11,
+      "label": "11月2-5日",
+      "sortDate": 20271102,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "美国 拉斯维加斯 Las Vegas Convention Center",
+      "address": "3150 Paradise Road, Las Vegas, NV 89109, USA",
+      "region": "北美"
+    },
+    "content": {
+      "zh": {
+        "focus": "北美改装、性能零部件、皮卡越野、维修工具与渠道采购核心展会",
+        "audience": "改装品牌、性能零部件、皮卡越野、经销商和北美渠道采购商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "tuning"
+      ],
+      "keywords": [
+        "SEMA Show 2027",
+        "北美改装、性能零部件、皮卡越野、维修工具与渠道采购核心展会"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "aapex-2027-2027-617",
+    "official": {
+      "defaultName": "AAPEX 2027",
+      "names": {
+        "zh": "AAPEX 2027"
+      },
+      "url": "https://www.aapexshow.com/faqs/"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 11,
+      "label": "11月2-4日",
+      "sortDate": 20271102,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "美国 拉斯维加斯 Venetian Expo",
+      "address": "201 Sands Avenue, Las Vegas, NV 89169, USA",
+      "region": "北美"
+    },
+    "content": {
+      "zh": {
+        "focus": "北美汽车后市场展，聚焦零部件、维修、诊断工具、养护与行业采购对接",
+        "audience": "汽配制造商、独立维修厂、连锁门店、车队和北美售后采购团队",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "AAPEX 2027",
+        "北美汽车后市场展，聚焦零部件、维修、诊断工具、养护与行业采购对接"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "automechanika-riyadh-2027-2027-618",
+    "official": {
+      "defaultName": "Automechanika Riyadh 2027",
+      "names": {
+        "zh": "Automechanika Riyadh 2027"
+      },
+      "url": "https://www.arabwheels.sa/blog/en/automechanika-riyadh-2027-correct-dates-may-listings/"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 1,
+      "label": "1月11-13日",
+      "sortDate": 20270111,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "沙特 利雅得",
+      "address": "Riyadh Front Exhibition and Conference Center",
+      "region": "中东"
+    },
+    "content": {
+      "zh": {
+        "focus": "沙特汽车后市场展",
+        "audience": "汽配制造商、分销商、维修服务商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "Automechanika Riyadh 2027",
+        "沙特汽车后市场展"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "mwc-barcelona-2027-2027-619",
+    "official": {
+      "defaultName": "MWC Barcelona 2027",
+      "names": {
+        "zh": "MWC Barcelona 2027"
+      },
+      "url": "https://www.mwcbarcelona.com/"
+    },
+    "taxonomy": {
+      "categoryId": "smart-connected",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月1-4日",
+      "sortDate": 20270301,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "西班牙 巴塞罗那",
+      "address": "Fira Gran Via, Barcelona",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "全球移动通信大会，含V2X/车联网",
+        "audience": "通信技术商、汽车OEM、Tier1供应商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "smart-connected"
+      ],
+      "keywords": [
+        "MWC Barcelona 2027",
+        "全球移动通信大会，含V2X/车联网"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "tire-technology-expo-2027-2027-620",
+    "official": {
+      "defaultName": "Tire Technology Expo 2027",
+      "names": {
+        "zh": "Tire Technology Expo 2027"
+      },
+      "url": "https://tiretechnology-expo.com/"
+    },
+    "taxonomy": {
+      "categoryId": "tire-rubber",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月2-4日",
+      "sortDate": 20270302,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "德国 汉诺威",
+      "address": "Deutsche Messe, Hannover",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "全球轮胎技术展，覆盖轮胎制造全价值链",
+        "audience": "轮胎制造商、橡胶材料商、设备供应商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "tire-rubber"
+      ],
+      "keywords": [
+        "Tire Technology Expo 2027",
+        "全球轮胎技术展，覆盖轮胎制造全价值链"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "bangkok-international-motor-show-2027-2027-621",
+    "official": {
+      "defaultName": "Bangkok International Motor Show 2027",
+      "names": {
+        "zh": "Bangkok International Motor Show 2027"
+      },
+      "url": "https://www.neventum.com/tradeshows/bangkok-international-motor-show"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月24日-4月4日",
+      "sortDate": 20270324,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "泰国 曼谷",
+      "address": "IMPACT Challenger Hall 1-3, Bangkok",
+      "region": "东南亚"
+    },
+    "content": {
+      "zh": {
+        "focus": "东南亚最大车展之一",
+        "audience": "整车厂商、消费者、经销商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "Bangkok International Motor Show 2027",
+        "东南亚最大车展之一"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "seoul-motor-show-2027-2027-622",
+    "official": {
+      "defaultName": "Seoul Motor Show 2027",
+      "names": {
+        "zh": "Seoul Motor Show 2027"
+      },
+      "url": "http://www.booking-expo.com/events/sms-seoul-motor-show"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月28日-4月7日",
+      "sortDate": 20270328,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "韩国 首尔",
+      "address": "KINTEX, Goyang, Seoul",
+      "region": "东亚"
+    },
+    "content": {
+      "zh": {
+        "focus": "韩国最大车展，两年一届",
+        "audience": "整车厂商、消费者、媒体",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "Seoul Motor Show 2027",
+        "韩国最大车展，两年一届"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "automec-so-paulo-2027-2027-623",
+    "official": {
+      "defaultName": "Automec São Paulo 2027",
+      "names": {
+        "zh": "Automec São Paulo 2027"
+      },
+      "url": "https://fuarsorgu.com/fair/automec"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 4,
+      "label": "4月20-24日",
+      "sortDate": 20270420,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "巴西 圣保罗",
+      "address": "São Paulo Expo Exhibition & Convention Center",
+      "region": "南美"
+    },
+    "content": {
+      "zh": {
+        "focus": "南美最大汽配展，两年一届",
+        "audience": "汽配制造商、分销商、维修服务商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "Automec São Paulo 2027",
+        "南美最大汽配展，两年一届"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "automotive-testing-expo-europe-2027-2027-624",
+    "official": {
+      "defaultName": "Automotive Testing Expo Europe 2027",
+      "names": {
+        "zh": "Automotive Testing Expo Europe 2027"
+      },
+      "url": "https://testingexpo-europe.com/"
+    },
+    "taxonomy": {
+      "categoryId": "testing",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 6,
+      "label": "6月2-3日",
+      "sortDate": 20270602,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "德国 斯图加特",
+      "address": "Messe Stuttgart",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "欧洲汽车测试、验证与质量工程领先展会",
+        "audience": "测试工程师、OEM、Tier1供应商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "testing"
+      ],
+      "keywords": [
+        "Automotive Testing Expo Europe 2027",
+        "欧洲汽车测试、验证与质量工程领先展会"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "automechanika-birmingham-2027-2027-625",
+    "official": {
+      "defaultName": "Automechanika Birmingham 2027",
+      "names": {
+        "zh": "Automechanika Birmingham 2027"
+      },
+      "url": "https://expertexhibitsgmbh.com/events/automechanika-birmingham/"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 6,
+      "label": "6月8-10日",
+      "sortDate": 20270608,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "英国 伯明翰",
+      "address": "National Exhibition Centre (NEC), Birmingham",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "英国最大汽配展，两年一届",
+        "audience": "汽配制造商、分销商、维修服务商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "Automechanika Birmingham 2027",
+        "英国最大汽配展，两年一届"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 1
+    }
+  },
+  {
+    "id": "geneva-international-motor-show-2027-2027-626",
+    "official": {
+      "defaultName": "Geneva International Motor Show 2027",
+      "names": {
+        "zh": "Geneva International Motor Show 2027"
+      },
+      "url": "https://www.radonexhibition.eu/trade-shows/geneva-motor-show/"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 6,
+      "label": "6月10-13日",
+      "sortDate": 20270610,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "瑞士 日内瓦",
+      "address": "Domaine Grand Malagny, Geneva",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "百年车展，第100届",
+        "audience": "整车厂商、媒体、消费者",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "Geneva International Motor Show 2027",
+        "百年车展，第100届"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "automechanika-ho-chi-minh-city-2027-2027-627",
+    "official": {
+      "defaultName": "Automechanika Ho Chi Minh City 2027",
+      "names": {
+        "zh": "Automechanika Ho Chi Minh City 2027"
+      },
+      "url": "https://expolume.com/expo/ho-chi-minh-automechanika/"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 6,
+      "label": "6月16-18日",
+      "sortDate": 20270616,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "越南 胡志明市",
+      "address": "Saigon Exhibition and Convention Center (SECC)",
+      "region": "东南亚"
+    },
+    "content": {
+      "zh": {
+        "focus": "越南汽配市场门户",
+        "audience": "汽配制造商、分销商、维修服务商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "Automechanika Ho Chi Minh City 2027",
+        "越南汽配市场门户"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "the-battery-show-europe-2027-2027-628",
+    "official": {
+      "defaultName": "The Battery Show Europe 2027",
+      "names": {
+        "zh": "The Battery Show Europe 2027"
+      },
+      "url": "https://www.thebatteryshow.eu/"
+    },
+    "taxonomy": {
+      "categoryId": "battery-ev",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 6,
+      "label": "6月22-24日",
+      "sortDate": 20270622,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "德国 斯图加特",
+      "address": "Messe Stuttgart",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "欧洲电池与电动车技术展，电池全产业链",
+        "audience": "电池制造商、材料商、OEM、储能系统商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "battery-ev"
+      ],
+      "keywords": [
+        "The Battery Show Europe 2027",
+        "欧洲电池与电动车技术展，电池全产业链"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "ina-paace-automechanika-mexico-2027-2027-629",
+    "official": {
+      "defaultName": "INA PAACE Automechanika Mexico 2027",
+      "names": {
+        "zh": "INA PAACE Automechanika Mexico 2027"
+      },
+      "url": "http://www.showseye.com/fairs/PAACE-Automechanika-Mexico.html"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 7,
+      "label": "7月7-9日",
+      "sortDate": 20270707,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "墨西哥 墨西哥城",
+      "address": "Centro Banamex, Mexico City",
+      "region": "北美"
+    },
+    "content": {
+      "zh": {
+        "focus": "拉美最大汽配展，辐射美墨加市场",
+        "audience": "汽配制造商、分销商、维修服务商",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "INA PAACE Automechanika Mexico 2027",
+        "拉美最大汽配展，辐射美墨加市场"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "goodwood-festival-of-speed-2027-2027-630",
+    "official": {
+      "defaultName": "Goodwood Festival of Speed 2027",
+      "names": {
+        "zh": "Goodwood Festival of Speed 2027"
+      },
+      "url": "https://motosportstravel.com/goodwood-travel-packages/goodwood-festival-of-speed/"
+    },
+    "taxonomy": {
+      "categoryId": "racing-culture",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 7,
+      "label": "7月15-18日",
+      "sortDate": 20270715,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "英国 Goodwood",
+      "address": "Goodwood House, West Sussex, UK",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "全球著名赛车与经典车庆典",
+        "audience": "赛车爱好者、汽车收藏家、媒体",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "racing-culture"
+      ],
+      "keywords": [
+        "Goodwood Festival of Speed 2027",
+        "全球著名赛车与经典车庆典"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "japan-mobility-show-2027-2027-631",
+    "official": {
+      "defaultName": "Japan Mobility Show 2027",
+      "names": {
+        "zh": "Japan Mobility Show 2027"
+      },
+      "url": "https://www.jufair.com/information/333178.html"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 10,
+      "label": "10月30日-11月9日",
+      "sortDate": 20271030,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "日本 东京",
+      "address": "Tokyo Big Sight International Exhibition Center",
+      "region": "东亚"
+    },
+    "content": {
+      "zh": {
+        "focus": "日本东京车展，展示未来移动出行",
+        "audience": "整车厂商、消费者、媒体、科技公司",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "Japan Mobility Show 2027",
+        "日本东京车展，展示未来移动出行"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
   }
 ];
 
