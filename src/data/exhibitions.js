@@ -33752,6 +33752,214 @@ export const EXHIBITIONS = [
       "market": "海外",
       "star": 2
     }
+  },
+  {
+    "id": "bharat-mobility-global-expo-2027-2027-632",
+    "official": {
+      "defaultName": "Bharat Mobility Global Expo 2027",
+      "names": {
+        "zh": "Bharat Mobility Global Expo 2027"
+      },
+      "url": "https://bharat-mobility.com/"
+    },
+    "taxonomy": {
+      "categoryId": "whole-vehicle",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 2,
+      "label": "2月4-9日",
+      "sortDate": 20270204,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "印度 新德里 Bharat Mandapam",
+      "address": "Bharat Mandapam, Pragati Maidan, New Delhi, India",
+      "region": "南亚"
+    },
+    "content": {
+      "zh": {
+        "focus": "印度最大汽车展，展示整车、零部件、EV、电池、轮胎、钢铁等全产业链",
+        "audience": "整车厂商、零部件供应商、经销商、消费者、媒体和政府采购团队",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "whole-vehicle"
+      ],
+      "keywords": [
+        "Bharat Mobility Global Expo 2027",
+        "印度最大汽车展，展示整车、零部件、EV、电池、轮胎、钢铁等全产业链"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 3
+    }
+  },
+  {
+    "id": "fastener-fair-stuttgart-2027-2027-633",
+    "official": {
+      "defaultName": "Fastener Fair Stuttgart 2027",
+      "names": {
+        "zh": "Fastener Fair Stuttgart 2027"
+      },
+      "url": "https://www.fastenerfair.com/"
+    },
+    "taxonomy": {
+      "categoryId": "repair-equipment",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 4,
+      "label": "4月6-8日",
+      "sortDate": 20270406,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "德国 斯图加特 Messe Stuttgart",
+      "address": "Messe Stuttgart, Messepiazza 1, 70629 Stuttgart, Germany",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "全球紧固件与固定技术展，覆盖紧固件全产业链",
+        "audience": "紧固件制造商、分销商、供应商、工程师",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "repair-equipment"
+      ],
+      "keywords": [
+        "Fastener Fair Stuttgart 2027",
+        "全球紧固件与固定技术展，覆盖紧固件全产业链"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "automechanika-mumbai-2027-2027-634",
+    "official": {
+      "defaultName": "Automechanika Mumbai 2027",
+      "names": {
+        "zh": "Automechanika Mumbai 2027"
+      },
+      "url": "https://automechanika.messefrankfurt.com/global/en.html"
+    },
+    "taxonomy": {
+      "categoryId": "aftermarket",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 3,
+      "label": "3月16-18日",
+      "sortDate": 20270316,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "印度 孟买",
+      "address": "Bandra Kurla Complex, Mumbai, India",
+      "region": "南亚"
+    },
+    "content": {
+      "zh": {
+        "focus": "印度领先的汽车后市场与车辆生产行业展会",
+        "audience": "汽配制造商、分销商、维修服务商、OEM",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "aftermarket"
+      ],
+      "keywords": [
+        "Automechanika Mumbai 2027",
+        "印度领先的汽车后市场与车辆生产行业展会"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
+  },
+  {
+    "id": "retro-classics-stuttgart-2027-2027-635",
+    "official": {
+      "defaultName": "Retro Classics Stuttgart 2027",
+      "names": {
+        "zh": "Retro Classics Stuttgart 2027"
+      },
+      "url": "https://www.retro-classics.de/en/"
+    },
+    "taxonomy": {
+      "categoryId": "racing-culture",
+      "supplyChainId": "",
+      "countryCode": ""
+    },
+    "date": {
+      "year": 2027,
+      "month": 4,
+      "label": "4月29日-5月2日",
+      "sortDate": 20270429,
+      "status": "2027预告"
+    },
+    "location": {
+      "label": "德国 斯图加特 Messe Stuttgart",
+      "address": "Messe Stuttgart, Messepiazza 1, 70629 Stuttgart, Germany",
+      "region": "欧洲"
+    },
+    "content": {
+      "zh": {
+        "focus": "欧洲最大经典车展与老爷车文化展",
+        "audience": "经典车收藏家、老爷车爱好者、汽车文化爱好者、媒体",
+        "buyerValue": [],
+        "sellerValue": [],
+        "buyerTasks": [],
+        "sellerTargets": []
+      },
+      "en": {}
+    },
+    "matching": {
+      "categories": [
+        "racing-culture"
+      ],
+      "keywords": [
+        "Retro Classics Stuttgart 2027",
+        "欧洲最大经典车展与老爷车文化展"
+      ],
+      "audiences": []
+    },
+    "meta": {
+      "market": "海外",
+      "star": 2
+    }
   }
 ];
 
